@@ -10,8 +10,6 @@
 **/
 public with sharing class teste {
     public teste() {
-        public class teste(){
         String abc='';
         }
     }
-}
