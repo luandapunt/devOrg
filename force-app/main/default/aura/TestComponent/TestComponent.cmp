@@ -1,0 +1,10 @@
+<aura:component controller="QuoteLineTestController">
+    <aura:attribute type="String" name="quoteLineId"/>
+    <aura:attribute type="Object" name="quoteLine"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    {!v.quoteLine.Name}
+    <br/>
+    TEST
+</aura:component>

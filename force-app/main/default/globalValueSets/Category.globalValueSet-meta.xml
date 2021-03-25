@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Projeto</fullName>
+        <default>false</default>
+        <label>Projeto</label>
+    </customValue>
+    <customValue>
+        <fullName>Horas Padrão</fullName>
+        <default>false</default>
+        <label>Horas Padrão</label>
+    </customValue>
+    <customValue>
+        <fullName>Recursos</fullName>
+        <default>false</default>
+        <label>Recursos</label>
+    </customValue>
+    <customValue>
+        <fullName>Opcionais</fullName>
+        <default>false</default>
+        <label>Opcionais</label>
+    </customValue>
+    <masterLabel>Category</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

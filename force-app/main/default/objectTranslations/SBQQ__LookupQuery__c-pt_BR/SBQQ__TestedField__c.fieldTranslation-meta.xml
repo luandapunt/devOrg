@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>O campo no objeto de Cotação, de Linha de cotação ou de Opção de produto que é avaliado por essa consulta. Exigido se Tipo de correspondência = Valor do campo.</help>
+    <label><!-- Tested Field --></label>
+    <name>SBQQ__TestedField__c</name>
+    <picklistValues>
+        <masterLabel>Corrente_Curto_Circuito__c</masterLabel>
+        <translation><!-- Corrente_Curto_Circuito__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Country_Factor__c</masterLabel>
+        <translation><!-- Country_Factor__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parent_Product_Formula__c</masterLabel>
+        <translation><!-- Parent_Product_Formula__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Code</masterLabel>
+        <translation>Código do produto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__ConfiguredSKU__c</masterLabel>
+        <translation><!-- SBQQ__ConfiguredSKU__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SBQQ__Product__c</masterLabel>
+        <translation><!-- SBQQ__Product__c --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>mlfb__c</masterLabel>
+        <translation><!-- mlfb__c --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

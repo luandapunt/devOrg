@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>new2</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>new2</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>/lightning/o/Account/new?defaultFieldValues=
+    Name={!URLENCODE(Account.Name)},
+    OwnerId={!Account.OwnerId},
+    AccountNumber={!Account.AccountNumber},
+    NumberOfEmployees=35000,
+    CustomCheckbox__c={!IF(Account.SomeCheckbox__c, true, false)}</url>
+</WebLink>

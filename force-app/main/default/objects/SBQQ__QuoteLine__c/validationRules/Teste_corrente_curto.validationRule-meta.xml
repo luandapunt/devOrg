@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Teste_corrente_curto</fullName>
+    <active>true</active>
+    <errorConditionFormula>VALUE(TRIM(LEFT(TEXT(Corrente_Curto_Circuito__c),FIND(&quot; &quot;,TEXT(Corrente_Curto_Circuito__c))))) &gt;  VALUE(TRIM(LEFT(TEXT(SBQQ__Product__r.Corrente_Curto_Circuito__c),FIND(&quot; &quot;,TEXT(SBQQ__Product__r.Corrente_Curto_Circuito__c)))))</errorConditionFormula>
+    <errorMessage>Selecione apenas valores iguais ou menores de corrente de curto circuito</errorMessage>
+</ValidationRule>

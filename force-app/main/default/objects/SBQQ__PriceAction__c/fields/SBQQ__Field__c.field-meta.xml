@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SBQQ__Field__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the field you want updated when the conditions are met.</inlineHelpText>
+    <label>Target Field</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unit Price</fullName>
+                <default>false</default>
+                <label>Unit Price</label>
+            </value>
+            <value>
+                <fullName>Discount (%)</fullName>
+                <default>false</default>
+                <label>Discount (%)</label>
+            </value>
+            <value>
+                <fullName>Discount (Amt)</fullName>
+                <default>false</default>
+                <label>Discount (Amt)</label>
+            </value>
+            <value>
+                <fullName>Markup (%)</fullName>
+                <default>false</default>
+                <label>Markup (%)</label>
+            </value>
+            <value>
+                <fullName>Markup (Amt)</fullName>
+                <default>false</default>
+                <label>Markup (Amt)</label>
+            </value>
+            <value>
+                <fullName>Max_Lead_Time__c</fullName>
+                <default>false</default>
+                <label>Max_Lead_Time__c</label>
+            </value>
+            <value>
+                <fullName>controlled_field__c</fullName>
+                <default>false</default>
+                <label>controlled_field__c</label>
+            </value>
+            <value>
+                <fullName>controlling_field__c</fullName>
+                <default>false</default>
+                <label>controlling_field__c</label>
+            </value>
+            <value>
+                <fullName>SBQQ__Quantity__c</fullName>
+                <default>false</default>
+                <label>SBQQ__Quantity__c</label>
+            </value>
+            <value>
+                <fullName>SBQQ__LineItemGroups__r.Total_Cost__c</fullName>
+                <default>false</default>
+                <label>SBQQ__LineItemGroups__r.Total_Cost__c</label>
+            </value>
+            <value>
+                <fullName>Country_Factor__c</fullName>
+                <default>false</default>
+                <label>Country_Factor__c</label>
+            </value>
+            <value>
+                <fullName>Horas_do_Produto__c</fullName>
+                <default>false</default>
+                <label>Horas_do_Produto__c</label>
+            </value>
+            <value>
+                <fullName>Esforco_Total__c</fullName>
+                <default>false</default>
+                <label>Esforco_Total__c</label>
+            </value>
+            <value>
+                <fullName>Horas_do_Recurso__c</fullName>
+                <default>false</default>
+                <label>Horas_do_Recurso__c</label>
+            </value>
+            <value>
+                <fullName>SBQQ__UnitCost__c</fullName>
+                <default>false</default>
+                <label>SBQQ__UnitCost__c</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

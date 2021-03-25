@@ -1,0 +1,16 @@
+<apex:page standardController="SBQQ__QuoteLine__c">
+    <apex:includeLightning />
+    <div id="lightning" />
+
+    <script>
+        $Lightning.use("c:TestApp", function() {
+          $Lightning.createComponent("c:TestComponent",
+              { quoteLineId : "{!SBQQ__QuoteLine__c.Id}" },
+              "lightning",
+              function(cmp) {
+                // do some stuff
+              }
+          );
+        });
+    </script>
+</apex:page>
