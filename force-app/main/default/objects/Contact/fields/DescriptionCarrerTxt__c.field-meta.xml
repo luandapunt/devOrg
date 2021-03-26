@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionCarrerTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição profissão</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Arquiteto</fullName>
+                <default>false</default>
+                <label>Arquiteto</label>
+            </value>
+            <value>
+                <fullName>Eletricista</fullName>
+                <default>false</default>
+                <label>Eletricista</label>
+            </value>
+            <value>
+                <fullName>Engenheiro Agrícola</fullName>
+                <default>false</default>
+                <label>Engenheiro Agrícola</label>
+            </value>
+            <value>
+                <fullName>Engenheiro Agrônomo</fullName>
+                <default>false</default>
+                <label>Engenheiro Agrônomo</label>
+            </value>
+            <value>
+                <fullName>Engenheiro Ambiental</fullName>
+                <default>false</default>
+                <label>Engenheiro Ambiental</label>
+            </value>
+            <value>
+                <fullName>Engenheiro Civil</fullName>
+                <default>false</default>
+                <label>Engenheiro Civil</label>
+            </value>
+            <value>
+                <fullName>Engenheiro Mecânico</fullName>
+                <default>false</default>
+                <label>Engenheiro Mecânico</label>
+            </value>
+            <value>
+                <fullName>Engenheiro Sanitário</fullName>
+                <default>false</default>
+                <label>Engenheiro Sanitário</label>
+            </value>
+            <value>
+                <fullName>Instalador de Campo</fullName>
+                <default>false</default>
+                <label>Instalador de Campo</label>
+            </value>
+            <value>
+                <fullName>Instalador Hidráulico</fullName>
+                <default>false</default>
+                <label>Instalador Hidráulico</label>
+            </value>
+            <value>
+                <fullName>Mestre de Obras</fullName>
+                <default>false</default>
+                <label>Mestre de Obras</label>
+            </value>
+            <value>
+                <fullName>Outras Profissões</fullName>
+                <default>false</default>
+                <label>Outras Profissões</label>
+            </value>
+            <value>
+                <fullName>Paisagista</fullName>
+                <default>false</default>
+                <label>Paisagista</label>
+            </value>
+            <value>
+                <fullName>Pedreiro</fullName>
+                <default>false</default>
+                <label>Pedreiro</label>
+            </value>
+            <value>
+                <fullName>Projetista</fullName>
+                <default>false</default>
+                <label>Projetista</label>
+            </value>
+            <value>
+                <fullName>Projetista Agrícola</fullName>
+                <default>false</default>
+                <label>Projetista Agrícola</label>
+            </value>
+            <value>
+                <fullName>Projetista Hidráulico</fullName>
+                <default>false</default>
+                <label>Projetista Hidráulico</label>
+            </value>
+            <value>
+                <fullName>Técnico Agrícola</fullName>
+                <default>false</default>
+                <label>Técnico Agrícola</label>
+            </value>
+            <value>
+                <fullName>Técnico de Edificação</fullName>
+                <default>false</default>
+                <label>Técnico de Edificação</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

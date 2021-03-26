@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MaterialTypeFml__c</fullName>
+    <description>Indica se o gruo de material do produto utilizado na pesquisa é tubo ou não.</description>
+    <externalId>false</externalId>
+    <formula>IF( MaterialGroupTxt__c==&apos;Tubos&apos;, &apos;Tubo&apos;, &apos;Não-Tubo&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Tipo do material</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

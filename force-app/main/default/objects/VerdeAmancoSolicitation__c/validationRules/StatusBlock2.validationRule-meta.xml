@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusBlock2</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(StatusTxt__c),&quot;Material entregue no endereço solicitado&quot;) &amp;&amp;    OR($Profile.Name=&apos;Vendedor&apos;,$Profile.Name=&apos;Representante&apos;,$Profile.Name=&apos;Representante Partner&apos;) &amp;&amp;  NOT( ISPICKVAL(StatusTxt__c, &quot;Fotos aguardando aprovação&quot;) )</errorConditionFormula>
+    <errorMessage>Não é possível editar  a solicitação. Só é possível adicionar fotos ou enviar para aprovação.</errorMessage>
+</ValidationRule>

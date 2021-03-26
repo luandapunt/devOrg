@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RTBidim</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;Bidim&apos; &amp;&amp;  NOT(ISPICKVAL(Opty_Sales_Area__r.CodeSalesOrganizationTxt__c,&apos;0099&apos;))</errorConditionFormula>
+    <errorMessage>Esse tipo de registro está disponível apenas para contas da Bidim</errorMessage>
+</ValidationRule>

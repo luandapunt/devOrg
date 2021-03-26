@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Name_SAP</fullName>
+    <fields>CustomIDTxt__c</fields>
+    <fields>Name</fields>
+    <fields>OrderTypeLkp__c</fields>
+    <fields>AccountCodeFml__c</fields>
+    <fields>AccountLkp__c</fields>
+    <fields>PVCChannelFml__c</fields>
+    <fields>PriceExpirationFml__c</fields>
+    <label>Name_SAP</label>
+</CompactLayout>

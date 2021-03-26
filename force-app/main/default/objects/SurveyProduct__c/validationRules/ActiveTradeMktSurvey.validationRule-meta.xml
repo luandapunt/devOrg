@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActiveTradeMktSurvey</fullName>
+    <active>true</active>
+    <errorConditionFormula>TradeMktSurveyLkp__r.IsActiveBln__c == TRUE &amp;&amp;
+(ISNEW() || ISCHANGED(ProductLkp__c)||ISCHANGED(OtherProductsTxt__c)
+||ISCHANGED(OtherMaterialGroupTxt__c))</errorConditionFormula>
+    <errorMessage>Não é possível adicionar ou alterar um produto de uma Pesquisa de Trade Marketing ativa.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Cancelamento_pedido_2</fullName>
+    <active>true</active>
+    <description>Regras referente a status do caso tipo Cancelamento de pedido 2.</description>
+    <errorConditionFormula>IF(CONTAINS( $User.UIThemeDisplayed , &apos;Theme4d&apos;),
+IF(ByPassBln__c = TRUE, 
+OR(
+	AND(
+		ISNEW(),
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		RecordType.Name = &apos;Cancelamento de pedido&apos;,
+		ISPICKVAL( Type , &apos;Cancelamento com remessa&apos;),
+		IF(NOT(ISPICKVAL(Status, &apos;Aguardando parecer do setor&apos;)), true, false) 
+	),
+	AND(
+		RecordType.Name = &apos;Cancelamento de pedido&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		ISPICKVAL( Type , &apos;Cancelamento com remessa&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando parecer do setor&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Aguardando parecer do setor&apos;), 
+		ISPICKVAL(Status, &apos;Parecer retornado pelo setor&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND(
+		RecordType.Name = &apos;Cancelamento de pedido&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		ISPICKVAL( Type , &apos;Cancelamento com remessa&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Parecer retornado pelo setor&apos;), 
+		IF (NOT(OR(ISPICKVAL(Status, &apos;Parecer retornado pelo setor&apos;), 
+		ISPICKVAL(Status, &apos;Encerrado&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	)
+),
+FALSE
+),
+OR(
+	AND(
+		ISNEW(),
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		RecordType.Name = &apos;Cancelamento de pedido&apos;,
+		ISPICKVAL( Type , &apos;Cancelamento com remessa&apos;),
+		IF(NOT(ISPICKVAL(Status, &apos;Aguardando parecer do setor&apos;)), true, false) 
+	),
+	AND(
+		RecordType.Name = &apos;Cancelamento de pedido&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		ISPICKVAL( Type , &apos;Cancelamento com remessa&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando parecer do setor&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Aguardando parecer do setor&apos;), 
+		ISPICKVAL(Status, &apos;Parecer retornado pelo setor&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND(
+		RecordType.Name = &apos;Cancelamento de pedido&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		ISPICKVAL( Type , &apos;Cancelamento com remessa&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Parecer retornado pelo setor&apos;), 
+		IF (NOT(OR(ISPICKVAL(Status, &apos;Parecer retornado pelo setor&apos;), 
+		ISPICKVAL(Status, &apos;Encerrado&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	)
+)
+)</errorConditionFormula>
+    <errorMessage>Cancelamento de pedido 2: alteração de status não permitida.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnavailableREORState</fullName>
+    <active>false</active>
+    <errorConditionFormula>!$Setup.SkipValidations__c.Skip__c &amp;&amp; 
+TEXT(PartnerTypeTxt__c)=&apos;REOR&apos; &amp;&amp; Parent.BillingState != BillingState</errorConditionFormula>
+    <errorDisplayField>BillingStateCode</errorDisplayField>
+    <errorMessage>Não é possível cadastrar um endereço de entrega com Estado diferente do Cliente Emissor.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CodeSurveyFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/?sort=&quot; &amp;  Name , &quot;&quot;, &apos;_self&apos;) &amp; 
+
+HYPERLINK(&quot;/&quot; &amp; Id, Name &amp; &apos; - &apos; &amp; TradeMktSurveyLkp__r.Name, &apos;_self&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Pesquisa</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

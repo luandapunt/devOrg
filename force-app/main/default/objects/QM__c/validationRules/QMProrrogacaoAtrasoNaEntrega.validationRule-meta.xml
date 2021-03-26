@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QMProrrogacaoAtrasoNaEntrega</fullName>
+    <active>true</active>
+    <description>Validação de dados para abertura de QM através do caso. Tipo Prorrogação Atraso na entrega</description>
+    <errorConditionFormula>IF(
+   RecordType.DeveloperName = &quot;QMProrrocacao&quot; , 
+IF(
+    ISPICKVAL( CaseLkp__r.Type , &quot;Atraso na entrega&quot;),
+IF(
+    NOT(
+        ISPICKVAL( ComplaintReasonTxt__c , &quot;08-Transportadora&quot;)         
+       ) , TRUE, FALSE      
+   )  || 
+ IF(
+    NOT(
+        ISPICKVAL(  RecordTxt__c , &quot;Reclamação&quot;)         
+       ) , TRUE, FALSE      
+   )   ||
+ IF(
+    NOT(
+        ISPICKVAL(   NonConformityTxt__c , &quot;0801-Atraso de entrega da transportadora&quot;)         
+       ) , TRUE, FALSE       
+   )
+, FALSE
+  )
+, FALSE
+  )</errorConditionFormula>
+    <errorMessage>Gentileza ajustar campos abaixo com os seguintes valores (de acordo com o tipo de registro de &quot;Prorrogação&quot; com Tipo &quot;Atraso na entrega&quot;): Natureza da reclamação: 08-Transportadora
+Registro: Devolução
+Não conformidade: 0801-Atraso de entrega</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampaignGroup</fullName>
+    <fields>Name</fields>
+    <fields>GroupCodeTxt__c</fields>
+    <fields>MainSalesAreaLkp__c</fields>
+    <fields>NCTotalGeneratedNmb__c</fields>
+    <fields>NCTotalRequestedNmb__c</fields>
+    <fields>AvaiableCreditFml__c</fields>
+    <fields>AvaiableCreditNmb__c</fields>
+    <label>Agrupamento de Campanha</label>
+</CompactLayout>

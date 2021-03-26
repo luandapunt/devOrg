@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NF</fullName>
+    <fields>Name</fields>
+    <fields>AccountLkp__c</fields>
+    <fields>ClientCodeFml__c</fields>
+    <label>NF</label>
+</CompactLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priority2Txt__c</fullName>
+    <externalId>false</externalId>
+    <label>Prioridade 2</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administração das Vendas</fullName>
+                <default>false</default>
+                <label>Administração das Vendas</label>
+            </value>
+            <value>
+                <fullName>Home Office</fullName>
+                <default>false</default>
+                <label>Home Office</label>
+            </value>
+            <value>
+                <fullName>IE - Pregão</fullName>
+                <default>false</default>
+                <label>IE - Pregão</label>
+            </value>
+            <value>
+                <fullName>IE - Licitação</fullName>
+                <default>false</default>
+                <label>IE - Licitação</label>
+            </value>
+            <value>
+                <fullName>Prospecção</fullName>
+                <default>false</default>
+                <label>Prospecção</label>
+            </value>
+            <value>
+                <fullName>Prospecção de Conquista</fullName>
+                <default>false</default>
+                <label>Prospecção de Conquista</label>
+            </value>
+            <value>
+                <fullName>Prospecção de Concorrente</fullName>
+                <default>false</default>
+                <label>Prospecção de Concorrente</label>
+            </value>
+            <value>
+                <fullName>Treinamento/Palestra</fullName>
+                <default>false</default>
+                <label>Treinamento/Palestra</label>
+            </value>
+            <value>
+                <fullName>Treinamento/Palestra Balconistas e Instaladores</fullName>
+                <default>false</default>
+                <label>Treinamento/Palestra Balconistas e Instaladores</label>
+            </value>
+            <value>
+                <fullName>Treinamento/Palestra em Escritório CTD</fullName>
+                <default>false</default>
+                <label>Treinamento/Palestra em Escritório CTD</label>
+            </value>
+            <value>
+                <fullName>Treinamento/Palestra em Obra CTD</fullName>
+                <default>false</default>
+                <label>Treinamento/Palestra em Obra CTD</label>
+            </value>
+            <value>
+                <fullName>Venda/Negociação</fullName>
+                <default>false</default>
+                <label>Venda/Negociação</label>
+            </value>
+            <value>
+                <fullName>Visita de Conversão</fullName>
+                <default>false</default>
+                <label>Visita de Conversão</label>
+            </value>
+            <value>
+                <fullName>Visita de Especificação</fullName>
+                <default>false</default>
+                <label>Visita de Especificação</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

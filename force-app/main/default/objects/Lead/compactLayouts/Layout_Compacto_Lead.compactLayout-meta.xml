@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Layout_Compacto_Lead</fullName>
+    <fields>ShortNameTxt__c</fields>
+    <fields>Name</fields>
+    <fields>ChannelLkp__c</fields>
+    <fields>CNPJTxt__c</fields>
+    <fields>MobilePhone</fields>
+    <fields>Email</fields>
+    <label>Layout Compacto Lead</label>
+</CompactLayout>

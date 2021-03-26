@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FiscalClassificationTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição classificação fiscal</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Não sujeito a impst.</fullName>
+                <default>false</default>
+                <label>Não sujeito a impst.</label>
+            </value>
+            <value>
+                <fullName>Imposto normal</fullName>
+                <default>false</default>
+                <label>Imposto normal</label>
+            </value>
+            <value>
+                <fullName>Área Livre Com IPI</fullName>
+                <default>false</default>
+                <label>Área Livre Com IPI</label>
+            </value>
+            <value>
+                <fullName>ZFM - ICMS e IPI</fullName>
+                <default>false</default>
+                <label>ZFM - ICMS e IPI</label>
+            </value>
+            <value>
+                <fullName>Clientes exportação</fullName>
+                <default>false</default>
+                <label>Clientes exportação</label>
+            </value>
+            <value>
+                <fullName>Área Livre Comer. ST</fullName>
+                <default>false</default>
+                <label>Área Livre Comer. ST</label>
+            </value>
+            <value>
+                <fullName>Imposto Futuro</fullName>
+                <default>false</default>
+                <label>Imposto Futuro</label>
+            </value>
+            <value>
+                <fullName>Desc. REIDI</fullName>
+                <default>false</default>
+                <label>Desc. REIDI</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

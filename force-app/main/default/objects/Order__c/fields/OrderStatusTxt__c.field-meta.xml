@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderStatusTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Status da ordem</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rascunho</fullName>
+                <default>false</default>
+                <label>Rascunho</label>
+            </value>
+            <value>
+                <fullName>InApproval</fullName>
+                <default>false</default>
+                <label>Em Aprovação</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Aprovado</label>
+            </value>
+            <value>
+                <fullName>SentToSAP</fullName>
+                <default>false</default>
+                <label>Enviado SAP</label>
+            </value>
+            <value>
+                <fullName>Não processado</fullName>
+                <default>false</default>
+                <label>Não processado</label>
+            </value>
+            <value>
+                <fullName>Processado parcialmente</fullName>
+                <default>false</default>
+                <label>Processado parcialmente</label>
+            </value>
+            <value>
+                <fullName>Processado completamente</fullName>
+                <default>false</default>
+                <label>Processado completamente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

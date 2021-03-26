@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionSubfiscalGroupTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição grupo subfiscal</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SubfiscalGroupTxt__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Isento de sub.fiscal</fullName>
+                <default>false</default>
+                <label>Isento de sub.fiscal</label>
+            </value>
+            <value>
+                <fullName>Sujeito ST - Consumo DIFA</fullName>
+                <default>false</default>
+                <label>Sujeito ST - Consumo DIFA</label>
+            </value>
+            <value>
+                <fullName>Cliente c/Liminar não sujeito a Subst. T</fullName>
+                <default>false</default>
+                <label>Cliente c/Liminar não sujeito a Subst. T</label>
+            </value>
+            <value>
+                <fullName>Sujeito a Subst.Tributaria Parceiros</fullName>
+                <default>false</default>
+                <label>Sujeito a Subst.Tributaria Parceiros</label>
+            </value>
+            <value>
+                <fullName>Sujeito redução ICMS ST</fullName>
+                <default>false</default>
+                <label>Sujeito redução ICMS ST</label>
+            </value>
+            <value>
+                <fullName>SImples nacional</fullName>
+                <default>false</default>
+                <label>SImples nacional</label>
+            </value>
+            <value>
+                <fullName>Sujeito a sub.fiscal</fullName>
+                <default>false</default>
+                <label>Sujeito a sub.fiscal</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Isento de sub.fiscal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Sujeito ST - Consumo DIFA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Cliente c/Liminar não sujeito a Subst. T</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Sujeito a Subst.Tributaria Parceiros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Sujeito redução ICMS ST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>SImples nacional</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Sujeito a sub.fiscal</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

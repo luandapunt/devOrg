@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Sustacao</fullName>
+    <active>true</active>
+    <description>Regras referente a status do caso tipo Sustação.</description>
+    <errorConditionFormula>IF( 
+ByPassBln__c = TRUE,
+OR(
+	AND(
+		ISNEW(),
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		RecordType.Name = &apos;Sustação&apos;,
+		IF(NOT(ISPICKVAL(Status, &apos;Aguardando retorno transportadora&apos;)), true, false) 
+	),
+	AND(
+		RecordType.Name = &apos;Sustação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando retorno transportadora&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Aguardando retorno transportadora&apos;), 
+		ISPICKVAL(Status, &apos;QM em andamento&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND(
+		RecordType.Name = &apos;Sustação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;QM em andamento&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;QM em andamento&apos;),
+                ISPICKVAL(Status, &apos;Aguardando encerramento&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND(
+		RecordType.Name = &apos;Sustação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando encerramento&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Aguardando encerramento&apos;), 
+		ISPICKVAL(Status, &apos;Encerrado&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	)
+), 
+FALSE 
+)</errorConditionFormula>
+    <errorMessage>Sustação: alteração de status não permitida.</errorMessage>
+</ValidationRule>

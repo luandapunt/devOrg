@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoticeDescriptionTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição Agenda / Aviso</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>NoticeTxt__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agendamento</fullName>
+                <default>false</default>
+                <label>Agendamento</label>
+            </value>
+            <value>
+                <fullName>Agend. /Area Restrita</fullName>
+                <default>false</default>
+                <label>Agend. /Area Restrita</label>
+            </value>
+            <value>
+                <fullName>Area Restrita</fullName>
+                <default>false</default>
+                <label>Area Restrita</label>
+            </value>
+            <value>
+                <fullName>Aviso</fullName>
+                <default>false</default>
+                <label>Aviso</label>
+            </value>
+            <value>
+                <fullName>Retira</fullName>
+                <default>false</default>
+                <label>Retira</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Agendamento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Agend. /Area Restrita</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Area Restrita</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Aviso</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Retira</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,3 +1,13 @@
+/**
+ * @description       : 
+ * @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+ * @group             : 
+ * @last modified on  : 03-25-2021
+ * @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+ * Modifications Log 
+ * Ver   Date         Author                               Modification
+ * 1.0   03-25-2021   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+**/
 global class MyClass {
 
     webservice static void myMethod() // you can pass parameters
@@ -13,7 +23,7 @@ global class MyClass {
 
     // Add a contact to this account.
     Contact con = new Contact(
-        FirstName='Joe',
+        FirstName='Luan',
         LastName='Smith',
         Phone='415.555.1212',
         AccountId=acctID);

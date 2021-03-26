@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DamageTypeTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Origem da avaria</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Expedição</fullName>
+                <default>false</default>
+                <label>Expedição</label>
+            </value>
+            <value>
+                <fullName>Transportadora</fullName>
+                <default>false</default>
+                <label>Transportadora</label>
+            </value>
+            <value>
+                <fullName>Qualidade</fullName>
+                <default>false</default>
+                <label>Qualidade</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

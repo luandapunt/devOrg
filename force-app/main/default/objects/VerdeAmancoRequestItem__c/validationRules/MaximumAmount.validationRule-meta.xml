@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MaximumAmount</fullName>
+    <active>true</active>
+    <errorConditionFormula>AmountNmb__c  &gt;  VerdeAmancoKitItemLkp__r.MaximumAmountNmb__c</errorConditionFormula>
+    <errorMessage>A quantidade selecionada é maior que a permitida.</errorMessage>
+</ValidationRule>

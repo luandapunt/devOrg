@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoDiscountRangeNmb__c</fullName>
+    <description>Valor que tem que ser atingido para liberar o desconto YPVO e YPME</description>
+    <externalId>false</externalId>
+    <label>Faixa sem Desconto</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

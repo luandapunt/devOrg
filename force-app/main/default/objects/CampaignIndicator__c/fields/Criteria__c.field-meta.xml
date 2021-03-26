@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Criteria__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;SELECT &quot; &amp;  GroupBy__c &amp; &quot;, &quot; &amp; GroupedField__c &amp; &quot; FROM &quot; &amp; Table__c &amp; &quot; WHERE &quot; &amp; Filter__c &amp; IF( ISBLANK(Filter__c) , &quot; &quot;, &quot; AND &quot;) &amp; DateField__c &amp; &quot; &gt;= {0} &quot; &amp; &quot; AND &quot; &amp; DateField__c &amp; &quot; &lt;= {1} &quot; &amp; &quot; GROUP BY &quot; &amp; GroupBy__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Critério</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

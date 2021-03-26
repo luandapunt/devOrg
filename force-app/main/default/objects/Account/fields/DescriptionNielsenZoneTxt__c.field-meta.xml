@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionNielsenZoneTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição Zona Nielsen</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Varejo Geral</fullName>
+                <default>false</default>
+                <label>Varejo Geral</label>
+            </value>
+            <value>
+                <fullName>Varejo Direcionado</fullName>
+                <default>false</default>
+                <label>Varejo Direcionado</label>
+            </value>
+            <value>
+                <fullName>Atacado Generalista</fullName>
+                <default>false</default>
+                <label>Atacado Generalista</label>
+            </value>
+            <value>
+                <fullName>Atacado Constr.Imobi</fullName>
+                <default>false</default>
+                <label>Atacado Constr.Imobi</label>
+            </value>
+            <value>
+                <fullName>Distribuidor</fullName>
+                <default>false</default>
+                <label>Distribuidor</label>
+            </value>
+            <value>
+                <fullName>Distribuidor Exclusi</fullName>
+                <default>false</default>
+                <label>Distribuidor Exclusi</label>
+            </value>
+            <value>
+                <fullName>Empreiteira/Construt</fullName>
+                <default>false</default>
+                <label>Empreiteira/Construt</label>
+            </value>
+            <value>
+                <fullName>Órgão Público</fullName>
+                <default>false</default>
+                <label>Órgão Público</label>
+            </value>
+            <value>
+                <fullName>Instaladora</fullName>
+                <default>false</default>
+                <label>Instaladora</label>
+            </value>
+            <value>
+                <fullName>Construtora Imobilia</fullName>
+                <default>false</default>
+                <label>Construtora Imobilia</label>
+            </value>
+            <value>
+                <fullName>Indústria</fullName>
+                <default>false</default>
+                <label>Indústria</label>
+            </value>
+            <value>
+                <fullName>Home Center</fullName>
+                <default>false</default>
+                <label>Home Center</label>
+            </value>
+            <value>
+                <fullName>Perfurador Medio</fullName>
+                <default>false</default>
+                <label>Perfurador Medio</label>
+            </value>
+            <value>
+                <fullName>Cia Aguas/Cia Privat</fullName>
+                <default>false</default>
+                <label>Cia Aguas/Cia Privat</label>
+            </value>
+            <value>
+                <fullName>Inter-company</fullName>
+                <default>false</default>
+                <label>Inter-company</label>
+            </value>
+            <value>
+                <fullName>Consumidor final</fullName>
+                <default>false</default>
+                <label>Consumidor final</label>
+            </value>
+            <value>
+                <fullName>Prod. Rural/Emp.Agro</fullName>
+                <default>false</default>
+                <label>Prod. Rural/Emp.Agro</label>
+            </value>
+            <value>
+                <fullName>Eventual</fullName>
+                <default>false</default>
+                <label>Eventual</label>
+            </value>
+            <value>
+                <fullName>Coml. Exportadora</fullName>
+                <default>false</default>
+                <label>Coml. Exportadora</label>
+            </value>
+            <value>
+                <fullName>Distr. Geomecanico</fullName>
+                <default>false</default>
+                <label>Distr. Geomecanico</label>
+            </value>
+            <value>
+                <fullName>Revenda Especial.1</fullName>
+                <default>false</default>
+                <label>Revenda Especial.1</label>
+            </value>
+            <value>
+                <fullName>Revenda Especial.2</fullName>
+                <default>false</default>
+                <label>Revenda Especial.2</label>
+            </value>
+            <value>
+                <fullName>Perfurador Grande</fullName>
+                <default>false</default>
+                <label>Perfurador Grande</label>
+            </value>
+            <value>
+                <fullName>Cons.Proprio.Infra-E</fullName>
+                <default>false</default>
+                <label>Cons.Proprio.Infra-E</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>Agroindustria</fullName>
+                <default>false</default>
+                <label>Agroindustria</label>
+            </value>
+            <value>
+                <fullName>Consum End Entrega</fullName>
+                <default>false</default>
+                <label>Consum End Entrega</label>
+            </value>
+            <value>
+                <fullName>BIDIM-Artes Gráficas</fullName>
+                <default>false</default>
+                <label>BIDIM-Artes Gráficas</label>
+            </value>
+            <value>
+                <fullName>BIDIM-Automotivo</fullName>
+                <default>false</default>
+                <label>BIDIM-Automotivo</label>
+            </value>
+            <value>
+                <fullName>BIDIM-Calçados</fullName>
+                <default>false</default>
+                <label>BIDIM-Calçados</label>
+            </value>
+            <value>
+                <fullName>BIDIM-Filtração</fullName>
+                <default>false</default>
+                <label>BIDIM-Filtração</label>
+            </value>
+            <value>
+                <fullName>BIDIM-Geo</fullName>
+                <default>false</default>
+                <label>BIDIM-Geo</label>
+            </value>
+            <value>
+                <fullName>BIDIM-Laminados</fullName>
+                <default>false</default>
+                <label>BIDIM-Laminados</label>
+            </value>
+            <value>
+                <fullName>BIDIM-Limpeza</fullName>
+                <default>false</default>
+                <label>BIDIM-Limpeza</label>
+            </value>
+            <value>
+                <fullName>BIDIM-Persianas</fullName>
+                <default>false</default>
+                <label>BIDIM-Persianas</label>
+            </value>
+            <value>
+                <fullName>BIDIM-Roofing</fullName>
+                <default>false</default>
+                <label>BIDIM-Roofing</label>
+            </value>
+            <value>
+                <fullName>ATAC/VARE - EXC IRR</fullName>
+                <default>false</default>
+                <label>ATAC/VARE - EXC IRR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

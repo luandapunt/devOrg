@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Faixa_sem_Desconto</fullName>
+    <columns>SalesOrganizationTxt__c</columns>
+    <columns>ChannelPVCLkp__c</columns>
+    <columns>NoDiscountRangeNmb__c</columns>
+    <columns>NAME</columns>
+    <columns>UsesZPVCBln__c</columns>
+    <columns>ChannelDiscountNmb__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>BlockedItem__c.NoDiscountRange</value>
+    </filters>
+    <label>Faixa sem Desconto</label>
+</ListView>

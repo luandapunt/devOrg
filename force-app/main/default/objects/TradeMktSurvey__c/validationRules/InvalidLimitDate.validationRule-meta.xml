@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InvalidLimitDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>LimitDate__c &lt; TODAY()</errorConditionFormula>
+    <errorDisplayField>LimitDate__c</errorDisplayField>
+    <errorMessage>Defina uma data limite válida.</errorMessage>
+</ValidationRule>

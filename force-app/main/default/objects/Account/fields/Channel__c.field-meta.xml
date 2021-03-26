@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel__c</fullName>
+    <description>Campo fórmula com o nome do canal. Utilizado apenas para Contas do tipo Agrupamento de Campanha</description>
+    <externalId>false</externalId>
+    <formula>MainAccountLkp__r.ChannelLkp__r.Name</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Canal</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

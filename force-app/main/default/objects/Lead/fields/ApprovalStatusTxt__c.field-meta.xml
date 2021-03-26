@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApprovalStatusTxt__c</fullName>
+    <description>Campo utilizado para impedir um usuário de pular etapas no Sales Path de Lead. Existe uma regra de validação que verifica se o valor desse campo é igual ao do campo &quot;Aprovação&quot; e, caso não seja, não permite que o Sales Path seja alterado.</description>
+    <externalId>false</externalId>
+    <label>Status da aprovação</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aguardando envio para aprovação</fullName>
+                <default>true</default>
+                <label>Vendedor</label>
+            </value>
+            <value>
+                <fullName>Enviado para aprovação</fullName>
+                <default>false</default>
+                <label>Cadastro</label>
+            </value>
+            <value>
+                <fullName>Aprovado na etapa 1</fullName>
+                <default>false</default>
+                <label>Fiscal</label>
+            </value>
+            <value>
+                <fullName>Aprovado na etapa 2</fullName>
+                <default>false</default>
+                <label>Enviado ao SAP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

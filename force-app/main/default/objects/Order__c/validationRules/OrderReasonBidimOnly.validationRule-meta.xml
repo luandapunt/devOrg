@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderReasonBidimOnly</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISPICKVAL(AccountAreaSalesLkp__r.CodeSalesOrganizationTxt__c, &apos;0099&apos;)) &amp;&amp; NOT(ISPICKVAL(OrderReasonTxt__c, &apos;&apos;)) &amp;&amp; CustomIDTxt__c = null</errorConditionFormula>
+    <errorDisplayField>OrderReasonTxt__c</errorDisplayField>
+    <errorMessage>O campo Motivo da Ordem só pode ser preenchido para clientes Bidim.</errorMessage>
+</ValidationRule>

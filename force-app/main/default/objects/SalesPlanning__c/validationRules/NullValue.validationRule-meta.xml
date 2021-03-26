@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NullValue</fullName>
+    <active>false</active>
+    <description>Impede a criação de um Planejamento de Vendas com valor zerado ou nulo.</description>
+    <errorConditionFormula>TotalValueNmb__c = 0 || TotalValueNmb__c = NULL</errorConditionFormula>
+    <errorMessage>Insira um valor para os todos os planejamentos de venda.</errorMessage>
+</ValidationRule>

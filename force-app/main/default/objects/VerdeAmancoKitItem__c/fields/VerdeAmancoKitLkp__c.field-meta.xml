@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VerdeAmancoKitLkp__c</fullName>
+    <externalId>false</externalId>
+    <label>Kit Verde Amanco</label>
+    <referenceTo>VerdeAmancoKit__c</referenceTo>
+    <relationshipLabel>Itens do Kit Verde Amanco</relationshipLabel>
+    <relationshipName>VerdeAmancoKitItems</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

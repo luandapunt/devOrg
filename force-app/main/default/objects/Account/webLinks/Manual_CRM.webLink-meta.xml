@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Manual_CRM</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Manual CRM</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>https://mexichem--devsales.cs70.my.salesforce.com/sfc/p/3D000000CzAT/a/3D000000015h/jgfQKKl0ugyTd51uQvIz8h03oCfVU1xtTnw2g4UfImg</url>
+</WebLink>

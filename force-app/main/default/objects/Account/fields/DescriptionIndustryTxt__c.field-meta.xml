@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionIndustryTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição setor industrial</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>IndustryTxt__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contribuinte</fullName>
+                <default>false</default>
+                <label>Contribuinte</label>
+            </value>
+            <value>
+                <fullName>Não-Contribuinte</fullName>
+                <default>false</default>
+                <label>Não-Contribuinte</label>
+            </value>
+            <value>
+                <fullName>Contribuinte SC</fullName>
+                <default>false</default>
+                <label>Contribuinte SC</label>
+            </value>
+            <value>
+                <fullName>Pró Emprego</fullName>
+                <default>false</default>
+                <label>Pró Emprego</label>
+            </value>
+            <value>
+                <fullName>Contribuinte 12%</fullName>
+                <default>false</default>
+                <label>Contribuinte 12%</label>
+            </value>
+            <value>
+                <fullName>Contribuinte c/ ates</fullName>
+                <default>false</default>
+                <label>Contribuinte c/ ates</label>
+            </value>
+            <value>
+                <fullName>Fornecedor Simples</fullName>
+                <default>false</default>
+                <label>Fornecedor Simples</label>
+            </value>
+            <value>
+                <fullName>Transp. isento MG</fullName>
+                <default>false</default>
+                <label>Transp. isento MG</label>
+            </value>
+            <value>
+                <fullName>Transp.SC/SP-red.ICM</fullName>
+                <default>false</default>
+                <label>Transp.SC/SP-red.ICM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

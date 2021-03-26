@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Todas</fullName>
+    <columns>MonthYearFml__c</columns>
+    <columns>QuotaTypeTxt__c</columns>
+    <columns>SellerNumberFml__c</columns>
+    <columns>SellerLkp__c</columns>
+    <columns>TotalValueNmb__c</columns>
+    <columns>SimulatedTotalFml__c</columns>
+    <columns>RevenuePercentFml__c</columns>
+    <columns>LinkSalesPlanFml__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Todas</label>
+</ListView>

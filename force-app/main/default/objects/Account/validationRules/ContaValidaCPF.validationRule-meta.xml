@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContaValidaCPF</fullName>
+    <active>false</active>
+    <description>Regra valida se o CPF informado é valido ou não.</description>
+    <errorConditionFormula>and(OR($RecordType.DeveloperName = &apos;PersonAccountSAC&apos;, $RecordType.DeveloperName = &apos;SAPPersonAccount&apos;),
+    OR (AND(NOT(ISBLANK( CPFTxt__c )),
+    NOT AND (CPFTxt__c &lt;&gt; &apos;00000000000&apos;,CPFTxt__c &lt;&gt; &apos;11111111111&apos;,CPFTxt__c &lt;&gt; &apos;22222222222&apos;,CPFTxt__c &lt;&gt; &apos;33333333333&apos;,CPFTxt__c &lt;&gt; &apos;44444444444&apos;,CPFTxt__c &lt;&gt; &apos;55555555555&apos;,CPFTxt__c &lt;&gt; &apos;66666666666&apos;,CPFTxt__c &lt;&gt; &apos;77777777777&apos;,CPFTxt__c &lt;&gt; &apos;88888888888&apos;,CPFTxt__c &lt;&gt; &apos;99999999999&apos;, 
+IF ((MID(CPFTxt__c , 10, 1) =
+IF (MOD(((VALUE(MID(CPFTxt__c , 1, 1))*10)+
+(VALUE(MID(CPFTxt__c , 2, 1))*9)+
+(VALUE(MID(CPFTxt__c , 3, 1))*8)+
+(VALUE(MID(CPFTxt__c , 4, 1))*7)+
+(VALUE(MID(CPFTxt__c , 5, 1))*6)+
+(VALUE(MID(CPFTxt__c , 6, 1))*5)+
+(VALUE(MID(CPFTxt__c , 7, 1))*4)+
+(VALUE(MID(CPFTxt__c , 8, 1))*3)+
+(VALUE(MID(CPFTxt__c , 9, 1))*2)),11) &lt; 2,&apos;0&apos;,
+TEXT(11 - MOD(((VALUE(MID(CPFTxt__c , 1, 1))*10)+
+(VALUE(MID(CPFTxt__c , 2, 1))*9)+
+(VALUE(MID(CPFTxt__c , 3, 1))*8)+
+(VALUE(MID(CPFTxt__c , 4, 1))*7)+
+(VALUE(MID(CPFTxt__c , 5, 1))*6)+
+(VALUE(MID(CPFTxt__c , 6, 1))*5)+
+(VALUE(MID(CPFTxt__c , 7, 1))*4)+
+(VALUE(MID(CPFTxt__c , 8, 1))*3)+
+(VALUE(MID(CPFTxt__c , 9, 1))*2)),11))
+)),TRUE,FALSE),
+IF ((MID(CPFTxt__c , 11, 1) =
+IF (MOD(((VALUE(MID(CPFTxt__c , 1, 1))*11)+
+(VALUE(MID(CPFTxt__c , 2, 1))*10)+
+(VALUE(MID(CPFTxt__c , 3, 1))*9)+
+(VALUE(MID(CPFTxt__c , 4, 1))*8)+
+(VALUE(MID(CPFTxt__c , 5, 1))*7)+
+(VALUE(MID(CPFTxt__c , 6, 1))*6)+
+(VALUE(MID(CPFTxt__c , 7, 1))*5)+
+(VALUE(MID(CPFTxt__c , 8, 1))*4)+
+(VALUE(MID(CPFTxt__c , 9, 1))*3)+
+(VALUE(MID(CPFTxt__c , 10, 1))*2)),11) &lt; 2,&apos;0&apos;,
+TEXT(11 - MOD(((VALUE(MID(CPFTxt__c , 1, 1))*11)+
+(VALUE(MID(CPFTxt__c , 2, 1))*10)+
+(VALUE(MID(CPFTxt__c , 3, 1))*9)+
+(VALUE(MID(CPFTxt__c , 4, 1))*8)+
+(VALUE(MID(CPFTxt__c , 5, 1))*7)+
+(VALUE(MID(CPFTxt__c , 6, 1))*6)+
+(VALUE(MID(CPFTxt__c , 7, 1))*5)+
+(VALUE(MID(CPFTxt__c , 8, 1))*4)+
+(VALUE(MID(CPFTxt__c , 9, 1))*3)+
+(VALUE(MID(CPFTxt__c , 10, 1))*2)),11))
+)),TRUE,FALSE)
+	))))</errorConditionFormula>
+    <errorDisplayField>CPFTxt__c</errorDisplayField>
+    <errorMessage>O CPF informado não é válido.</errorMessage>
+</ValidationRule>

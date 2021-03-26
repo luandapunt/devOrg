@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EnableVerdeAmancoKit</fullName>
+    <active>false</active>
+    <description>Só permite ativar um Kit Verde Amanco caso, para o Canal correspondente, não exista outro Kit ativo.</description>
+    <errorConditionFormula>AND(ChannelLkp__r.ActiveVerdeAmancoKitLkp__c  &lt;&gt; Null, ChannelLkp__r.ActiveVerdeAmancoKitLkp__c  &lt;&gt;  Id,  ActiveBln__c  = True)</errorConditionFormula>
+    <errorDisplayField>ActiveBln__c</errorDisplayField>
+    <errorMessage>Já existe um Kit ativo para o Canal correspondente. Para ativar este Kit você deve, primeiramente, desativar o Kit marcado como ativo.</errorMessage>
+</ValidationRule>

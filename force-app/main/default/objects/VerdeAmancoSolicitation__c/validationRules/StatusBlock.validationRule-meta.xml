@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusBlock</fullName>
+    <active>true</active>
+    <description>Bloqueia edição para o vendedor se status igual a &quot;Aguardando envio&quot;.</description>
+    <errorConditionFormula>OR(ISPICKVAL(PRIORVALUE(StatusTxt__c),&quot;Enviando para o operador logístico&quot;),ISPICKVAL(PRIORVALUE(StatusTxt__c),&quot;Recebido pelo operador logístico&quot;)) &amp;&amp;    OR($Profile.Name=&apos;Vendedor&apos;,$Profile.Name=&apos;Representante&apos;,$Profile.Name=&apos;Representante Partner&apos;)</errorConditionFormula>
+    <errorMessage>Após alterar o status para &quot;Aguardando envio&quot; nenhuma alteração pode ser feita na solicitação. Só é possível acrescentar fotos ou, quando o status for alterado para &quot;Entrega realizada&quot;, enviar para aprovação.</errorMessage>
+</ValidationRule>

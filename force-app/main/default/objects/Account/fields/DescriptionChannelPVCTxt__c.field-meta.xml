@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionChannelPVCTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição canal PVC</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ChannelPVCTxt__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PR - ATACADOS CONSTRUTORAS 1</fullName>
+                <default>false</default>
+                <label>PR - ATACADOS CONSTRUTORAS 1</label>
+            </value>
+            <value>
+                <fullName>PR - ATACADOS CONSTRUTORAS 2</fullName>
+                <default>false</default>
+                <label>PR - ATACADOS CONSTRUTORAS 2</label>
+            </value>
+            <value>
+                <fullName>CO - COMPOSTOS ALPHAGARY EXPORTAÇÃO</fullName>
+                <default>false</default>
+                <label>CO - COMPOSTOS ALPHAGARY EXPORTAÇÃO</label>
+            </value>
+            <value>
+                <fullName>CO - COMPOSTOS ALPHAGARY NACIONAL</fullName>
+                <default>false</default>
+                <label>CO - COMPOSTOS ALPHAGARY NACIONAL</label>
+            </value>
+            <value>
+                <fullName>CO - COMPOSTOS ALPHAGARY SUBSIDIÁRIA</fullName>
+                <default>false</default>
+                <label>CO - COMPOSTOS ALPHAGARY SUBSIDIÁRIA</label>
+            </value>
+            <value>
+                <fullName>PR - ATACADO VAREJOS 1</fullName>
+                <default>false</default>
+                <label>PR - ATACADO VAREJOS 1</label>
+            </value>
+            <value>
+                <fullName>PR - ATACADO VAREJOS 2</fullName>
+                <default>false</default>
+                <label>PR - ATACADO VAREJOS 2</label>
+            </value>
+            <value>
+                <fullName>BIDIM - CIA AMBIENTAL</fullName>
+                <default>false</default>
+                <label>BIDIM - CIA AMBIENTAL</label>
+            </value>
+            <value>
+                <fullName>IE - CIA SANEAMENTO PRIVATIZADA</fullName>
+                <default>false</default>
+                <label>IE - CIA SANEAMENTO PRIVATIZADA</label>
+            </value>
+            <value>
+                <fullName>IE - COMPANHIAS DE SANEAMENTO</fullName>
+                <default>false</default>
+                <label>IE - COMPANHIAS DE SANEAMENTO</label>
+            </value>
+            <value>
+                <fullName>IE - FABRICANTE CONEXÕES IE</fullName>
+                <default>false</default>
+                <label>IE - FABRICANTE CONEXÕES IE</label>
+            </value>
+            <value>
+                <fullName>BIDIM - CONSTRUTORA</fullName>
+                <default>false</default>
+                <label>BIDIM - CONSTRUTORA</label>
+            </value>
+            <value>
+                <fullName>PR - CONSTRUTORA DIRETA</fullName>
+                <default>false</default>
+                <label>PR - CONSTRUTORA DIRETA</label>
+            </value>
+            <value>
+                <fullName>BIDIM - DISTRIBUIDOR</fullName>
+                <default>false</default>
+                <label>BIDIM - DISTRIBUIDOR</label>
+            </value>
+            <value>
+                <fullName>PR - DISTRIBUIDOR VAREJO</fullName>
+                <default>false</default>
+                <label>PR - DISTRIBUIDOR VAREJO</label>
+            </value>
+            <value>
+                <fullName>IE - EMPREITEIRAS</fullName>
+                <default>false</default>
+                <label>IE - EMPREITEIRAS</label>
+            </value>
+            <value>
+                <fullName>PR - EXPORTAÇÃO TERCEIROS</fullName>
+                <default>false</default>
+                <label>PR - EXPORTAÇÃO TERCEIROS</label>
+            </value>
+            <value>
+                <fullName>IR - FABRICANTES</fullName>
+                <default>false</default>
+                <label>IR - FABRICANTES</label>
+            </value>
+            <value>
+                <fullName>FABRICANTES DE GEOSSINTÉTICOS</fullName>
+                <default>false</default>
+                <label>FABRICANTES DE GEOSSINTÉTICOS</label>
+            </value>
+            <value>
+                <fullName>NT - GEOTEXTIL EXPORTAÇÃO</fullName>
+                <default>false</default>
+                <label>NT - GEOTEXTIL EXPORTAÇÃO</label>
+            </value>
+            <value>
+                <fullName>NT - GEOTEXTIL NACIONAL</fullName>
+                <default>false</default>
+                <label>NT - GEOTEXTIL NACIONAL</label>
+            </value>
+            <value>
+                <fullName>NT - GEOTEXTIL SUBSIDIÁRIA</fullName>
+                <default>false</default>
+                <label>NT - GEOTEXTIL SUBSIDIÁRIA</label>
+            </value>
+            <value>
+                <fullName>BIDIM - INDÚSTRIA</fullName>
+                <default>false</default>
+                <label>BIDIM - INDÚSTRIA</label>
+            </value>
+            <value>
+                <fullName>IR - INDÚSTRIAS (USINAS)</fullName>
+                <default>false</default>
+                <label>IR - INDÚSTRIAS (USINAS)</label>
+            </value>
+            <value>
+                <fullName>BIDIM - MINERAÇÃO</fullName>
+                <default>false</default>
+                <label>BIDIM - MINERAÇÃO</label>
+            </value>
+            <value>
+                <fullName>BIDIM - OUTROS</fullName>
+                <default>false</default>
+                <label>BIDIM - OUTROS</label>
+            </value>
+            <value>
+                <fullName>IR - OUTROS</fullName>
+                <default>false</default>
+                <label>IR - OUTROS</label>
+            </value>
+            <value>
+                <fullName>BIDIM - PRODUTOR RURAL</fullName>
+                <default>false</default>
+                <label>BIDIM - PRODUTOR RURAL</label>
+            </value>
+            <value>
+                <fullName>IR - PRODUTOR RURAL</fullName>
+                <default>false</default>
+                <label>IR - PRODUTOR RURAL</label>
+            </value>
+            <value>
+                <fullName>IE - REVENDA INFRA-ESTRUTURA</fullName>
+                <default>false</default>
+                <label>IE - REVENDA INFRA-ESTRUTURA</label>
+            </value>
+            <value>
+                <fullName>BIDIM - CIA SANEAMENTO</fullName>
+                <default>false</default>
+                <label>BIDIM - CIA SANEAMENTO</label>
+            </value>
+            <value>
+                <fullName>SD - SERVIÇOS DOUTORES EXPORTAÇÃO</fullName>
+                <default>false</default>
+                <label>SD - SERVIÇOS DOUTORES EXPORTAÇÃO</label>
+            </value>
+            <value>
+                <fullName>SD - SERVIÇOS DOUTORES NACIONAL</fullName>
+                <default>false</default>
+                <label>SD - SERVIÇOS DOUTORES NACIONAL</label>
+            </value>
+            <value>
+                <fullName>SD - SERVIÇOS DOUTORES SUBSIDIÁRIAS</fullName>
+                <default>false</default>
+                <label>SD - SERVIÇOS DOUTORES SUBSIDIÁRIAS</label>
+            </value>
+            <value>
+                <fullName>SC - SERVIÇOS CRED CONSTRUÇÃO</fullName>
+                <default>false</default>
+                <label>SC - SERVIÇOS CRED CONSTRUÇÃO</label>
+            </value>
+            <value>
+                <fullName>IR - SISTEMAS IRRIGAÇÃO LOCALIZADA</fullName>
+                <default>false</default>
+                <label>IR - SISTEMAS IRRIGAÇÃO LOCALIZADA</label>
+            </value>
+            <value>
+                <fullName>PR - SUBSIDIÁRIA EXPORTAÇÃO</fullName>
+                <default>false</default>
+                <label>PR - SUBSIDIÁRIA EXPORTAÇÃO</label>
+            </value>
+            <value>
+                <fullName>PR - SUBSIDIÁRIA NACIONAL</fullName>
+                <default>false</default>
+                <label>PR - SUBSIDIÁRIA NACIONAL</label>
+            </value>
+            <value>
+                <fullName>BIDIM - VAREJO 1</fullName>
+                <default>false</default>
+                <label>BIDIM - VAREJO 1</label>
+            </value>
+            <value>
+                <fullName>BIDIM - VAREJO 2</fullName>
+                <default>false</default>
+                <label>BIDIM - VAREJO 2</label>
+            </value>
+            <value>
+                <fullName>PR - VAREJOS CONSTRUTORA</fullName>
+                <default>false</default>
+                <label>PR - VAREJOS CONSTRUTORA</label>
+            </value>
+            <value>
+                <fullName>PR - VAREJOS HOME CENTER</fullName>
+                <default>false</default>
+                <label>PR - VAREJOS HOME CENTER</label>
+            </value>
+            <value>
+                <fullName>IR - REVENDAS DE IRRIGAÇÃO 1</fullName>
+                <default>false</default>
+                <label>IR - REVENDAS DE IRRIGAÇÃO 1</label>
+            </value>
+            <value>
+                <fullName>IR - REVENDAS DE IRRIGAÇÃO 2</fullName>
+                <default>false</default>
+                <label>IR - REVENDAS DE IRRIGAÇÃO 2</label>
+            </value>
+            <value>
+                <fullName>IR - REVENDAS DE IRRIGAÇÃO 3</fullName>
+                <default>false</default>
+                <label>IR - REVENDAS DE IRRIGAÇÃO 3</label>
+            </value>
+            <value>
+                <fullName>PR - VAREJOS 1</fullName>
+                <default>false</default>
+                <label>PR - VAREJOS 1</label>
+            </value>
+            <value>
+                <fullName>PR - VAREJOS 2</fullName>
+                <default>false</default>
+                <label>PR - VAREJOS 2</label>
+            </value>
+            <value>
+                <fullName>PR - VAREJOS 3</fullName>
+                <default>false</default>
+                <label>PR - VAREJOS 3</label>
+            </value>
+            <value>
+                <fullName>PR - VAREJOS 4</fullName>
+                <default>false</default>
+                <label>PR - VAREJOS 4</label>
+            </value>
+            <value>
+                <fullName>PR - VAREJOS 5</fullName>
+                <default>false</default>
+                <label>PR - VAREJOS 5</label>
+            </value>
+            <value>
+                <fullName>PR - REDES</fullName>
+                <default>false</default>
+                <label>PR - REDES</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

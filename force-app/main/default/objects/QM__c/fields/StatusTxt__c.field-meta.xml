@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>QM criada Salesforce</fullName>
+                <default>true</default>
+                <label>QM criada Salesforce</label>
+            </value>
+            <value>
+                <fullName>QM enviada SAP</fullName>
+                <default>false</default>
+                <label>QM enviada SAP</label>
+            </value>
+            <value>
+                <fullName>QM criada SAP</fullName>
+                <default>false</default>
+                <label>QM criada SAP</label>
+            </value>
+            <value>
+                <fullName>QM com erro</fullName>
+                <default>false</default>
+                <label>QM com erro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

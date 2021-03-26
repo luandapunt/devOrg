@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Substituicao_2</fullName>
+    <active>false</active>
+    <description>Regras referente a status do caso tipo Substituição 2.</description>
+    <errorConditionFormula>OR(
+	AND(
+		ISNEW(),
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		RecordType.Name = &apos;Substituição&apos;,
+		ISPICKVAL (Type , &apos;Qualidade&apos;),
+		IF(NOT(ISPICKVAL(Status, &apos;Em análise&apos;)), true, false)
+	),
+	AND(
+		RecordType.Name = &apos;Substituição&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		ISPICKVAL (Type , &apos;Qualidade&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em análise&apos;),
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Em análise&apos;),
+		ISPICKVAL(Status, &apos;Ordem de substituição criada&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		RecordType.Name = &apos;Substituição&apos;, 
+		ISPICKVAL (Type , &apos;Qualidade&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Ordem de substituição criada&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Ordem de substituição criada&apos;), 
+		ISPICKVAL( PRIORVALUE(Status) , &apos;Ordem de devolução simbólica criada&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND( 
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		RecordType.Name = &apos;Substituição&apos;, 
+		ISPICKVAL (Type , &apos;Qualidade&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Ordem de devolução simbólica criada&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Ordem de devolução simbólica criada&apos;), 
+		ISPICKVAL( PRIORVALUE(Status) , &apos;QM criada&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Substituição&apos;,
+		ISPICKVAL (Type , &apos;Qualidade&apos;),
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;QM criada&apos;),
+		IF(NOT(OR(ISPICKVAL(Status, &apos;QM criada&apos;),
+		ISPICKVAL( PRIORVALUE(Status) , &apos;Em andamento fiscal&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Substituição&apos;,
+		ISPICKVAL (Type , &apos;Qualidade&apos;),
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em andamento fiscal&apos;),
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Em andamento fiscal&apos;),
+		ISPICKVAL( PRIORVALUE(Status) , &apos;Em andamento transportes&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Substituição&apos;,
+		ISPICKVAL (Type , &apos;Qualidade&apos;),
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em andamento transportes&apos;),
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Em andamento transportes&apos;),
+		ISPICKVAL(Status, &apos;Em andamento fiscal 2&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Substituição&apos;,
+		ISPICKVAL (Type , &apos;Qualidade&apos;),
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em andamento fiscal 2&apos;),
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Em andamento fiscal 2&apos;),
+		ISPICKVAL(Status, &apos;Encerrado&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	)
+)</errorConditionFormula>
+    <errorMessage>Substituição 2: alteração de status não permitida.</errorMessage>
+</ValidationRule>

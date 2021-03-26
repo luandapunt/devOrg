@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextElementLkp__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Próximo elemento em relação à ordem definida no catálogo, entre os irmãos do elemento atual. Preenchido via trigger</description>
+    <externalId>false</externalId>
+    <label>Próximo Elemento</label>
+    <referenceTo>CatalogElement__c</referenceTo>
+    <relationshipLabel>Elementos Anteriores</relationshipLabel>
+    <relationshipName>PreviousElements</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

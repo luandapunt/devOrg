@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuotaCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>SellerLkp__c</fields>
+    <fields>SellerNumberFml__c</fields>
+    <fields>QuotaTypeTxt__c</fields>
+    <fields>CurrentMonthTxt__c</fields>
+    <fields>CurrentYearTxt__c</fields>
+    <fields>TotalValueNmb__c</fields>
+    <fields>RevenueNmb__c</fields>
+    <label>Layout Compacto de Cota</label>
+</CompactLayout>

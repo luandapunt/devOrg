@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContaBloquearCriacaoContasSAP</fullName>
+    <active>false</active>
+    <description>Não permitir a criação de contas tipo &quot;Conta jurídica SAP&quot; e &quot;Conta pessoal SAP&quot; por usuários que não enstejam com perfil</description>
+    <errorConditionFormula>AND( 
+
+ISNEW(), 
+
+OR(
+RecordType.Name = &apos;Conta jurídica SAP&apos;, 
+RecordType.Name = &apos;Conta pessoal SAP&apos; 
+),
+
+AND(
+$Profile.Name!=&apos;Salesforce Interface&apos;,
+$Profile.Name!=&apos;Administrador do sistema&apos;
+)
+
+)</errorConditionFormula>
+    <errorMessage>Não permitir a criação de contas tipo &quot;Conta jurídica SAP&quot; e &quot;Conta pessoal SAP&quot; por usuários que não enstejam com perfil &quot;Salesforce Interface&quot;</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FixedCreditValue__c</fullName>
+    <description>Valor do crédito a ser gerado quando a mecânica for definida com pagamento fixo</description>
+    <externalId>false</externalId>
+    <label>Valor Crédito Fixo</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

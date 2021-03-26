@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categoria__c</fullName>
+    <externalId>false</externalId>
+    <label>Categoria</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Não classificado</fullName>
+                <default>false</default>
+                <label>Não classificado</label>
+            </value>
+            <value>
+                <fullName>Campanha de Trd Mkt</fullName>
+                <default>false</default>
+                <label>Campanha de Trd Mkt</label>
+            </value>
+            <value>
+                <fullName>Casos</fullName>
+                <default>false</default>
+                <label>Casos</label>
+            </value>
+            <value>
+                <fullName>Catalogo de produtos</fullName>
+                <default>false</default>
+                <label>Catalogo de produtos</label>
+            </value>
+            <value>
+                <fullName>Cliente</fullName>
+                <default>false</default>
+                <label>Cliente</label>
+            </value>
+            <value>
+                <fullName>Comunidade de Parceiros</fullName>
+                <default>false</default>
+                <label>Comunidade de Parceiros</label>
+            </value>
+            <value>
+                <fullName>Cotação</fullName>
+                <default>false</default>
+                <label>Cotação</label>
+            </value>
+            <value>
+                <fullName>Cotas</fullName>
+                <default>false</default>
+                <label>Cotas</label>
+            </value>
+            <value>
+                <fullName>Novo Cliente</fullName>
+                <default>false</default>
+                <label>Novo Cliente</label>
+            </value>
+            <value>
+                <fullName>Offline</fullName>
+                <default>false</default>
+                <label>Offline</label>
+            </value>
+            <value>
+                <fullName>Oportunidade</fullName>
+                <default>false</default>
+                <label>Oportunidade</label>
+            </value>
+            <value>
+                <fullName>Ordem de venda</fullName>
+                <default>false</default>
+                <label>Ordem de venda</label>
+            </value>
+            <value>
+                <fullName>Pesquisa de Preço</fullName>
+                <default>false</default>
+                <label>Pesquisa de Preço</label>
+            </value>
+            <value>
+                <fullName>Planejamento de vendas</fullName>
+                <default>false</default>
+                <label>Planejamento de vendas</label>
+            </value>
+            <value>
+                <fullName>Produtos</fullName>
+                <default>false</default>
+                <label>Produtos</label>
+            </value>
+            <value>
+                <fullName>Projeto</fullName>
+                <default>false</default>
+                <label>Projeto</label>
+            </value>
+            <value>
+                <fullName>Radar de Obras</fullName>
+                <default>false</default>
+                <label>Radar de Obras</label>
+            </value>
+            <value>
+                <fullName>Relatórios</fullName>
+                <default>false</default>
+                <label>Relatórios</label>
+            </value>
+            <value>
+                <fullName>Verde Amanco</fullName>
+                <default>false</default>
+                <label>Verde Amanco</label>
+            </value>
+            <value>
+                <fullName>Visitas</fullName>
+                <default>false</default>
+                <label>Visitas</label>
+            </value>
+            <value>
+                <fullName>SAC</fullName>
+                <default>false</default>
+                <label>SAC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

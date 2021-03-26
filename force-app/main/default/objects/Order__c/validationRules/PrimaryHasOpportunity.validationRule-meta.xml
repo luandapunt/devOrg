@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PrimaryHasOpportunity</fullName>
+    <active>true</active>
+    <description>Pedidos sem oportunidade não podem ser primários</description>
+    <errorConditionFormula>ISNULL(OpportunityLkp__c) &amp;&amp; PrimaryBln__c</errorConditionFormula>
+    <errorMessage>Uma ordem só pode ser marcada como primária se estiver associada a uma oportunidade.</errorMessage>
+</ValidationRule>

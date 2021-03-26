@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Produto_Trocado_Qtd_Diferente_2</fullName>
+    <active>false</active>
+    <description>Regras referente a status do caso tipo Produto trocado Quantidades diferentes</description>
+    <errorConditionFormula>OR(          
+	AND(
+		RecordType.Name = &apos;Produto trocado&apos;,
+		ISPICKVAL( Type , &apos;Quantidades diferentes&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Ordem de devolução simbólica criada&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Ordem de devolução simbólica criada&apos;), 
+		ISPICKVAL(Status, &apos;Em análise&apos;), 
+		ISPICKVAL(Status, &apos;QM criada&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),AND(
+		RecordType.Name = &apos;Produto trocado&apos;,
+		ISPICKVAL( Type , &apos;Quantidades diferentes&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;QM criada&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;QM criada&apos;), 
+		ISPICKVAL(Status, &apos;Em andamento expedição&apos;), 
+		ISPICKVAL(Status, &apos;Em andamento fiscal&apos;), 
+		ISPICKVAL(Status, &apos;Em andamento transportes&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),AND(
+		RecordType.Name = &apos;Produto trocado&apos;,
+		ISPICKVAL( Type , &apos;Quantidades diferentes&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em andamento expedição&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Em andamento expedição&apos;), 
+		ISPICKVAL(Status, &apos;Em andamento transportes&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),AND(
+		RecordType.Name = &apos;Produto trocado&apos;,
+		ISPICKVAL( Type , &apos;Quantidades diferentes&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em andamento transportes&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Em andamento transportes&apos;),
+		ISPICKVAL(Status, &apos;Encerrado&apos;),
+		ISPICKVAL(Status, &apos;Em andamento fiscal&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),AND(
+		RecordType.Name = &apos;Produto trocado&apos;,
+		ISPICKVAL( Type , &apos;Quantidades diferentes&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em andamento financeiro&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Em andamento financeiro&apos;),
+		ISPICKVAL(Status, &apos;Encerrado&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),AND(
+		RecordType.Name = &apos;Produto trocado&apos;,
+		ISPICKVAL( Type , &apos;Quantidades diferentes&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em andamento fiscal&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Em andamento fiscal&apos;),
+		ISPICKVAL(Status, &apos;Em andamento fiscal&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	)
+)</errorConditionFormula>
+    <errorMessage>Produto trocado Quantidades diferentes 2: alteração de status não permitida.</errorMessage>
+</ValidationRule>

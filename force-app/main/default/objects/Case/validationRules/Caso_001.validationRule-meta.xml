@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_001</fullName>
+    <active>true</active>
+    <description>[Caso] Não permite alterar tipo de registro de caso.</description>
+    <errorConditionFormula>ISCHANGED(RecordTypeId)</errorConditionFormula>
+    <errorMessage>O campo &quot;Tipo de registro do caso&quot; não pode ser alterado.</errorMessage>
+</ValidationRule>

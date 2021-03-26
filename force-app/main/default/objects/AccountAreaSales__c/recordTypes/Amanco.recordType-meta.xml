@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amanco</fullName>
+    <active>true</active>
+    <label>Cliente Amanco</label>
+    <picklistValues>
+        <picklist>ActivitySectorTxt__c</picklist>
+        <values>
+            <fullName>Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Composto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Embalagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Família produtos 01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geomecânico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infra-Estrutura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irrigação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item Descontinuado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Manutenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matéria Prima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Predial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refugo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serviço</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serviços</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Setor Comum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sucata</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ChannelPVCTxt__c</picklist>
+        <values>
+            <fullName>AC1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AC2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AGS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AV1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AV2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DTB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FGB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SAB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VB1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VB2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VCO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VHC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VI1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VI2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VI3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VJ1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VJ2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VJ3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VJ4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VJ5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VRD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CodeActivitySectorTxt__c</picklist>
+        <values>
+            <fullName>01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CodeDistribubutionChannelTxt__c</picklist>
+        <values>
+            <fullName>01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CodeFiscalClassificationTxt__c</picklist>
+        <values>
+            <fullName>1</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CodeSalesOrganizationTxt__c</picklist>
+        <values>
+            <fullName>0099</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0141</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0143</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM01</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CustomerGroup2Txt__c</picklist>
+        <values>
+            <fullName>001</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CustomerGroup3Txt__c</picklist>
+        <values>
+            <fullName>001</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DescriptionChannelPVCTxt__c</picklist>
+        <values>
+            <fullName>BIDIM - CIA AMBIENTAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM - CIA SANEAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM - CONSTRUTORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM - DISTRIBUIDOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM - INDÚSTRIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM - MINERAÇÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM - OUTROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM - PRODUTOR RURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM - VAREJO 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM - VAREJO 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO - COMPOSTOS ALPHAGARY EXPORTAÇÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO - COMPOSTOS ALPHAGARY NACIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO - COMPOSTOS ALPHAGARY SUBSIDIÁRIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FABRICANTES DE GEOSSINTÉTICOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE - CIA SANEAMENTO PRIVATIZADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE - COMPANHIAS DE SANEAMENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE - EMPREITEIRAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE - FABRICANTE CONEXÕES IE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE - REVENDA INFRA-ESTRUTURA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR - FABRICANTES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR - INDÚSTRIAS %28USINAS%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR - OUTROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR - PRODUTOR RURAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR - REVENDAS DE IRRIGAÇÃO 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR - REVENDAS DE IRRIGAÇÃO 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR - REVENDAS DE IRRIGAÇÃO 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR - SISTEMAS IRRIGAÇÃO LOCALIZADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NT - GEOTEXTIL EXPORTAÇÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NT - GEOTEXTIL NACIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NT - GEOTEXTIL SUBSIDIÁRIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - ATACADO VAREJOS 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - ATACADO VAREJOS 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - ATACADOS CONSTRUTORAS 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - ATACADOS CONSTRUTORAS 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - CONSTRUTORA DIRETA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - DISTRIBUIDOR VAREJO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - EXPORTAÇÃO TERCEIROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - REDES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - SUBSIDIÁRIA EXPORTAÇÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - SUBSIDIÁRIA NACIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - VAREJOS 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - VAREJOS 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - VAREJOS 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - VAREJOS 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - VAREJOS 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - VAREJOS CONSTRUTORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR - VAREJOS HOME CENTER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC - SERVIÇOS CRED CONSTRUÇÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD - SERVIÇOS DOUTORES EXPORTAÇÃO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD - SERVIÇOS DOUTORES NACIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD - SERVIÇOS DOUTORES SUBSIDIÁRIAS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DescriptionCustomerGroup2Txt__c</picklist>
+        <values>
+            <fullName>CONQUISTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOP 0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOP 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOP 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TOP Interm Obsoleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DescriptionCustomerGroup3Txt__c</picklist>
+        <values>
+            <fullName>Embalagem Master</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DescriptionExpeditionConditionTxt__c</picklist>
+        <values>
+            <fullName>Alagoas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anapolis %28Amanco%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anápolis %28Amanco%29- I</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bahia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO%2FNO %2F 0700 - Jlle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO%2FNO - Especial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Devolução</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exportação Amanco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livre</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mato Grosso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mato Grosso do Sul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minas Gerais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montevideo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nordeste%2F0700 - Jlle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nordeste%2FNorte 0900</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plas%2E Suape</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plast%2E PA Maceió</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rio de Janeiro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sul do Pará</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>São Paulo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>São Paulo - Centro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>São Paulo - Z%2EOeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>São Paulo - Z%2ESul 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>São Paulo - Z%2ESul 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>São Paulo -Z%2ELeste 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>São Paulo- Z%2ELeste 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>São Paulo-Z%2ENorte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trading Jonville</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trading Suape</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferência</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>retirada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DescriptionFullSupplyTxt__c</picklist>
+        <values>
+            <fullName>Desc</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DescriptionSalesOfficeTxt__c</picklist>
+        <values>
+            <fullName>Agência %28Default%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alphagary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assistência Técnica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exportação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reg Infra Industria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional CO%2FNO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Construtora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Infra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Irriga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Nordeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional RJ%2FES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional SP Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional SP Interior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Sul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venda Direta</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DistributionChannelTxt__c</picklist>
+        <values>
+            <fullName>Atendimento Mexichem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Can%2Edistribuição 01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canal Comun</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exportação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Intercompany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repres%2FVendedor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venda Direta</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ExpeditionConditionTxt__c</picklist>
+        <values>
+            <fullName>01</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FiscalClassificationTxt__c</picklist>
+        <values>
+            <fullName>Clientes exportação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Desc%2E REIDI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imposto Futuro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imposto normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Não sujeito a impst%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZFM - ICMS e IPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Área Livre Com IPI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Área Livre Comer%2E ST</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FullSupplyTxt__c</picklist>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SalesOfficeTxt__c</picklist>
+        <values>
+            <fullName>0001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0010</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0030</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0040</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0050</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0060</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0070</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0090</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0110</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0120</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0130</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0140</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0150</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0160</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL60</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL65</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL70</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL95</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL99</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SalesOrganizationTxt__c</picklist>
+        <values>
+            <fullName>ALPHAGARY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AMANCO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BIDIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PLASTUBOS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampaignDateInterval</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR((CampaignLkp__r.StartDate__c &gt; StartDate__c),(CampaignLkp__r.EndDate__c &lt; EndDate__c))</errorConditionFormula>
+    <errorMessage>As datas de início e término da apuração devem estar dentro do período da campanha.</errorMessage>
+</ValidationRule>

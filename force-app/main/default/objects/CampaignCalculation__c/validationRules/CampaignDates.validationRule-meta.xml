@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampaignDates</fullName>
+    <active>true</active>
+    <errorConditionFormula>StartDate__c &gt;  EndDate__c</errorConditionFormula>
+    <errorMessage>A data de início não pode ser posterior à data de término</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChildLkp__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Mapa de integração</label>
+    <referenceTo>IntegrationMap__c</referenceTo>
+    <relationshipLabel>Mapa da integração filha (Mapa de integração)</relationshipLabel>
+    <relationshipName>Mapa_da_integra_o_filha</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

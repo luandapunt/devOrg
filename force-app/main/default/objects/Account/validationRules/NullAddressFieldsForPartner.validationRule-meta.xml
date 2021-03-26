@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NullAddressFieldsForPartner</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecordType.DeveloperName = &apos;AccountPartner&apos; &amp;&amp; 
+(BillingStreet = NULL || 
+BillingCity = NULL || 
+BillingState = NULL || 
+BillingPostalCode = NULL)</errorConditionFormula>
+    <errorMessage>É necessário preencher todos os campos de endereço.</errorMessage>
+</ValidationRule>

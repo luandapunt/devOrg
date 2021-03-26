@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEPRules</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+       AND(
+           LEN(PostalCode)=9,
+           FIND(&apos;-&apos;,PostalCode)&lt;&gt;6
+       ),
+       AND(
+           LEN(PostalCode)=9,
+           NOT(ISNUMBER(LEFT(PostalCode,5)))
+       ), 
+       AND(
+           LEN(PostalCode)=9,
+           NOT(ISNUMBER(RIGHT(PostalCode,3)))
+       ),
+       AND(
+           LEN(PostalCode)=8,
+           NOT(ISNUMBER(PostalCode))
+       ),
+       LEN(PostalCode)&lt;8, 
+       LEN(PostalCode)&gt;9
+    ),
+    NOT(ISBLANK(PostalCode))
+)</errorConditionFormula>
+    <errorMessage>O CEP deve conter apenas 8 dígitos ( todos números) ou 9 dígitos (5 números + traço + 3 números). 
+Exemplo: 69900715 ou 69900-715</errorMessage>
+</ValidationRule>

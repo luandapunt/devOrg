@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAC Reclamação</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Aberto</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Aguardando amostra</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Aguardando cadastro do cliente</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Aguardando documentos do campo</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Aguardando encerramento</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Aguardando parecer de campo</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Análise amostra em andamento</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Análise amostra encerrada</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Cancelado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Encerrado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Enviado para laboratório</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Ordem de indenização de produto criada</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Ordem de indenização monetária criada</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

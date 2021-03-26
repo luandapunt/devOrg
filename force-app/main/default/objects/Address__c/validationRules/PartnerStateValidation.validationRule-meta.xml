@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PartnerStateValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(LeadLkp__c)) &amp;&amp; TEXT( StateTxt__c ) &lt;&gt;  TEXT( LeadLkp__r.StateCode )</errorConditionFormula>
+    <errorMessage>Não é possível cadastrar endereço de entrega para estado diferente do emissor</errorMessage>
+</ValidationRule>

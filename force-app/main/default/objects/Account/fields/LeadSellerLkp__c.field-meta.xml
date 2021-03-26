@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeadSellerLkp__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Vendedor do Lead</label>
+    <referenceTo>Seller__c</referenceTo>
+    <relationshipLabel>Contas (Vendedor do Lead)</relationshipLabel>
+    <relationshipName>ConvertedAccounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherBrandsTxt__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Caso o concorrente não esteja listado nas opções anteriores, insira o nome dos outros concorrentes separados por &quot;;&quot;.</inlineHelpText>
+    <label>Outras Marcas</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LinkSalesPlanFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(RecordType.DeveloperName=&apos;QuotaAttainment&apos;,
+HYPERLINK(&apos;/apex/AddSalesPlanPage?scontrolCaching=1&amp;id=&apos; + Id, &apos;Planejar Vendas&apos;, &apos;_self&apos;),
+&apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Planejar Vendas</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

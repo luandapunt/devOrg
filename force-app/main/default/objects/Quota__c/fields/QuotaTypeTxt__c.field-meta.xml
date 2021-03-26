@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuotaTypeTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de Cota</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>001</fullName>
+                <default>false</default>
+                <label>ROL Total</label>
+            </value>
+            <value>
+                <fullName>002</fullName>
+                <default>false</default>
+                <label>ROL de Conexões</label>
+            </value>
+            <value>
+                <fullName>013</fullName>
+                <default>false</default>
+                <label>Positivação Varejos</label>
+            </value>
+            <value>
+                <fullName>021</fullName>
+                <default>false</default>
+                <label>SUPERCPVC</label>
+            </value>
+            <value>
+                <fullName>010</fullName>
+                <default>false</default>
+                <label>ROL de Tubos</label>
+            </value>
+            <value>
+                <fullName>014</fullName>
+                <default>false</default>
+                <label>Positivação Cliente</label>
+            </value>
+            <value>
+                <fullName>018</fullName>
+                <default>false</default>
+                <label>ROL Água Quente</label>
+            </value>
+            <value>
+                <fullName>025</fullName>
+                <default>false</default>
+                <label>ROL/Kg</label>
+            </value>
+            <value>
+                <fullName>027</fullName>
+                <default>false</default>
+                <label>BIAX PN 12,5</label>
+            </value>
+            <value>
+                <fullName>028</fullName>
+                <default>false</default>
+                <label>BIAX PN 16</label>
+            </value>
+            <value>
+                <fullName>029</fullName>
+                <default>false</default>
+                <label>ROL Total Lançamentos/Produtos</label>
+            </value>
+            <value>
+                <fullName>003</fullName>
+                <default>false</default>
+                <label>Microaspersão Gotejamento</label>
+            </value>
+            <value>
+                <fullName>005</fullName>
+                <default>false</default>
+                <label>ROL Água Fria</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

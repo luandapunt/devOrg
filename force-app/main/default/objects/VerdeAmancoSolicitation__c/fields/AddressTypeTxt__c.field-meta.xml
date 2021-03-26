@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AddressTypeTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo do Endereço</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Endereço do Cliente</fullName>
+                <default>false</default>
+                <label>Endereço do Cliente</label>
+            </value>
+            <value>
+                <fullName>Endereço do Solicitante</fullName>
+                <default>false</default>
+                <label>Endereço do Solicitante</label>
+            </value>
+            <value>
+                <fullName>Outro</fullName>
+                <default>false</default>
+                <label>Outro</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

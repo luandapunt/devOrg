@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotAllowObservation</fullName>
+    <active>true</active>
+    <description>Impede que os campos de observações sejam preenchidos nas Ordens em que o campo &quot;Permite obsevação&quot; está desmarcado.</description>
+    <errorConditionFormula>OR(AND( OrderTypeLkp__r.AllowsObservationBln__c=false, CommercialRemarkTxt__c&lt;&gt;null),AND( OrderTypeLkp__r.AllowsObservationBln__c=false,  RepresentativeRemarkTxt__c &lt;&gt;null),AND( OrderTypeLkp__r.AllowsObservationBln__c=false,  InvoiceHeaderTxt__c  &lt;&gt;null))</errorConditionFormula>
+    <errorMessage>Não é possível escrever observações para essa ordem.</errorMessage>
+</ValidationRule>

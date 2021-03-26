@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quebra_de_Embalagem</fullName>
+    <columns>ChannelPVCLkp__c</columns>
+    <columns>OrderTypeLkp__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>BlockedItem__c.PackageSeparationRT</value>
+    </filters>
+    <label>Quebra de Embalagem</label>
+</ListView>

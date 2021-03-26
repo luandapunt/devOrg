@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClientChannelTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Canal Cliente</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AC1 - PR - Atacados Construtoras 1</fullName>
+                <default>false</default>
+                <label>AC1 - PR - Atacados Construtoras 1</label>
+            </value>
+            <value>
+                <fullName>AC2 - PR - Atacados Construtoras 2</fullName>
+                <default>false</default>
+                <label>AC2 - PR - Atacados Construtoras 2</label>
+            </value>
+            <value>
+                <fullName>AV1 - PR - Atacado Varejos 1</fullName>
+                <default>false</default>
+                <label>AV1 - PR - Atacado Varejos 1</label>
+            </value>
+            <value>
+                <fullName>AV2 - PR - Atacado Varejos 2</fullName>
+                <default>false</default>
+                <label>AV2 - PR - Atacado Varejos 2</label>
+            </value>
+            <value>
+                <fullName>CAP - IE - CIA Saneamento Privatizada</fullName>
+                <default>false</default>
+                <label>CAP - IE - CIA Saneamento Privatizada</label>
+            </value>
+            <value>
+                <fullName>CAS - IE - Companhias de Saneamento</fullName>
+                <default>false</default>
+                <label>CAS - IE - Companhias de Saneamento</label>
+            </value>
+            <value>
+                <fullName>CTD - PR - Construtora Direta</fullName>
+                <default>false</default>
+                <label>CTD - PR - Construtora Direta</label>
+            </value>
+            <value>
+                <fullName>DTR - PR - Distribuidor Varejo</fullName>
+                <default>false</default>
+                <label>DTR - PR - Distribuidor Varejo</label>
+            </value>
+            <value>
+                <fullName>EMP - IE - Empreiteiras</fullName>
+                <default>false</default>
+                <label>EMP - IE - Empreiteiras</label>
+            </value>
+            <value>
+                <fullName>FAB - IR - Fabricantes</fullName>
+                <default>false</default>
+                <label>FAB - IR - Fabricantes</label>
+            </value>
+            <value>
+                <fullName>IND - IR - Indústrias (Usinas)</fullName>
+                <default>false</default>
+                <label>IND - IR - Indústrias (Usinas)</label>
+            </value>
+            <value>
+                <fullName>OTR - IR - Outros</fullName>
+                <default>false</default>
+                <label>OTR - IR - Outros</label>
+            </value>
+            <value>
+                <fullName>PRT - IR - Produto Rural</fullName>
+                <default>false</default>
+                <label>PRT - IR - Produto Rural</label>
+            </value>
+            <value>
+                <fullName>REV - IE - Revenda Infra-Estrutura</fullName>
+                <default>false</default>
+                <label>REV - IE - Revenda Infra-Estrutura</label>
+            </value>
+            <value>
+                <fullName>VCO - PR - Varejos Construtora</fullName>
+                <default>false</default>
+                <label>VCO - PR - Varejos Construtora</label>
+            </value>
+            <value>
+                <fullName>VHC - PR - Varejos Home Center</fullName>
+                <default>false</default>
+                <label>VHC - PR - Varejos Home Center</label>
+            </value>
+            <value>
+                <fullName>VI1 - IR - Revendas de Irrigação 1</fullName>
+                <default>false</default>
+                <label>VI1 - IR - Revendas de Irrigação 1</label>
+            </value>
+            <value>
+                <fullName>VI2 - IR - Revendas de Irrigação 2</fullName>
+                <default>false</default>
+                <label>VI2 - IR - Revendas de Irrigação 2</label>
+            </value>
+            <value>
+                <fullName>VJ1 - PR - Varejos 1</fullName>
+                <default>false</default>
+                <label>VJ1 - PR - Varejos 1</label>
+            </value>
+            <value>
+                <fullName>VJ2 - PR - Varejos 2</fullName>
+                <default>false</default>
+                <label>VJ2 - PR - Varejos 2</label>
+            </value>
+            <value>
+                <fullName>VJ3 - PR - Varejos 3</fullName>
+                <default>false</default>
+                <label>VJ3 - PR - Varejos 3</label>
+            </value>
+            <value>
+                <fullName>VJ4 - PR - Varejos 4</fullName>
+                <default>false</default>
+                <label>VJ4 - PR - Varejos 4</label>
+            </value>
+            <value>
+                <fullName>VJ5 - PR - Varejos 5</fullName>
+                <default>false</default>
+                <label>VJ5 - PR - Varejos 5</label>
+            </value>
+            <value>
+                <fullName>VRD - PR - Redes</fullName>
+                <default>false</default>
+                <label>VRD - PR - Redes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

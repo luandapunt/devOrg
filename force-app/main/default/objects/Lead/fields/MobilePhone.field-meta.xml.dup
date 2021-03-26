@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MobilePhone</fullName>
+    <inlineHelpText>Escreva o DDD seguido pelo número do celular, não adicione espaços ou outros caracteres não numéricos.
+Exemplos: 1198884432 ou 11998884432.
+*Campo obrigatório para aprovação.</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QMProprietarioCaso</fullName>
+    <active>true</active>
+    <description>Não permite que uma QM seja criada por um usuário diferente do proprietário do Caso.</description>
+    <errorConditionFormula>IF(
+    NOT($Profile.Name = &apos;Interface Salesforce&apos; || 
+        $Profile.Name = &apos;Administrador do sistema&apos;) ,
+    $User.Id &lt;&gt;  CaseLkp__r.OwnerId, 
+    FALSE
+    )</errorConditionFormula>
+    <errorMessage>QM só pode ser criada pelo mesmo proprietário do Caso relacionado.</errorMessage>
+</ValidationRule>

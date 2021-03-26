@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QMProdutoTrocadoII</fullName>
+    <active>true</active>
+    <description>QM para produto trocado com quantidades diferentes.</description>
+    <label>Produto Trocado quantidades diferentes</label>
+    <picklistValues>
+        <picklist>ComplaintReasonTxt__c</picklist>
+        <values>
+            <fullName>04-Expedição</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DevolutionTxt__c</picklist>
+        <values>
+            <fullName>Parcial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ManufacturingCenterTxt__c</picklist>
+        <values>
+            <fullName>0100-SUMARE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0300-UBERABA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0600-CONEXOES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0700-ACESSORIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0850-AP%2EGOIANIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0870-ANAPOLIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0900-SUAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR10-MEXICHEM TRADING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR20-SUAPE TRADING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR30-BIDIM%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR31-PLASTUBOS MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR33-PLASTUBOS AL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NonConformityTxt__c</picklist>
+        <values>
+            <fullName>0403-Produto trocado%2C diferente da NF</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OriginTxt__c</picklist>
+        <values>
+            <fullName>0800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reclame aqui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PriorityTxt__c</picklist>
+        <values>
+            <fullName>Baixa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RecordTxt__c</picklist>
+        <values>
+            <fullName>Reclamação</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatusTxt__c</picklist>
+        <values>
+            <fullName>QM com erro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QM criada SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QM criada Salesforce</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>QM enviada SAP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

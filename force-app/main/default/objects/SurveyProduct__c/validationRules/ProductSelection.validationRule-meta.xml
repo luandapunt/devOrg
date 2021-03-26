@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductSelection</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ProductLkp__c != null &amp;&amp;  OtherProductsTxt__c != null) ||
+(ProductLkp__c != null &amp;&amp; TEXT(OtherMaterialGroupTxt__c) != null) ||
+(ProductLkp__c != null &amp;&amp; TEXT(OtherSubsystemTxt__c) != null) || 
+(ProductLkp__c == null &amp;&amp;  OtherProductsTxt__c == null)</errorConditionFormula>
+    <errorMessage>Preencha apenas o campo &quot;Produto&quot; com um produto Mexichem ou os campos &quot;Outros Produtos&quot;, &quot;Outros - Grupo de Material&quot; e &quot;Outros - Subsistema&quot; referenciando um produto externo.</errorMessage>
+</ValidationRule>

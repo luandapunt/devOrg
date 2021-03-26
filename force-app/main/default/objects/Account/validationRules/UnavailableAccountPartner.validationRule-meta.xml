@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnavailableAccountPartner</fullName>
+    <active>true</active>
+    <description>Regra para impossibilitar a criação de contas parceiro (recebedor) para contas com determinados perfis Nielsen.</description>
+    <errorConditionFormula>!$Setup.SkipValidations__c.Skip__c &amp;&amp; 
+TEXT(PartnerTypeTxt__c) = &apos;REOR&apos; &amp;&amp; 
+( 
+TEXT(Parent.NielsenZoneTxt__c) != &apos;07&apos; &amp;&amp;
+TEXT(Parent.NielsenZoneTxt__c) != &apos;08&apos; &amp;&amp;
+TEXT(Parent.NielsenZoneTxt__c) != &apos;09&apos; &amp;&amp;
+TEXT(Parent.NielsenZoneTxt__c) != &apos;10&apos; &amp;&amp;
+TEXT(Parent.NielsenZoneTxt__c) != &apos;14&apos; &amp;&amp;
+TEXT(Parent.NielsenZoneTxt__c) != &apos;15&apos; &amp;&amp;
+TEXT(Parent.NielsenZoneTxt__c) != &apos;17&apos; &amp;&amp;
+TEXT(Parent.NielsenZoneTxt__c) != &apos;18&apos; &amp;&amp;
+TEXT(Parent.NielsenZoneTxt__c) != &apos;23&apos; &amp;&amp;
+TEXT(Parent.NielsenZoneTxt__c) != &apos;27&apos;
+)</errorConditionFormula>
+    <errorMessage>Não é permitido o cadastro de parceiros (recebedor) para este cliente.</errorMessage>
+</ValidationRule>

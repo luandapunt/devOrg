@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RegisterTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Registro</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ComplaintNatureTxt__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Devolução</fullName>
+                <default>false</default>
+                <label>Devolução</label>
+            </value>
+            <value>
+                <fullName>Reclamação</fullName>
+                <default>false</default>
+                <label>Reclamação</label>
+            </value>
+            <value>
+                <fullName>Substituição</fullName>
+                <default>false</default>
+                <label>Substituição</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>04-Expedição</controllingFieldValue>
+            <controllingFieldValue>06-Produto</controllingFieldValue>
+            <controllingFieldValue>07-Representante/Vendedor</controllingFieldValue>
+            <controllingFieldValue>08-Transportadora</controllingFieldValue>
+            <controllingFieldValue>09-Planejamento Logístico</controllingFieldValue>
+            <controllingFieldValue>11-Cliente</controllingFieldValue>
+            <controllingFieldValue>12-Atendimento Amanco 0800</controllingFieldValue>
+            <controllingFieldValue>14-Cadastro</controllingFieldValue>
+            <controllingFieldValue>15-Fiscal</controllingFieldValue>
+            <valueName>Devolução</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>04-Expedição</controllingFieldValue>
+            <controllingFieldValue>06-Produto</controllingFieldValue>
+            <controllingFieldValue>07-Representante/Vendedor</controllingFieldValue>
+            <controllingFieldValue>08-Transportadora</controllingFieldValue>
+            <controllingFieldValue>09-Planejamento Logístico</controllingFieldValue>
+            <controllingFieldValue>11-Cliente</controllingFieldValue>
+            <controllingFieldValue>12-Atendimento Amanco 0800</controllingFieldValue>
+            <valueName>Reclamação</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>04-Expedição</controllingFieldValue>
+            <controllingFieldValue>06-Produto</controllingFieldValue>
+            <controllingFieldValue>07-Representante/Vendedor</controllingFieldValue>
+            <controllingFieldValue>08-Transportadora</controllingFieldValue>
+            <valueName>Substituição</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

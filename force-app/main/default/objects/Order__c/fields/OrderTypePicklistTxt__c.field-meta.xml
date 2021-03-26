@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderTypePicklistTxt__c</fullName>
+    <defaultValue>&apos;ZNOV&apos;</defaultValue>
+    <externalId>false</externalId>
+    <label>Tipo de Ordem</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>OrderType</valueSetName>
+    </valueSet>
+</CustomField>

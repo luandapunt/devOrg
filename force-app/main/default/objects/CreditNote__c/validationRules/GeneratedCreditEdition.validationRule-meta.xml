@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GeneratedCreditEdition</fullName>
+    <active>true</active>
+    <description>Não permite o vendedor editar um registro de NC se for do tipo &quot;Crédito Gerado&quot;</description>
+    <errorConditionFormula>$Profile.Name = &apos;Vendedor&apos; &amp;&amp;   ISPICKVAL( Type__c , &apos;Crédito Campanha&apos;)</errorConditionFormula>
+    <errorMessage>Esse tipo de usuário não pode editar uma Nota de Crédito do tipo &quot;Crédito Gerado&quot;</errorMessage>
+</ValidationRule>

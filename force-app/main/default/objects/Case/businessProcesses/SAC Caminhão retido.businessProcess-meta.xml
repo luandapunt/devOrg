@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAC Caminhão retido</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Aguardando cliente%2Fvendedor</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Aguardando cliente%2Fvendedor%2Fgerente</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Cancelado</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Em análise</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Encerrado</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

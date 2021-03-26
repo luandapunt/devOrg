@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FECHAMENTO_Caso_Bloquear_edicao_de_casos</fullName>
+    <active>true</active>
+    <description>Regra para bloquear a edição de casos encerrados.</description>
+    <errorConditionFormula>IF(CONTAINS( $User.UIThemeDisplayed , &apos;Theme3&apos;),False,
+IF(
+   ByPassBln__c = FALSE,
+   AND( 
+       $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+       $Profile.Name!= &apos;Administrador do sistema&apos;,
+   OR( 
+       ISPICKVAL( Status , &apos;Encerrado&apos;),
+       ISPICKVAL( Status , &apos;Cancelado&apos;)
+      )
+      ),
+   FALSE
+  )
+)</errorConditionFormula>
+    <errorMessage>FECHAR PRIMEIRO O caso não poderá ser encerrado ou cancelado utilizar Fechar Caso no FEED.</errorMessage>
+</ValidationRule>

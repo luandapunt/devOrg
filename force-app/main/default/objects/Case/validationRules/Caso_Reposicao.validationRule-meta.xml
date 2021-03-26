@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Reposicao</fullName>
+    <active>true</active>
+    <description>Regras referente a status do caso tipo Reposição.</description>
+    <errorConditionFormula>IF( 
+ByPassBln__c = TRUE,
+OR(
+	AND(
+		RecordType.Name = &apos;Reposição&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+                OR ( 
+                  ISPICKVAL( Reason , &apos;Produto trocado&apos;), 
+                  ISPICKVAL( Reason , &apos;Extravio de Volume&apos;), 
+                  ISPICKVAL( Reason , &apos;Faturamento sem estoque&apos;) 
+                ), 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aberto&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aberto&apos;),
+		ISPICKVAL(Status, &apos;Aguardando retorno transportadora&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reposição&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;,
+                OR ( 
+                  ISPICKVAL( Reason , &apos;Produto trocado&apos;), 
+                  ISPICKVAL( Reason , &apos;Extravio de Volume&apos;), 
+                  ISPICKVAL( Reason , &apos;Faturamento sem estoque&apos;) 
+                ), 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando retorno transportadora&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aguardando retorno transportadora&apos;),
+		ISPICKVAL(Status, &apos;Aguardando nota fiscal de devolução&apos;),
+		ISPICKVAL(Status, &apos;Em análise&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reposição&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+                OR ( 
+                  ISPICKVAL( Reason , &apos;Produto trocado&apos;), 
+                  ISPICKVAL( Reason , &apos;Extravio de Volume&apos;), 
+                  ISPICKVAL( Reason , &apos;Faturamento sem estoque&apos;) 
+                ), 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando nota fiscal de devolução&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aguardando nota fiscal de devolução&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;),
+		ISPICKVAL(Status, &apos;Em análise&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reposição&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+                OR ( 
+                  ISPICKVAL( Reason , &apos;Produto trocado&apos;), 
+                  ISPICKVAL( Reason , &apos;Extravio de Volume&apos;), 
+                  ISPICKVAL( Reason , &apos;Faturamento sem estoque&apos;) 
+                ), 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em análise&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Em análise&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	)
+), 
+FALSE 
+)</errorConditionFormula>
+    <errorMessage>Reposição: alteração de status não permitida.</errorMessage>
+</ValidationRule>

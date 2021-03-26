@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomerLossReasonTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo de Perda do Cliente</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sem obra em andamento</fullName>
+                <default>false</default>
+                <label>Sem obra em andamento</label>
+            </value>
+            <value>
+                <fullName>Cliente compra por outra razão social</fullName>
+                <default>false</default>
+                <label>Cliente compra por outra razão social</label>
+            </value>
+            <value>
+                <fullName>Atendimento por telefone</fullName>
+                <default>false</default>
+                <label>Atendimento por telefone</label>
+            </value>
+            <value>
+                <fullName>Complemento de pedido</fullName>
+                <default>false</default>
+                <label>Complemento de pedido</label>
+            </value>
+            <value>
+                <fullName>Cliente solicitou alteração dias de visita</fullName>
+                <default>false</default>
+                <label>Cliente solicitou alteração dias de visita</label>
+            </value>
+            <value>
+                <fullName>Agendamento errado</fullName>
+                <default>false</default>
+                <label>Agendamento errado</label>
+            </value>
+            <value>
+                <fullName>Em negociação/aguardar próxima visita</fullName>
+                <default>false</default>
+                <label>Em negociação/aguardar próxima visita</label>
+            </value>
+            <value>
+                <fullName>Cliente exclusivo do concorrente</fullName>
+                <default>false</default>
+                <label>Cliente exclusivo do concorrente</label>
+            </value>
+            <value>
+                <fullName>Férias</fullName>
+                <default>false</default>
+                <label>Férias</label>
+            </value>
+            <value>
+                <fullName>Sem ferramentas de trabalho</fullName>
+                <default>false</default>
+                <label>Sem ferramentas de trabalho</label>
+            </value>
+            <value>
+                <fullName>Cliente remarcou visita</fullName>
+                <default>false</default>
+                <label>Cliente remarcou visita</label>
+            </value>
+            <value>
+                <fullName>Problemas de saúde</fullName>
+                <default>false</default>
+                <label>Problemas de saúde</label>
+            </value>
+            <value>
+                <fullName>Inadimplente</fullName>
+                <default>false</default>
+                <label>Inadimplente</label>
+            </value>
+            <value>
+                <fullName>Cliente fechado</fullName>
+                <default>false</default>
+                <label>Cliente fechado</label>
+            </value>
+            <value>
+                <fullName>Compra do atacado</fullName>
+                <default>false</default>
+                <label>Compra do atacado</label>
+            </value>
+            <value>
+                <fullName>Comprador ausente</fullName>
+                <default>false</default>
+                <label>Comprador ausente</label>
+            </value>
+            <value>
+                <fullName>Preço do concorrente</fullName>
+                <default>false</default>
+                <label>Preço do concorrente</label>
+            </value>
+            <value>
+                <fullName>Trabalha apenas com Low Price</fullName>
+                <default>false</default>
+                <label>Trabalha apenas com Low Price</label>
+            </value>
+            <value>
+                <fullName>Cliente com estoque alto</fullName>
+                <default>false</default>
+                <label>Cliente com estoque alto</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

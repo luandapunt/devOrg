@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pergunta1__c</fullName>
+    <externalId>false</externalId>
+    <label>Porque deixou de comprar?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sub_Motivo__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Atendimento Comercial / Sem Visita</fullName>
+                <default>false</default>
+                <label>Atendimento Comercial / Sem Visita</label>
+            </value>
+            <value>
+                <fullName>Compra com concorrente / Marca low price</fullName>
+                <default>false</default>
+                <label>Compra com concorrente / Marca low price</label>
+            </value>
+            <value>
+                <fullName>Compra de Distribuidor</fullName>
+                <default>false</default>
+                <label>Compra de Distribuidor</label>
+            </value>
+            <value>
+                <fullName>Crise/Estoque alto</fullName>
+                <default>false</default>
+                <label>Crise/Estoque alto</label>
+            </value>
+            <value>
+                <fullName>Demora na entrega</fullName>
+                <default>false</default>
+                <label>Demora na entrega</label>
+            </value>
+            <value>
+                <fullName>Preço</fullName>
+                <default>false</default>
+                <label>Preço</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Televendas</controllingFieldValue>
+            <valueName>Atendimento Comercial / Sem Visita</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Televendas</controllingFieldValue>
+            <valueName>Compra com concorrente / Marca low price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Televendas</controllingFieldValue>
+            <valueName>Compra de Distribuidor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Televendas</controllingFieldValue>
+            <valueName>Crise/Estoque alto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Televendas</controllingFieldValue>
+            <valueName>Demora na entrega</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Televendas</controllingFieldValue>
+            <valueName>Preço</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

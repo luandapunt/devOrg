@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreditStatusTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Status de crédito</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Vazio - Verif.crédito não foi efetuada</fullName>
+                <default>false</default>
+                <label>Vazio - Verif.crédito não foi efetuada</label>
+            </value>
+            <value>
+                <fullName>A - Verif.crédito foi efetuada, operação oK</fullName>
+                <default>false</default>
+                <label>A - Verif.crédito foi efetuada, operação oK</label>
+            </value>
+            <value>
+                <fullName>B - Verif.crédito foi efetuada, operação não oK</fullName>
+                <default>false</default>
+                <label>B - Verif.crédito foi efetuada, operação não oK</label>
+            </value>
+            <value>
+                <fullName>C - Verif.crédito efetuada, operação não oK, liberação parcial</fullName>
+                <default>false</default>
+                <label>C - Verif.crédito efetuada, operação não oK, liberação parcial</label>
+            </value>
+            <value>
+                <fullName>D - Ordem liberada pelo crédito</fullName>
+                <default>false</default>
+                <label>D - Ordem liberada pelo crédito</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

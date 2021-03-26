@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicita_o_Layout_Compacto</fullName>
+    <fields>Categoria__c</fields>
+    <fields>AssuntoTxt__c</fields>
+    <fields>ShowstopperTxt__c</fields>
+    <fields>Status__c</fields>
+    <fields>TypeTxt__c</fields>
+    <fields>OwnerNameFml__c</fields>
+    <label>[Solicitação] Layout Compacto</label>
+</CompactLayout>

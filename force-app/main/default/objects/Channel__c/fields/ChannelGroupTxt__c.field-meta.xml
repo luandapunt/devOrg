@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChannelGroupTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Grupo do Canal</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amanco Predial</fullName>
+                <default>false</default>
+                <label>Amanco Predial</label>
+            </value>
+            <value>
+                <fullName>Amanco Infra</fullName>
+                <default>false</default>
+                <label>Amanco Infra</label>
+            </value>
+            <value>
+                <fullName>Amanco Irriga</fullName>
+                <default>false</default>
+                <label>Amanco Irriga</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

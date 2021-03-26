@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FlagMinPriceFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISNULL(TotalGrossCostNmb__c), IMAGE(&quot;/img/samples/rating3.gif&quot;, &quot;Em Processamento&quot;, 16, 16), 
+IF(UnitPriceNmb__c &lt; ZMIN__c, 
+IMAGE(&quot;/img/samples/flag_red.gif&quot;, &quot;Abaixo do Preço Mínimo&quot;, 16,16), IMAGE(&quot;/img/samples/flag_green.gif&quot;, &quot;OK&quot;, 16,16)))</formula>
+    <label>Flag Preço Mínimo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

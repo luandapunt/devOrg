@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InvalidActivityDateTime</fullName>
+    <active>true</active>
+    <errorConditionFormula>RecurrenceCreatedBln__c == false &amp;&amp; 
+(WEEKDAY(DATEVALUE(ActivityDateTime)) == 1 || 
+WEEKDAY(DATEVALUE(ActivityDateTime)) == 7 || 
+HOUR(TIMEVALUE(ActivityDateTime)) &lt; (8 + TimeZoneOffsetNmb__c) || 
+HOUR(TIMEVALUE(ActivityDateTime)) &gt; (18 + TimeZoneOffsetNmb__c)|| 
+( 
+(18 + TimeZoneOffsetNmb__c - HOUR(TIMEVALUE(ActivityDateTime))  - (MINUTE(TIMEVALUE(ActivityDateTime))/60)) &lt; (DurationInMinutes/60)) 
+)</errorConditionFormula>
+    <errorMessage>Data/horário inválidos. Por favor, verifique se a visita será agendada em horário comercial.</errorMessage>
+</ValidationRule>

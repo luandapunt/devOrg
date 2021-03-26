@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactTypeTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de contato</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Facebook</fullName>
+                <default>false</default>
+                <label>Facebook</label>
+            </value>
+            <value>
+                <fullName>Mídia Social</fullName>
+                <default>false</default>
+                <label>Mídia Social</label>
+            </value>
+            <value>
+                <fullName>Reclame Aqui</fullName>
+                <default>false</default>
+                <label>Reclame Aqui</label>
+            </value>
+            <value>
+                <fullName>Telefone</fullName>
+                <default>false</default>
+                <label>Telefone</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

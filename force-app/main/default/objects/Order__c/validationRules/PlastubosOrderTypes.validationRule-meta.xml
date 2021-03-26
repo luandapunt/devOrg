@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlastubosOrderTypes</fullName>
+    <active>true</active>
+    <description>Restringe os tipos de ordem que podem ser criadas por vendedores da Plastubos</description>
+    <errorConditionFormula>AND(SellerLkp__r.SalesOrganizationTxt__c = &apos;0143&apos;, 
+NOT(ISPICKVAL(OrderTypePicklistTxt__c, &apos;&apos;)), 
+NOT(ISPICKVAL(OrderTypePicklistTxt__c, &apos;ZNOV&apos;)), 
+NOT(ISPICKVAL(OrderTypePicklistTxt__c, &apos;ZCOV&apos;)), 
+NOT(ISPICKVAL(OrderTypePicklistTxt__c, &apos;ZCCS&apos;)), 
+NOT(ISPICKVAL(OrderTypePicklistTxt__c, &apos;ZRCS&apos;)), 
+NOT(ISPICKVAL(OrderTypePicklistTxt__c, &apos;ZREP&apos;)), 
+NOT(ISPICKVAL(OrderTypePicklistTxt__c, &apos;ZSUB&apos;)) 
+
+)</errorConditionFormula>
+    <errorMessage>O tipo de ordem escolhido não é permitido para a sua organização de vendas</errorMessage>
+</ValidationRule>

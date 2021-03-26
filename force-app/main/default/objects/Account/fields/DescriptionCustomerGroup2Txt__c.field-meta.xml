@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionCustomerGroup2Txt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição grupo de clientes 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>CustomerGroup2Txt__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TOP 1</fullName>
+                <default>false</default>
+                <label>TOP 1</label>
+            </value>
+            <value>
+                <fullName>TOP 2</fullName>
+                <default>false</default>
+                <label>TOP 2</label>
+            </value>
+            <value>
+                <fullName>TOP Interm Obsoleto</fullName>
+                <default>false</default>
+                <label>TOP Interm Obsoleto</label>
+            </value>
+            <value>
+                <fullName>TOP 0</fullName>
+                <default>false</default>
+                <label>TOP 0</label>
+            </value>
+            <value>
+                <fullName>VIP</fullName>
+                <default>false</default>
+                <label>VIP</label>
+            </value>
+            <value>
+                <fullName>CONQUISTA</fullName>
+                <default>false</default>
+                <label>CONQUISTA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

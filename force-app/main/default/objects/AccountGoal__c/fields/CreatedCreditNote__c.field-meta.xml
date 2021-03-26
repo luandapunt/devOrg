@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreatedCreditNote__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo onde é indicado se a a meta de conta já gerou uma nota de crédito. Utilizado na recuperação de campanha.</description>
+    <externalId>false</externalId>
+    <label>Gerou Nota de Crédito</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

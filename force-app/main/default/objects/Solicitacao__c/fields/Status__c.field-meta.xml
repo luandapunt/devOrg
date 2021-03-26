@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Novo</fullName>
+                <default>true</default>
+                <label>Novo</label>
+            </value>
+            <value>
+                <fullName>Pendente EF</fullName>
+                <default>false</default>
+                <label>Pendente EF</label>
+            </value>
+            <value>
+                <fullName>Pendente ET</fullName>
+                <default>false</default>
+                <label>Pendente ET</label>
+            </value>
+            <value>
+                <fullName>Pendente Execução</fullName>
+                <default>false</default>
+                <label>Pendente Execução</label>
+            </value>
+            <value>
+                <fullName>Em andamento</fullName>
+                <default>false</default>
+                <label>Em andamento</label>
+            </value>
+            <value>
+                <fullName>Executado</fullName>
+                <default>false</default>
+                <label>Executado</label>
+            </value>
+            <value>
+                <fullName>Validar</fullName>
+                <default>false</default>
+                <label>Validar</label>
+            </value>
+            <value>
+                <fullName>Validado</fullName>
+                <default>false</default>
+                <label>Validado</label>
+            </value>
+            <value>
+                <fullName>Backlog</fullName>
+                <default>false</default>
+                <label>Backlog</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

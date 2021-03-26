@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductDistributionChannelTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Canal distribuição produto</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>01-Can.distribuição 01</fullName>
+                <default>false</default>
+                <label>01-Can.distribuição 01</label>
+            </value>
+            <value>
+                <fullName>03-Exportação</fullName>
+                <default>false</default>
+                <label>03-Exportação</label>
+            </value>
+            <value>
+                <fullName>06-Intercompany</fullName>
+                <default>false</default>
+                <label>06-Intercompany</label>
+            </value>
+            <value>
+                <fullName>07-Nacional</fullName>
+                <default>false</default>
+                <label>07-Nacional</label>
+            </value>
+            <value>
+                <fullName>16-Canal Comun</fullName>
+                <default>false</default>
+                <label>16-Canal Comun</label>
+            </value>
+            <value>
+                <fullName>CC-Atendimento Mexichem</fullName>
+                <default>false</default>
+                <label>CC-Atendimento Mexichem</label>
+            </value>
+            <value>
+                <fullName>EX-Exportação</fullName>
+                <default>false</default>
+                <label>EX-Exportação</label>
+            </value>
+            <value>
+                <fullName>RV-Repres/Vendedor</fullName>
+                <default>false</default>
+                <label>RV-Repres/Vendedor</label>
+            </value>
+            <value>
+                <fullName>VD-Venda Direta</fullName>
+                <default>false</default>
+                <label>VD-Venda Direta</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

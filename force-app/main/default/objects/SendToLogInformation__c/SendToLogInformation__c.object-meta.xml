@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>E-mail addresses to which will be sent an e-mail with log results, right after a interface finishes its execution.</description>
+    <enableFeeds>false</enableFeeds>
+    <label>Send To - Log Information</label>
+    <visibility>Public</visibility>
+</CustomObject>

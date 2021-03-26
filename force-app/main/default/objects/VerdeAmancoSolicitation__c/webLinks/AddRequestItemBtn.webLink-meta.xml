@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AddRequestItemBtn</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Adicionar Itens de Solicitação</masterLabel>
+    <openType>sidebar</openType>
+    <page>CreateVerdeAmancoRequestItem</page>
+    <protected>false</protected>
+</WebLink>

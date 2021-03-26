@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendQmToSAP</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Enviar QM</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/apex.js&quot;)}
+{!REQUIRESCRIPT(&apos;//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js&apos;)} 
+{!REQUIRESCRIPT(&apos;//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js&apos;)}
+
+var qm = sforce.connection.query(&quot;Select StatusTxt__c from QM__c where Id = &apos;{!QM__c.Id}&apos; limit 1&quot;);
+qm = qm.getArray(&quot;records&quot;);			
+	
+if(qm[0].StatusTxt__c == &quot;QM com erro&quot; || qm[0].StatusTxt__c == &quot;QM criada Salesforce&quot;) {
+            
+    var modalHtml = &apos;&lt;div&gt;&apos; +
+                        &apos;&lt;img class=&quot;loader&quot; src=&quot;/resource/1462823431000/LoaderStaticResource/loader.gif&quot; style=&quot;width:64px;height:64px;position:absolute;top:50%;left:50%;margin-top:-12px;margin-left:0px;z-index:2;&quot; /&gt;&apos; + 
+                    &apos;&lt;/div&gt;&apos; ;
+				
+    var j$ = jQuery.noConflict();
+    j$(&apos;head&apos;)//.append(&apos;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css&quot; type=&quot;text/css&quot;/&gt;&apos;); 
+    var modalDialog = j$(&apos;&lt;div&gt;&lt;/div&gt;&apos;)
+       .html(modalHtml)
+       .dialog({
+            autoOpen: false,
+            resizable: false,
+            autoResize: true,
+            modal: true,
+            draggable: false
+    });
+ 
+    modalDialog.dialog(&apos;open&apos;);
+
+    var callback = {onSuccess: callResult, onFailure: callResult};
+
+    sforce.apex.execute(&quot;QMService&quot;,&quot;sendSyncToSAP&quot;,{qmId:&quot;{!QM__c.Id}&quot;}, callback);				    
+    
+    function callResult(result) {
+        
+        modalDialog.dialog(&apos;close&apos;);	
+
+        if((&apos;&apos;+result).indexOf(&apos;E_RESPONSE&apos;) != -1 &amp;&amp; (&apos;&apos;+result).indexOf(&apos;100&apos;) != -1) {
+            sforce.apex.execute(&quot;QMBO&quot;,&quot;updateSentStatus&quot;,{qmId:&quot;{!QM__c.Id}&quot;})
+            alert(&apos;QM enviada com sucesso!&apos;);
+            location.reload();
+        }else if((&apos;&apos;+result).indexOf(&apos;E_RESPONSE&apos;) != -1 &amp;&amp; (&apos;&apos;+result).indexOf(&apos;999&apos;) != -1){
+            alert(&apos;Falha no envio da QM, número da qm ou do caso faltante&apos;);
+        }else if((&apos;&apos;+result).indexOf(&apos;E_RESPONSE&apos;) != -1 &amp;&amp; (&apos;&apos;+result).indexOf(&apos;888&apos;) != -1){
+            alert(&apos;Falha, QM ja existe no SAP!&apos;);
+        }else{
+            alert(&apos;Falha no envio da QM, tente novamente!&apos;);
+        }
+    }                                                            
+                                                                
+    
+}</url>
+</WebLink>

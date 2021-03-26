@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SolicitationBlocked</fullName>
+    <active>true</active>
+    <description>Não permite adicionar itens à solicitação caso o status da mesma seja diferente de &quot;Em preenchimento&quot;.</description>
+    <errorConditionFormula>NOT(
+ISPICKVAL(VerdeAmancoSolicitationIdLkp__r.StatusTxt__c , &quot;Em preenchimento&quot;)
+)</errorConditionFormula>
+    <errorMessage>Não é possível adicionar itens à essa solicitação.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FieldRules</fullName>
+    <active>true</active>
+    <description>Determina o número certo de caracteres que deve ser inserido nos campos: Telefone, Celular e CNPJ.</description>
+    <errorConditionFormula>OR(
+      AND(OR( LEN(Phone)&lt;10, LEN(Phone)&gt;15, LEN(Phone)=12,  
+          LEN(Phone)=13),  
+          NOT( ISBLANK(Phone))
+      ),
+      AND(OR( LEN(MobilePhone)&lt;10, LEN(MobilePhone)&gt;15, 
+          LEN(MobilePhone)=12, LEN(MobilePhone)=13),
+          NOT( ISBLANK(MobilePhone)) 
+      ),
+      AND(OR( LEN(CNPJTxt__c)&lt;14, LEN(CNPJTxt__c)&gt;18, 
+          LEN(CNPJTxt__c)=15, LEN(CNPJTxt__c)=16, 
+          LEN(CNPJTxt__c)=17),
+          NOT( ISBLANK(CNPJTxt__c)) 
+      )
+)</errorConditionFormula>
+    <errorMessage>Os seguintes campos devem ser preenchidos com uma quantidade específica de caracteres:
+Telefone: 10 ou 11 caracteres
+Celular: 10 ou 11 caracteres
+CNPJ: 14 caracteres</errorMessage>
+</ValidationRule>

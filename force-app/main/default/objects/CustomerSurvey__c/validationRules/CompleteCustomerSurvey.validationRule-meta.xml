@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompleteCustomerSurvey</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR($Profile.Name=&apos;Vendedor&apos;,$Profile.Name=&apos;Representante&apos;,$Profile.Name=&apos;Representante Partner&apos;) &amp;&amp; 
+( 
+TEXT(PRIORVALUE(StatusTxt__c)) = &apos;Completa&apos; || 
+(TEXT(StatusTxt__c) = &apos;Completa&apos; &amp;&amp; ISCHANGED(RemarkTxt__c)) 
+)</errorConditionFormula>
+    <errorMessage>Não é possível editar uma pesquisa de preço completa.</errorMessage>
+</ValidationRule>

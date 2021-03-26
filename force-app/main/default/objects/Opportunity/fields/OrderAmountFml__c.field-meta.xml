@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OrderAmountFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF((OrderLkp__c != null &amp;&amp; OrderLkp__r.PrimaryBln__c == true), OrderLkp__r.TotalPriceNmb__c, Amount)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Valor Oportunidade</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

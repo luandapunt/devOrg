@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoBrandSelected</fullName>
+    <active>true</active>
+    <errorConditionFormula>(ISNULL(BrandsTxt__c) || ISBLANK(BrandsTxt__c)) &amp;&amp; (ISNULL(OtherBrandsTxt__c) || ISBLANK(OtherBrandsTxt__c))</errorConditionFormula>
+    <errorMessage>Defina ao menos uma marca de produtos para a pesquisa.</errorMessage>
+</ValidationRule>

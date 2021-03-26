@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IndustryTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Setor industrial</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0001</fullName>
+                <default>false</default>
+                <label>Contribuinte</label>
+            </value>
+            <value>
+                <fullName>0002</fullName>
+                <default>false</default>
+                <label>Não Contribuinte</label>
+            </value>
+            <value>
+                <fullName>0003</fullName>
+                <default>false</default>
+                <label>Contribuinte SC</label>
+            </value>
+            <value>
+                <fullName>0004</fullName>
+                <default>false</default>
+                <label>Pró Emprego</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

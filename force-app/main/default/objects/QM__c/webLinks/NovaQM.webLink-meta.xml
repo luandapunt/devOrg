@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NovaQM</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Nova QM</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+
+var QMCaseAccountLkp__c = &quot;&amp;CF00N1500000Gz5LY__lkid=&quot;;
+var QMCaseAccountLkp__r_Name = &quot;&amp;CF00N1500000Gz5LY=&quot;;
+var QMClientContactLkp__c = &quot;&amp;CF00N1500000GyZuh_lkid=&quot;;
+var QMClientContactLkp__r_Name = &quot;&amp;CF00N1500000GyZuh=&quot;;
+var QMTecnicianLkp__c_Name = &quot;&amp;CF00N1500000GyZvC=&quot;;
+var QMTecnicianLkp__c = &quot;&amp;CF00N1500000GyZvC_lkid=&quot;;
+var QMCaseItemName = &quot;&amp;CF00N1500000GyZzK=&quot;;
+var QMCaseItemLkp = &quot;&amp;CF00N1500000GyZzK_lkid=&quot;;
+var QMOrderName = &quot;&amp;CF00N1500000GyZuk=&quot;;
+var QMOrderLkp = &quot;&amp;CF00N1500000GyZuk_lkid=&quot;;
+var QMInvoiceName = &quot;&amp;CF00N1500000GyZus=&quot;;
+var QMInvoiceLkp = &quot;&amp;CF00N1500000GyZus_lkid=&quot;;
+var QMSellerName = &quot;&amp;CF00N1500000Gysoa=&quot;;
+var QMSellerLkp = &quot;&amp;CF00N1500000Gysoa_lkid=&quot;;
+var QMCaseLkp_Name = &quot;&amp;CF00N1500000GyZuf=&quot;;
+var QMCaseLkp = &quot;&amp;CF00N1500000GyZuf_lkid=&quot;;
+
+var caseId = window.location.pathname;
+caseId = caseId.replace(&apos;/&apos;,&apos;&apos;);
+
+var qm = sforce.connection.query(&quot;Select Id from QM__c where CaseLkp__c = &apos;&quot; + caseId + &quot;&apos;&quot;);
+qm = qm.getArray(&quot;records&quot;);
+
+if(qm.length == 0) {
+
+	var caso = sforce.connection.query(&quot;Select CaseNumber, InvoiceLkp__c, InvoiceLkp__r.Name, InvoiceLkp__r.RemittanceLkp__r.OrderLkp__r.Id, RecordTypeId, RecordType.Name,&quot; + 
+                                           &quot;RecordType.DeveloperName, AccountId, Account.Name, Status, TecnicianLkp__c, TecnicianLkp__r.Name, ContactId, Contact.Name, SinisterTxt__c, DevolutionOrderTxt__c from Case where Id = &apos;&quot; + caseId + &quot;&apos; limit 1&quot;);
+	console.log(caso);
+	caso = caso.getArray(&quot;records&quot;);
+	
+        console.log(caso);
+
+	if(caso[0].Status != &quot;Cancelado&quot; &amp;&amp; caso[0].Status != &quot;Encerrado&quot;) {
+	
+		if(caso[0].RecordType.Name == &quot;Reclamação&quot;) {
+			var caseItem = sforce.connection.query(&quot;Select Id, Name from CaseItem__c where CaseMdt__c = &apos;&quot; + caseId + &quot;&apos; limit 1&quot;);
+			caseItem = caseItem.getArray(&quot;records&quot;);			
+			
+			if(caseItem.length &gt; 0) {
+				window.location = window.location.protocol + &apos;//&apos; + window.location.hostname + 
+						(&quot;/setup/ui/recordtypeselect.jsp?ent=01I15000002wJEB&amp;retURL=%2F + caseId + &amp;save_new_url=%2Fa0F%2Fe%3FretURL%3D%252F&quot; + caseId + QMCaseLkp_Name +caso[0].CaseNumber+ QMCaseLkp + caseId +
+						(caso[0].Account.Name ? QMCaseAccountLkp__r_Name + caso[0].Account.Name + QMCaseAccountLkp__c + caso[0].AccountId : &apos;&apos;) + 
+						(caseItem[0].Id ? QMCaseItemName + caseItem[0].Name + QMCaseItemLkp + caseItem[0].Id : &apos;&apos;) + 
+                                                (caso[0].TecnicianLkp__c ? QMTecnicianLkp__c_Name + caso[0].TecnicianLkp__r.Name + QMTecnicianLkp__c + caso[0].TecnicianLkp__c : &apos;&apos;) +
+                                                (caso[0].ContactId ? QMClientContactLkp__r_Name + caso[0].Contact.Name + QMClientContactLkp__c + caso[0].ContactId : &quot;&quot;));
+			} else {
+				alert(&quot;Não é possível criar a QM. Não há¡ Item de caso informado no Caso.&quot;);
+			}
+		} else {
+			
+			var order;
+			
+			if(caso[0].RecordType.Name == &quot;Prorrogação&quot; || caso[0].RecordType.Name == &quot;Transtorno na entrega&quot; ||  caso[0].RecordType.Name == &quot;Sustação&quot; || caso[0].RecordType.Name == &quot;Carta de correção&quot; || caso[0].RecordType.Name == &quot;Extravio de nota fiscal&quot; ||
+                          (caso[0].RecordType.Name == &quot;Sinistro&quot; &amp;&amp; caso[0].SinisterTxt__c &amp;&amp; caso[0].SinisterTxt__c == &quot;Total&quot;)) {
+				order = sforce.connection.query(&quot;Select Id, Name, SellerLkp__c, SellerLkp__r.Name FROM Order__c WHERE Id = &apos;&quot; + caso[0].InvoiceLkp__r.RemittanceLkp__r.OrderLkp__r.Id + &quot;&apos;&quot;);
+			} else {
+				order = sforce.connection.query(&quot;Select Id, Name, SellerLkp__c, SellerLkp__r.Name FROM Order__c WHERE CaseLkp__c = &apos;&quot; + caseId + &quot;&apos; limit 1&quot;);
+			}
+
+			order = order.getArray(&quot;records&quot;);
+			
+			if(order.length &gt; 0) {
+				
+				if(caso[0].InvoiceLkp__c) {
+							
+                                        console.log(&quot;chegou aqui&quot;);   
+					var orderSubstituicao;     
+                                        
+                                        if(caso[0].RecordType.Name == &quot;Substituição&quot;) {
+                                            orderSubstituicao = sforce.connection.query(&quot;Select Id, Name FROM Order__c WHERE Name = &apos;&quot; + caso[0].DevolutionOrderTxt__c + &quot;&apos; limit 1&quot;);                
+                                            orderSubstituicao = orderSubstituicao.getArray(&quot;records&quot;);       
+                                        }
+
+					window.location = window.location.protocol + &apos;//&apos; + window.location.hostname + 
+					(&quot;/setup/ui/recordtypeselect.jsp?ent=01I15000002wJEB&amp;retURL=%2F + caseId + &amp;save_new_url=%2Fa0F%2Fe%3FretURL%3D%252F&quot; + caseId + QMCaseLkp_Name +caso[0].CaseNumber+ QMCaseLkp + caseId +
+					QMInvoiceName + caso[0].InvoiceLkp__r.Name +
+					QMInvoiceLkp + caso[0].InvoiceLkp__c + (order[0].SellerLkp__c ? QMSellerName + order[0].SellerLkp__r.Name + 
+					QMSellerLkp + order[0].SellerLkp__c : &quot;&quot;) +
+                                        (caso[0].RecordType.Name == &quot;Produto trocado&quot; &amp;&amp; caso[0].AccountId ? QMCaseAccountLkp__r_Name + caso[0].Account.Name + QMCaseAccountLkp__c + caso[0].AccountId : &quot;&quot;) +
+                                        (caso[0].RecordType.Name == &quot;Substituição&quot; &amp;&amp; orderSubstituicao.length &gt; 0 ? QMOrderName + orderSubstituicao[0].Name + QMOrderLkp + orderSubstituicao[0].Id : QMOrderName + order[0].Name + QMOrderLkp + order[0].Id));
+					 
+				}else {
+					alert(&quot;Nenhuma nota fiscal vinculada ao caso&quot;);
+				}
+				
+			} else {
+				alert(&quot;Nenhuma ordem vinculada ao caso&quot;);
+			}
+		}
+	} else {
+		alert(&quot;O caso está¡ encerrado, não é possivel criar uma nova QM&quot;);
+	}
+} else {
+	alert(&quot;Não é possivel inserir mais de uma QM por caso.&quot;);
+}</url>
+</WebLink>

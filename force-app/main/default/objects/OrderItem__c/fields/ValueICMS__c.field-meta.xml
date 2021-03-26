@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValueICMS__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OriginalQuantityNmb__c != 0 &amp;&amp; SyncedSAPBln__c = false, 
+( BX13__c / OriginalQuantityNmb__c ) * OrderQuantityNmb__c * (1 - ZPRO__c) * (1 - ZCOT__c) * (1 - ZPVO__c) * (1 - ZVJ1__c) * (1 - ZPME__c) * (1 - ZPSO__c) * (1 - XXES__c) * (1 - ZPXI__c),
+BX13__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ICMS Final</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

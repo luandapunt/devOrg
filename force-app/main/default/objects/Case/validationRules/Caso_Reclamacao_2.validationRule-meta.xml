@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Reclamacao_2</fullName>
+    <active>true</active>
+    <description>Regras referente a status do caso tipo Reclamação.</description>
+    <errorConditionFormula>IF( 
+ByPassBln__c = TRUE,
+OR(	
+	AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando documentos do campo&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aguardando documentos do campo&apos;),
+		ISPICKVAL(Status, &apos;Aguardando cadastro do cliente&apos;), 
+		ISPICKVAL(Status, &apos;Ordem de indenização monetária criada&apos;), 
+		ISPICKVAL(Status, &apos;Ordem de Indenização produto criada&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando cadastro do cliente &apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aguardando cadastro do cliente &apos;),
+		ISPICKVAL(Status, &apos;Ordem de indenização monetária criada&apos;), 
+		ISPICKVAL(Status, &apos;Ordem de Indenização produto criada&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Ordem de Indenização produto criada&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Ordem de Indenização produto criada&apos;),
+		ISPICKVAL(Status, &apos;Aguardando encerramento&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Ordem de indenização monetária criada&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Ordem de indenização monetária criada&apos;),
+		ISPICKVAL(Status, &apos;Aguardando encerramento&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando encerramento&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aguardando encerramento&apos;),
+		ISPICKVAL(Status, &apos;Encerrado&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	)
+), 
+FALSE 
+)</errorConditionFormula>
+    <errorMessage>Reclamação 2: alteração de status não permitida.</errorMessage>
+</ValidationRule>

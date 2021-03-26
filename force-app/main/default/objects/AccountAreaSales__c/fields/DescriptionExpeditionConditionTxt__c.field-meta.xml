@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionExpeditionConditionTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição condição de expedição</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alagoas</fullName>
+                <default>false</default>
+                <label>Alagoas</label>
+            </value>
+            <value>
+                <fullName>Anapolis (Amanco)</fullName>
+                <default>false</default>
+                <label>Anapolis (Amanco)</label>
+            </value>
+            <value>
+                <fullName>Anápolis (Amanco)- I</fullName>
+                <default>false</default>
+                <label>Anápolis (Amanco)- I</label>
+            </value>
+            <value>
+                <fullName>Bahia</fullName>
+                <default>false</default>
+                <label>Bahia</label>
+            </value>
+            <value>
+                <fullName>CO/NO - Especial</fullName>
+                <default>false</default>
+                <label>CO/NO - Especial</label>
+            </value>
+            <value>
+                <fullName>CO/NO / 0700 - Jlle</fullName>
+                <default>false</default>
+                <label>CO/NO / 0700 - Jlle</label>
+            </value>
+            <value>
+                <fullName>Devolução</fullName>
+                <default>false</default>
+                <label>Devolução</label>
+            </value>
+            <value>
+                <fullName>Exportação Amanco</fullName>
+                <default>false</default>
+                <label>Exportação Amanco</label>
+            </value>
+            <value>
+                <fullName>Livre</fullName>
+                <default>false</default>
+                <label>Livre</label>
+            </value>
+            <value>
+                <fullName>Mato Grosso</fullName>
+                <default>false</default>
+                <label>Mato Grosso</label>
+            </value>
+            <value>
+                <fullName>Mato Grosso do Sul</fullName>
+                <default>false</default>
+                <label>Mato Grosso do Sul</label>
+            </value>
+            <value>
+                <fullName>Minas Gerais</fullName>
+                <default>false</default>
+                <label>Minas Gerais</label>
+            </value>
+            <value>
+                <fullName>Montevideo</fullName>
+                <default>false</default>
+                <label>Montevideo</label>
+            </value>
+            <value>
+                <fullName>Nordeste/0700 - Jlle</fullName>
+                <default>false</default>
+                <label>Nordeste/0700 - Jlle</label>
+            </value>
+            <value>
+                <fullName>Nordeste/Norte 0900</fullName>
+                <default>false</default>
+                <label>Nordeste/Norte 0900</label>
+            </value>
+            <value>
+                <fullName>Plas. Suape</fullName>
+                <default>false</default>
+                <label>Plas. Suape</label>
+            </value>
+            <value>
+                <fullName>Plast. PA Maceió</fullName>
+                <default>false</default>
+                <label>Plast. PA Maceió</label>
+            </value>
+            <value>
+                <fullName>retirada</fullName>
+                <default>false</default>
+                <label>retirada</label>
+            </value>
+            <value>
+                <fullName>Rio de Janeiro</fullName>
+                <default>false</default>
+                <label>Rio de Janeiro</label>
+            </value>
+            <value>
+                <fullName>São Paulo</fullName>
+                <default>false</default>
+                <label>São Paulo</label>
+            </value>
+            <value>
+                <fullName>São Paulo - Centro</fullName>
+                <default>false</default>
+                <label>São Paulo - Centro</label>
+            </value>
+            <value>
+                <fullName>São Paulo - Z.Oeste</fullName>
+                <default>false</default>
+                <label>São Paulo - Z.Oeste</label>
+            </value>
+            <value>
+                <fullName>São Paulo - Z.Sul 1</fullName>
+                <default>false</default>
+                <label>São Paulo - Z.Sul 1</label>
+            </value>
+            <value>
+                <fullName>São Paulo - Z.Sul 2</fullName>
+                <default>false</default>
+                <label>São Paulo - Z.Sul 2</label>
+            </value>
+            <value>
+                <fullName>São Paulo- Z.Leste 1</fullName>
+                <default>false</default>
+                <label>São Paulo- Z.Leste 1</label>
+            </value>
+            <value>
+                <fullName>São Paulo -Z.Leste 2</fullName>
+                <default>false</default>
+                <label>São Paulo -Z.Leste 2</label>
+            </value>
+            <value>
+                <fullName>São Paulo-Z.Norte</fullName>
+                <default>false</default>
+                <label>São Paulo-Z.Norte</label>
+            </value>
+            <value>
+                <fullName>standard</fullName>
+                <default>false</default>
+                <label>standard</label>
+            </value>
+            <value>
+                <fullName>Sul</fullName>
+                <default>false</default>
+                <label>Sul</label>
+            </value>
+            <value>
+                <fullName>Sul do Pará</fullName>
+                <default>false</default>
+                <label>Sul do Pará</label>
+            </value>
+            <value>
+                <fullName>Trading Jonville</fullName>
+                <default>false</default>
+                <label>Trading Jonville</label>
+            </value>
+            <value>
+                <fullName>Trading Suape</fullName>
+                <default>false</default>
+                <label>Trading Suape</label>
+            </value>
+            <value>
+                <fullName>Transferência</fullName>
+                <default>false</default>
+                <label>Transferência</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

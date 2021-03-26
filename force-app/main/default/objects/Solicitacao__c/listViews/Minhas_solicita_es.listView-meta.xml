@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minhas_solicita_es</fullName>
+    <columns>NAME</columns>
+    <columns>AssuntoTxt__c</columns>
+    <columns>ShowstopperTxt__c</columns>
+    <columns>TypeTxt__c</columns>
+    <columns>EffortQUALITxt__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Minhas solicitações</label>
+</ListView>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>ChannelLkp__c</columns>
+    <columns>SalesOrganizationTxt__c</columns>
+    <columns>SalesOfficeTxt__c</columns>
+    <columns>ClassificationTxt__c</columns>
+    <columns>ProductLkp__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ChannelLkp__c</field>
+        <operation>equals</operation>
+        <value>vj3</value>
+    </filters>
+    <filters>
+        <field>SalesOfficeTxt__c</field>
+        <operation>equals</operation>
+        <value>0060</value>
+    </filters>
+    <label>Tudo</label>
+</ListView>

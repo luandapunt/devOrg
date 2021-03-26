@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_000</fullName>
+    <active>true</active>
+    <description>Bloqueio de criação de casos via email-to-case</description>
+    <errorConditionFormula>ISPICKVAL(Origin, &apos;Emailtocase&apos;)</errorConditionFormula>
+    <errorMessage>Bloqueada a criação de casos via email-to-case</errorMessage>
+</ValidationRule>

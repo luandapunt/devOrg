@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubcategoryTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-categoria</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Categoria__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Catálogo</fullName>
+                <default>false</default>
+                <label>Catálogo</label>
+            </value>
+            <value>
+                <fullName>Colunas da Lista de itens</fullName>
+                <default>false</default>
+                <label>Colunas da Lista de itens</label>
+            </value>
+            <value>
+                <fullName>Comissões/Frete</fullName>
+                <default>false</default>
+                <label>Comissões/Frete</label>
+            </value>
+            <value>
+                <fullName>Condição de pagamento</fullName>
+                <default>false</default>
+                <label>Condição de pagamento</label>
+            </value>
+            <value>
+                <fullName>Digitação de Itens</fullName>
+                <default>false</default>
+                <label>Digitação de Itens</label>
+            </value>
+            <value>
+                <fullName>Embalagem</fullName>
+                <default>false</default>
+                <label>Embalagem</label>
+            </value>
+            <value>
+                <fullName>Geral</fullName>
+                <default>false</default>
+                <label>Geral</label>
+            </value>
+            <value>
+                <fullName>Importação de itens</fullName>
+                <default>false</default>
+                <label>Importação de itens</label>
+            </value>
+            <value>
+                <fullName>Nota de Crédito</fullName>
+                <default>false</default>
+                <label>Nota de Crédito</label>
+            </value>
+            <value>
+                <fullName>PVC</fullName>
+                <default>false</default>
+                <label>PVC</label>
+            </value>
+            <value>
+                <fullName>Resumo do Pedido</fullName>
+                <default>false</default>
+                <label>Resumo do Pedido</label>
+            </value>
+            <value>
+                <fullName>Resumo Tela de Pedido</fullName>
+                <default>false</default>
+                <label>Resumo Tela de Pedido</label>
+            </value>
+            <value>
+                <fullName>Status do pedido</fullName>
+                <default>false</default>
+                <label>Status do pedido</label>
+            </value>
+            <value>
+                <fullName>Tipo de ordem</fullName>
+                <default>false</default>
+                <label>Tipo de ordem</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Catálogo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Colunas da Lista de itens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Comissões/Frete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Condição de pagamento</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Digitação de Itens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Embalagem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Geral</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Importação de itens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>PVC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Resumo do Pedido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Status do pedido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ordem de venda</controllingFieldValue>
+            <valueName>Tipo de ordem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Campanha de Trd Mkt</controllingFieldValue>
+            <valueName>Nota de Crédito</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

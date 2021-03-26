@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NCTotalApprovedNmb__c</fullName>
+    <externalId>false</externalId>
+    <label>NC Total aprovado</label>
+    <summarizedField>CreditNote__c.Value__c</summarizedField>
+    <summaryFilterItems>
+        <field>CreditNote__c.Type__c</field>
+        <operation>equals</operation>
+        <value>Solicitação</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>CreditNote__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Aprovado</value>
+    </summaryFilterItems>
+    <summaryForeignKey>CreditNote__c.AccountLkp__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

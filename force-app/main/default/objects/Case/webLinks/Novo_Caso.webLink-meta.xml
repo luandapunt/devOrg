@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Novo_Caso</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Novo Caso</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/apex.js&quot;)}
+{!REQUIRESCRIPT(&quot;/support/console/22.0/integration.js&quot;)}
+
+var name = window.location.pathname; 
+
+var sufixUrl = window.location.pathname.replace(&apos;/&apos;,&apos;&apos;).length&gt;=15? 
+					&apos;?accountId=&apos;+window.location.pathname.replace(&apos;/&apos;,&apos;&apos;) : &apos;&apos; ; 
+
+var console = &quot;&amp;inConsole=&quot;;
+					
+//if(sforce.console.isInConsole()) { 
+//	console += &quot;yes&quot;;
+//} else {
+//	console += &quot;no&quot;;
+//}
+
+if (typeof(srcUp) == &apos;function&apos;) {
+	console += &quot;yes&quot;;
+} else {
+	console += &quot;no&quot;;
+}					
+					
+window.location=window.location.protocol + &apos;//&apos; + window.location.hostname +&apos;/apex/CaseMotive&apos;+ sufixUrl + console ;</url>
+</WebLink>

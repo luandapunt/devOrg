@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BidimCarrierSelect</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(CarrierLkp__c &lt;&gt; null,  ClientTransportBln__c = True)</errorConditionFormula>
+    <errorMessage>Os campos Cliente Retira e Motorista não podem estar selecionados simultaneamente.</errorMessage>
+</ValidationRule>

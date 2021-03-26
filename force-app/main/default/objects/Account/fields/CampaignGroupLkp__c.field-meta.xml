@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CampaignGroupLkp__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Agrupamento de campanha que a Conta faz parte. Utilizado para as campanhas de Trade Marketing</description>
+    <externalId>false</externalId>
+    <label>Agrupamento de Campanha</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Agrupamento de Campanha</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Contas do Agrupamento de Campanha</relationshipLabel>
+    <relationshipName>GroupAccounts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

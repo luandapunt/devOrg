@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QMDevolucaoTotalCliente</fullName>
+    <active>true</active>
+    <description>QM de devolução total com Nota fiscal do cliente.</description>
+    <label>Devolução total NF cliente</label>
+    <picklistValues>
+        <picklist>ComplaintReasonTxt__c</picklist>
+        <values>
+            <fullName>04-Expedição</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06-Produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07-Representante%2FVendedor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08-Transportadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09-Planejamento Logístico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11-Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12-Atendimento Amanco 0800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14-Cadastro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15-Fiscal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DevolutionTxt__c</picklist>
+        <values>
+            <fullName>Total</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ManufacturingCenterTxt__c</picklist>
+        <values>
+            <fullName>0100-SUMARE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0300-UBERABA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0600-CONEXOES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0700-ACESSORIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0850-AP%2EGOIANIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0870-ANAPOLIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0900-SUAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR10-MEXICHEM TRADING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR20-SUAPE TRADING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR30-BIDIM%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR31-PLASTUBOS MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR33-PLASTUBOS AL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NonConformityTxt__c</picklist>
+        <values>
+            <fullName>---ATENDIMENTO AMANCO 0800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>---Cadastro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>---Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>---Expedição</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>---Fiscal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>---Planejamento Logístico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>---Produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>---Representante%2FVendedor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>---Transportadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0401-Código de barras trocado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0401-Produto faltante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0402-Produto a mais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0403-Produto trocado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0403-Produto trocado%2C diferente da NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0404-Volume com etiqueta trocada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0405-Atraso no embarque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0405-Pedido faturado sem inspeção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0406-Agendamento não cumprido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0407-Código de barras trocado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0408-Faturamento antecipado %2F Fechamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0408-Produto danificado no embarque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0409-Demora no faturamento da remessa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0409-SUSTAR DUPLICATA DA NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0411-Etiqueta trocada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0412-Faturado sem estoque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0414-Material Não Embarcou</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0601-Código de barras divergente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0601-Embalagem com produto trocado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0601-Prazo de validade vencido%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0602-Falta dentro emb prim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0602-Prazo de validade vencido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0602-Problema com a embalagem%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0603-Problema com a embalagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0603-Produto com problema de fabricação%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0604-Código de barras divergente%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0604-Produto com problema de fabricação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0605-Código de barras divergente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0606-Validade muito próxima%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0607-Cor fora de padrão%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0610-Deformação%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0611-Espessura menor%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0612-Produto queimado%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0613-Produto trincado%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0614-Produto amassado%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0615-Produto quebrado%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0616-Produto furado%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0617-Danificado dentro da embalagem%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0618-Produto danificado%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0619-Produto evaporou%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0621-Produto c%2F Vazamento%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0623-Desbitolamento%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0624-Produto não aquece%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0625-Produto não liga%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0626-Liga e não puxa água%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0627-Prod ventuinha presa%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0628-Produto com Bolha%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0630-Porosidade%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0631-Dilatação excessiva%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0638-Problema com a embalagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0701-Cadastro incorreto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0701-Falta de visita %2F contato</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0702-Cliente não fez pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0703-Pedido cancelado e faturado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0704-Digitação incorreta - item%2Fqtd%2Fcond%2Fdata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0704-Pedido sem programação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0705-Cadastro incorreto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0705-Duplicidade de pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0706-Cliente não fez pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0707-Condição pgto em desacordo com pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0707-Local de entrega diferente da NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0708-Digitação incorreta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0709-Duplicidade de pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0709-Pedido cancelado e faturado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0710-Pedido para cliente incorreto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0711-Preço em desacordo com o pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0712-Local de entrega diferente da NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0714-Desmembramento de Duplicata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0714-Negociação comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0717-Pedido não programado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0719-Não solicitou fornecimento completo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0720-Negociação Comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0801-Atraso de entrega da transportadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0801-Produto danificado no transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0801-Transportadora não localizou endereço</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0802-Extravio de volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0802-Produto danificado no transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0803-Embalagem danificada no Transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0803-Extravio de volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0803-Sinistro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0804-Atraso de entrega%2FAgendamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0805-Sinistro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0806-Troca de volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0807-Extravio Total</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0809-Reclamação de Agendamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0809-Volume trocado no transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0810-Transtornos na entrega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0812-Transp%2E Não coletou material de Zsub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0814-Realocação de carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0815-Embalagem danificada no transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0815-Extravio Total</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0816-Sustar duplicata na NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0816-Transportadora não fez a entrega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0817-Sustar-Cliente nao reconheçe assinatura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0819-Produto Faltante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0901-Demora no faturam%2E por falta de produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0903-Quebra incorreta de remessa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0905-Faturado pelo centro incorreto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0906-Faturamento antecipado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1102-Cliente ñ aceita faturam%2E parcial%2Fsaldo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1102-Pedido cancelado e faturado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1103-Negociação comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1104-Cliente solicitou item errado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1104-Negociação Comercial SUFRAMA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1105-Acordo - Causas Naturais%2FFiscais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1105-Negociação comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1106-Cliente reteve CTRC%2FCanhoto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1108-Cliente não retirou o material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1110-Local de entrega diferente da NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1111-Cliente desistiu da compra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1112-Atraso embarque pgto Guia ST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1113-Não habilitado na Suframa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1114-Não Agendou dentro do Prazo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1115-Local de Entrega Errado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1116-Cliente s%2F espaço fis%2E%2C solic reentrega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1117-Pedido divergente%2Frecusa na entrega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1118-Atraso pagamento DAE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1119-Fechado%2FFeriado Regional%2FGreve Nacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1203-Digitação incorreta - item%2Fqtd%2Fcond%2Fdata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1206-Falta de retorno de informação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1207-Pedido cancelado e faturado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1209-Digitação incorreta %28interna%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1210-Pedido sem progamação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1213-Duplicidade de pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1214-Pedido para cliente incorreto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1216-Local de entrega diferente da NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1217-Pedido não programado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1218-condição de pagamento errada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1220-Elogio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1401-Falha de digitação no cadastro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1501-Cadastro incorreto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1502-Item incorreto %28Imposto%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1503-Mudança na regra do imposto no Estado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OriginTxt__c</picklist>
+        <values>
+            <fullName>0800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reclame aqui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PriorityTxt__c</picklist>
+        <values>
+            <fullName>Baixa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RecordTxt__c</picklist>
+        <values>
+            <fullName>Devolução</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reclamação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Substituição</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatusTxt__c</picklist>
+        <values>
+            <fullName>QM com erro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QM criada SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QM criada Salesforce</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>QM enviada SAP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

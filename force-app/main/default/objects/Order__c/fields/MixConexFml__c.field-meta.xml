@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MixConexFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TotalROLConexNmb__c != 0 || ROLTubesNmb__c != 0,
+TotalROLConexNmb__c  / (TotalROLConexNmb__c  + ROLTubesNmb__c),
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mix Conexão</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

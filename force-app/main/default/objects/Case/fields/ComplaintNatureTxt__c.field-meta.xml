@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ComplaintNatureTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Natureza da reclamação</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>04-Expedição</fullName>
+                <default>false</default>
+                <label>04-Expedição</label>
+            </value>
+            <value>
+                <fullName>06-Produto</fullName>
+                <default>false</default>
+                <label>06-Produto</label>
+            </value>
+            <value>
+                <fullName>07-Representante/Vendedor</fullName>
+                <default>false</default>
+                <label>07-Representante/Vendedor</label>
+            </value>
+            <value>
+                <fullName>08-Transportadora</fullName>
+                <default>false</default>
+                <label>08-Transportadora</label>
+            </value>
+            <value>
+                <fullName>09-Planejamento Logístico</fullName>
+                <default>false</default>
+                <label>09-Planejamento Logístico</label>
+            </value>
+            <value>
+                <fullName>11-Cliente</fullName>
+                <default>false</default>
+                <label>11-Cliente</label>
+            </value>
+            <value>
+                <fullName>12-Atendimento Amanco 0800</fullName>
+                <default>false</default>
+                <label>12-Atendimento Amanco 0800</label>
+            </value>
+            <value>
+                <fullName>14-Cadastro</fullName>
+                <default>false</default>
+                <label>14-Cadastro</label>
+            </value>
+            <value>
+                <fullName>15-Fiscal</fullName>
+                <default>false</default>
+                <label>15-Fiscal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

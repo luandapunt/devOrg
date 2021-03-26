@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductSalesTeamTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Equipe vendas produto</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>001-Vendedor Interno</fullName>
+                <default>false</default>
+                <label>001-Vendedor Interno</label>
+            </value>
+            <value>
+                <fullName>002-Representante</fullName>
+                <default>false</default>
+                <label>002-Representante</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

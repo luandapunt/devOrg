@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bloqueio_Ordem_Canal</fullName>
+    <columns>ChannelPVCLkp__c</columns>
+    <columns>OrderTypeLkp__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>BlockedItem__c.OrderTypeBlockRT</value>
+    </filters>
+    <label>Bloqueio Ordem Canal</label>
+</ListView>

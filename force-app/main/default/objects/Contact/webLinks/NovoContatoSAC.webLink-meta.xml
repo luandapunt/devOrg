@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NovoContatoSAC</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Novo contato SAC</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+
+var checktoUpdate = new sforce.SObject(&quot;Account&quot;); 
+checktoUpdate.Id = &quot;{!Account.Id}&quot;; 
+window.location.reload(true);
+
+window.location.assign(&quot;https://cs70.salesforce.com/003/e?retURL=&amp;accid={!Account.Id}&amp;RecordType=01215000000XBb0&amp;ent=Contact&quot;)</url>
+</WebLink>

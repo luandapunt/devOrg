@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MainAccountLkp__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Conta principal do Agrupamento de Campanha.</description>
+    <externalId>false</externalId>
+    <label>Conta Principal</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Conta Principal</relationshipLabel>
+    <relationshipName>MainAccount</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IntegrationMap__c</fullName>
+    <externalId>false</externalId>
+    <label>Mapa de integração</label>
+    <referenceTo>IntegrationMap__c</referenceTo>
+    <relationshipLabel>Mapa de integração items</relationshipLabel>
+    <relationshipName>IntegrationMapItems</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

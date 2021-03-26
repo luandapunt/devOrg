@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ManufacturingCenterTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Centro de fabricação</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0100-Fábrica de Sumaré</fullName>
+                <default>false</default>
+                <label>0100-Fábrica de Sumaré</label>
+            </value>
+            <value>
+                <fullName>0600-Fábrica de Joinville - Floresta</fullName>
+                <default>false</default>
+                <label>0600-Fábrica de Joinville - Floresta</label>
+            </value>
+            <value>
+                <fullName>0700-Fábrica de Joinville - Glória</fullName>
+                <default>false</default>
+                <label>0700-Fábrica de Joinville - Glória</label>
+            </value>
+            <value>
+                <fullName>0870-Fábrica de Anápolis</fullName>
+                <default>false</default>
+                <label>0870-Fábrica de Anápolis</label>
+            </value>
+            <value>
+                <fullName>0900-Fábrica de Suape</fullName>
+                <default>false</default>
+                <label>0900-Fábrica de Suape</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

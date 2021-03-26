@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidityFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH(LimitDate__c), 
+01,&quot;Janeiro&quot;, 
+02,&quot;Fevereiro&quot;, 
+03,&quot;Março&quot;, 
+04,&quot;Abril&quot;, 
+05,&quot;Maio&quot;, 
+06,&quot;Junho&quot;, 
+07,&quot;Julho&quot;, 
+08,&quot;Agosto&quot;, 
+09,&quot;Setembro&quot;, 
+10,&quot;Outubro&quot;, 
+11,&quot;Novembro&quot;, 
+12,&quot;Dezembro&quot;, 
+null 
+) + &quot; &quot; + 
+TEXT(YEAR(LimitDate__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Vigência</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QMSustacao</fullName>
+    <active>true</active>
+    <description>QM para sustar NF não recebida.</description>
+    <label>Sustação</label>
+    <picklistValues>
+        <picklist>ComplaintReasonTxt__c</picklist>
+        <values>
+            <fullName>04-Expedição</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08-Transportadora</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DevolutionTxt__c</picklist>
+        <values>
+            <fullName>Parcial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ManufacturingCenterTxt__c</picklist>
+        <values>
+            <fullName>0100-SUMARE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0300-UBERABA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0600-CONEXOES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0700-ACESSORIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0850-AP%2EGOIANIA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0870-ANAPOLIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0900-SUAPE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR10-MEXICHEM TRADING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR20-SUAPE TRADING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR30-BIDIM%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR31-PLASTUBOS MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BR33-PLASTUBOS AL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NonConformityTxt__c</picklist>
+        <values>
+            <fullName>---Expedição</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>---Transportadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0401-Código de barras trocado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0401-Produto faltante</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0402-Produto a mais</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0403-Produto trocado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0403-Produto trocado%2C diferente da NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0404-Volume com etiqueta trocada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0405-Atraso no embarque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0405-Pedido faturado sem inspeção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0406-Agendamento não cumprido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0407-Código de barras trocado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0408-Faturamento antecipado %2F Fechamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0408-Produto danificado no embarque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0409-Demora no faturamento da remessa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0409-SUSTAR DUPLICATA DA NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0411-Etiqueta trocada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0412-Faturado sem estoque</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0414-Material Não Embarcou</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0801-Atraso de entrega da transportadora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0801-Produto danificado no transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0801-Transportadora não localizou endereço</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0802-Extravio de volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0802-Produto danificado no transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0803-Embalagem danificada no Transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0803-Extravio de volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0803-Sinistro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0804-Atraso de entrega%2FAgendamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0805-Sinistro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0806-Troca de volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0807-Extravio Total</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0809-Reclamação de Agendamento</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0809-Volume trocado no transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0810-Transtornos na entrega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0812-Transp%2E Não coletou material de Zsub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0814-Realocação de carga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0815-Embalagem danificada no transporte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0815-Extravio Total</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0816-Sustar duplicata na NF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0816-Transportadora não fez a entrega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0817-Sustar-Cliente nao reconheçe assinatura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0819-Produto Faltante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>OriginTxt__c</picklist>
+        <values>
+            <fullName>0800</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reclame aqui</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PriorityTxt__c</picklist>
+        <values>
+            <fullName>Baixa</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RecordTxt__c</picklist>
+        <values>
+            <fullName>Reclamação</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>StatusTxt__c</picklist>
+        <values>
+            <fullName>QM com erro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QM criada SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QM criada Salesforce</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>QM enviada SAP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

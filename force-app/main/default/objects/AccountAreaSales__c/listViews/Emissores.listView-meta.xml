@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Emissores</fullName>
+    <columns>SalesOrgAccFml__c</columns>
+    <columns>SAPCodeFml__c</columns>
+    <columns>ShortNameFml__c</columns>
+    <columns>ChannelLkp__c</columns>
+    <columns>AccountGroupFml__c</columns>
+    <columns>BillingStateFml__c</columns>
+    <columns>BillingCityFml__c</columns>
+    <columns>BillingDistrictFml__c</columns>
+    <columns>AccountAddressTxt__c</columns>
+    <columns>PostalAddressTxt__c</columns>
+    <columns>AccountPhoneNumberNmb__c</columns>
+    <columns>CNPJTxt__c</columns>
+    <columns>SellerLkp__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AccountTypeFml__c</field>
+        <operation>equals</operation>
+        <value>Emissor</value>
+    </filters>
+    <label>Todos</label>
+</ListView>

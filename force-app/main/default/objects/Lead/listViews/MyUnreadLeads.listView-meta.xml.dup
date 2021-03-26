@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyUnreadLeads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>SalesOrganizationTxt__c</columns>
+    <columns>LeadAddressTxt__c</columns>
+    <columns>CNPJTxt__c</columns>
+    <columns>LEAD.ZIP</columns>
+    <columns>LEAD.PHONE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.UNREAD</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Meus Novos Clientes Não lidos</label>
+</ListView>

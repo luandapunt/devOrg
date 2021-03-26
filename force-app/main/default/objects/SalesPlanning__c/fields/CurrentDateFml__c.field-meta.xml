@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CurrentDateFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>DATE(VALUE(TEXT(CurrentYearTxt__c)),
+VALUE(TEXT(CurrentMonthTxt__c))
+,1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Data de Vigência</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

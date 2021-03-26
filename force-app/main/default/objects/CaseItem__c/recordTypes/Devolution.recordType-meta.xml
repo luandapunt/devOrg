@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Devolution</fullName>
+    <active>false</active>
+    <description>Tipo de itens referente a devolução de produtos.</description>
+    <label>Devolução</label>
+    <picklistValues>
+        <picklist>FailureTypeTxt__c</picklist>
+        <values>
+            <fullName>Extravio de produto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extravio de volume</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negociação comercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produto faltante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ManufacturingCenterTxt__c</picklist>
+        <values>
+            <fullName>0100-Fábrica de Sumaré</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0600-Fábrica de Joinville - Floresta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0700-Fábrica de Joinville - Glória</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0870-Fábrica de Anápolis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0900-Fábrica de Suape</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductActivitySectorTxt__c</picklist>
+        <values>
+            <fullName>01-Família produtos 01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46-Setor Comum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54-Serviços</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B1-Broker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO-Composto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CR-Construção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EB-Embalagem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GE-Geomecânico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA-Industria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID-Item Descontinuado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IE-Infra-Estrutura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN-Industrial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IR-Irrigação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MM-Material Manutenção</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MP-Matéria Prima</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PR-Predial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RF-Refugo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC-Sucata</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SE-Serviço</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductDistributionChannelTxt__c</picklist>
+        <values>
+            <fullName>01-Can%2Edistribuição 01</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03-Exportação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06-Intercompany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07-Nacional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16-Canal Comun</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CC-Atendimento Mexichem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EX-Exportação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RV-Repres%2FVendedor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VD-Venda Direta</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductSalesOfficeTxt__c</picklist>
+        <values>
+            <fullName>0010-Regional Sul</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0020-Regional SP Capital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0030-Regional RJ%2FES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0040-Regional Nordeste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0050-Regional SP Interior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0060-Regional MG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0070-REgional CO%2FNO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0090-Venda Direta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0100-Exportação</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0110-Regional Irriga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0120-Regional Construtora</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0130-Reg Infra Industria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0140-Alphagary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0150-Regional Infra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0160-Assistência Técnica</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductSalesOrganizationTxt__c</picklist>
+        <values>
+            <fullName>0099-BIDIM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0125-DOUTORES DA CONST%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0141-ALPHAGARY CORP%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0143-PLASTUBOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0147-MEXICHEM TRADING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>0155-BR - CredConstrução</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AM01-AMANCO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PL01-OrgV Plastubos</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ProductSalesTeamTxt__c</picklist>
+        <values>
+            <fullName>001-Vendedor Interno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>002-Representante</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

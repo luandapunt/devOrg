@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAC Informações gerais</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Em análise</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Encerrado</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

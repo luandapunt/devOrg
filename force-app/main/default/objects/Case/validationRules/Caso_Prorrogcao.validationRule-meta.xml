@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Prorrogcao</fullName>
+    <active>true</active>
+    <description>Regras referente a status do caso tipo Prorrogação.</description>
+    <errorConditionFormula>IF( 
+ByPassBln__c = TRUE,
+OR(
+	AND(
+		ISNEW(),
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		RecordType.Name = &apos;Prorrogação&apos;,
+		NOT (ISPICKVAL( Type , &apos;Atraso na entrega&apos;)),
+		IF(NOT(ISPICKVAL(Status, &apos;Em análise&apos;)), true, false) 
+	),
+	AND(
+		RecordType.Name = &apos;Prorrogação&apos;, 
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		NOT (ISPICKVAL( Type , &apos;Atraso na entrega&apos;)),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Em análise&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Em análise&apos;), 
+		ISPICKVAL(Status, &apos;QM em andamento&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND(
+		RecordType.Name = &apos;Prorrogação&apos;, 
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		NOT (ISPICKVAL( Type , &apos;Atraso na entrega&apos;)),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;QM em andamento&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;QM em andamento&apos;), 
+		ISPICKVAL(Status, &apos;Aguardando encerramento&apos;), 
+		ISPICKVAL(Status, &apos;Encerrado&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND(
+		RecordType.Name = &apos;Prorrogação&apos;, 
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+		NOT (ISPICKVAL( Type , &apos;Atraso na entrega&apos;)),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando encerramento&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Aguardando encerramento&apos;), 
+		ISPICKVAL(Status, &apos;Encerrado&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	)
+), 
+FALSE 
+)</errorConditionFormula>
+    <errorMessage>Prorrogação: alteração de status não permitida.</errorMessage>
+</ValidationRule>

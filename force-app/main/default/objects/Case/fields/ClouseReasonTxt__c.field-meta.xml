@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClouseReasonTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo do encerramento</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Crédito liberado</fullName>
+                <default>false</default>
+                <label>Crédito liberado</label>
+            </value>
+            <value>
+                <fullName>Improcedente</fullName>
+                <default>false</default>
+                <label>Improcedente</label>
+            </value>
+            <value>
+                <fullName>Negociação comercial</fullName>
+                <default>false</default>
+                <label>Negociação comercial</label>
+            </value>
+            <value>
+                <fullName>Ordem cancelada</fullName>
+                <default>false</default>
+                <label>Ordem cancelada</label>
+            </value>
+            <value>
+                <fullName>Pedido alterado</fullName>
+                <default>false</default>
+                <label>Pedido alterado</label>
+            </value>
+            <value>
+                <fullName>Pedido cancelado</fullName>
+                <default>false</default>
+                <label>Pedido cancelado</label>
+            </value>
+            <value>
+                <fullName>Prorrogação atendida</fullName>
+                <default>false</default>
+                <label>Prorrogação atendida</label>
+            </value>
+            <value>
+                <fullName>Reclamação não procede</fullName>
+                <default>false</default>
+                <label>Reclamação não procede</label>
+            </value>
+            <value>
+                <fullName>Nota fiscal entregue</fullName>
+                <default>false</default>
+                <label>Nota fiscal entregue</label>
+            </value>
+            <value>
+                <fullName>Reposição reprovada</fullName>
+                <default>false</default>
+                <label>Reposição reprovada</label>
+            </value>
+            <value>
+                <fullName>Sucesso</fullName>
+                <default>false</default>
+                <label>Sucesso</label>
+            </value>
+            <value>
+                <fullName>Termo de quitação recebido</fullName>
+                <default>false</default>
+                <label>Termo de quitação recebido</label>
+            </value>
+            <value>
+                <fullName>Informado por email</fullName>
+                <default>false</default>
+                <label>Informado por email</label>
+            </value>
+            <value>
+                <fullName>Informado por telefone</fullName>
+                <default>false</default>
+                <label>Informado por telefone</label>
+            </value>
+            <value>
+                <fullName>Sinistro total</fullName>
+                <default>false</default>
+                <label>Sinistro total</label>
+            </value>
+            <value>
+                <fullName>Sinistro parcial</fullName>
+                <default>false</default>
+                <label>Sinistro parcial</label>
+            </value>
+            <value>
+                <fullName>Ordem em duplicidade</fullName>
+                <default>false</default>
+                <label>Ordem em duplicidade</label>
+            </value>
+            <value>
+                <fullName>Solicitação do vendedor</fullName>
+                <default>false</default>
+                <label>Solicitação do vendedor</label>
+            </value>
+            <value>
+                <fullName>Substituição reprovada</fullName>
+                <default>false</default>
+                <label>Substituição reprovada</label>
+            </value>
+            <value>
+                <fullName>Substituição efetuada</fullName>
+                <default>false</default>
+                <label>Substituição efetuada</label>
+            </value>
+            <value>
+                <fullName>Revertido vendedor</fullName>
+                <default>false</default>
+                <label>Revertido vendedor</label>
+            </value>
+            <value>
+                <fullName>Revertido analista</fullName>
+                <default>false</default>
+                <label>Revertido analista</label>
+            </value>
+            <value>
+                <fullName>NFC de Devolução Incorreta</fullName>
+                <default>false</default>
+                <label>NFC de Devolução Incorreta</label>
+            </value>
+            <value>
+                <fullName>Devolução não Aprovada</fullName>
+                <default>false</default>
+                <label>Devolução não Aprovada</label>
+            </value>
+            <value>
+                <fullName>Novo pedido entregue ao cliente</fullName>
+                <default>false</default>
+                <label>Novo pedido entregue ao cliente</label>
+            </value>
+            <value>
+                <fullName>Cliente não aceitou novo pedido</fullName>
+                <default>false</default>
+                <label>Cliente não aceitou novo pedido</label>
+            </value>
+            <value>
+                <fullName>Transportadora localizou mercadoria</fullName>
+                <default>false</default>
+                <label>Transportadora localizou mercadoria</label>
+            </value>
+            <value>
+                <fullName>Indicação de BNDES realizada</fullName>
+                <default>false</default>
+                <label>Indicação de BNDES realizada</label>
+            </value>
+            <value>
+                <fullName>Indicação de BNDES não realizada</fullName>
+                <default>false</default>
+                <label>Indicação de BNDES não realizada</label>
+            </value>
+            <value>
+                <fullName>Carta de correção enviada</fullName>
+                <default>false</default>
+                <label>Carta de correção enviada</label>
+            </value>
+            <value>
+                <fullName>Solicitação não procede</fullName>
+                <default>false</default>
+                <label>Solicitação não procede</label>
+            </value>
+            <value>
+                <fullName>Contato do vendedor informado</fullName>
+                <default>false</default>
+                <label>Contato do vendedor informado</label>
+            </value>
+            <value>
+                <fullName>Informações fornecidas</fullName>
+                <default>false</default>
+                <label>Informações fornecidas</label>
+            </value>
+            <value>
+                <fullName>Solicitação não autorizada</fullName>
+                <default>false</default>
+                <label>Solicitação não autorizada</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Ordem cancelada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Reclamação não procede</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Reposição reprovada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Ordem em duplicidade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Solicitação do vendedor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Substituição reprovada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>NFC de Devolução Incorreta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Devolução não Aprovada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Cliente não aceitou novo pedido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Transportadora localizou mercadoria</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Indicação de BNDES não realizada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Solicitação não procede</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cancelado</controllingFieldValue>
+            <valueName>Solicitação não autorizada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Crédito liberado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Improcedente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Negociação comercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Pedido alterado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Pedido cancelado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Prorrogação atendida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Nota fiscal entregue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Termo de quitação recebido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Informado por email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Informado por telefone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Sinistro total</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Sinistro parcial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Substituição efetuada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Revertido vendedor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Revertido analista</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Novo pedido entregue ao cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Indicação de BNDES realizada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Carta de correção enviada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Contato do vendedor informado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Encerrado</controllingFieldValue>
+            <valueName>Informações fornecidas</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

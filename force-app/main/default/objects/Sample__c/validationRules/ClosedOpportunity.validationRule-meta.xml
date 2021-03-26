@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosedOpportunity</fullName>
+    <active>true</active>
+    <errorConditionFormula>TEXT(Opportunity__r.StageName) == &apos;Ganho&apos; || 
+TEXT(Opportunity__r.StageName) == &apos;Perdido&apos;</errorConditionFormula>
+    <errorMessage>Não é possível criar uma amostra para uma oportunidade fechada.</errorMessage>
+</ValidationRule>

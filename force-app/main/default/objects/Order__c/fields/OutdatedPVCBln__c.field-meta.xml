@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OutdatedPVCBln__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo que indica se o PVC está desatualizado, com dados do mês anterior.</description>
+    <externalId>false</externalId>
+    <label>PVC Desatualizado</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

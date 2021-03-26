@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Devolucao_4</fullName>
+    <active>true</active>
+    <description>Regras referente a status do caso tipo Devolução 4 Pós.</description>
+    <errorConditionFormula>IF( 
+ByPassBln__c = TRUE,
+OR(
+	AND(
+		ISNEW(),
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+                OR ( ISPICKVAL( Reason , &apos;Extravio de volume&apos;),
+                     ISPICKVAL( Reason , &apos;Produto faltante&apos;)),
+		RecordType.Name = &apos;Devolução&apos;,
+		ISPICKVAL( DeliveryTxt__c , &apos;Pós&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aberto&apos;),
+		ISPICKVAL(Status, &apos;Aguardando nota fiscal de devolução&apos;))) , true, false)
+	),
+	AND( 
+		RecordType.Name = &apos;Devolução&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+                OR ( ISPICKVAL( Reason , &apos;Extravio de volume&apos;),
+                     ISPICKVAL( Reason , &apos;Produto faltante&apos;)),
+		ISPICKVAL( DeliveryTxt__c , &apos;Pós&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando nota fiscal de devolução&apos;), 
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aguardando nota fiscal de devolução&apos;), 
+		ISPICKVAL(Status, &apos;Ordem de devolução criada&apos;),
+		ISPICKVAL(Status, &apos;Ordem devolução simbólica criada&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND( 
+		RecordType.Name = &apos;Devolução&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+                OR ( ISPICKVAL( Reason , &apos;Extravio de volume&apos;),
+                     ISPICKVAL( Reason , &apos;Produto faltante&apos;)),
+		ISPICKVAL( DeliveryTxt__c , &apos;Pós&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Ordem de devolução criada&apos;), 
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Ordem de devolução criada&apos;), 
+		ISPICKVAL(Status, &apos;QM em andamento&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND( 
+		RecordType.Name = &apos;Devolução&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+                OR ( ISPICKVAL( Reason , &apos;Extravio de volume&apos;),
+                     ISPICKVAL( Reason , &apos;Produto faltante&apos;)),
+		ISPICKVAL( DeliveryTxt__c , &apos;Pós&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;QM em andamento&apos;), 
+		IF(NOT(OR( ISPICKVAL(Status, &apos;QM em andamento&apos;), 
+		ISPICKVAL(Status, &apos;Aguardando encerramento&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND( 
+		RecordType.Name = &apos;Devolução&apos;,
+                $Profile.Name!= &apos;Interface Salesforce&apos;, 
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+                $Profile.Name!= &apos;Administrador do sistema&apos;, 
+                OR ( ISPICKVAL( Reason , &apos;Extravio de volume&apos;),
+                     ISPICKVAL( Reason , &apos;Produto faltante&apos;)),
+		ISPICKVAL( DeliveryTxt__c , &apos;Pós&apos;),
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando encerramento&apos;), 
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aguardando encerramento&apos;), 
+		ISPICKVAL(Status, &apos;Encerrado&apos;),
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	)
+), 
+FALSE 
+)</errorConditionFormula>
+    <errorMessage>Devolução 4 Pós: alteração de status não permitida.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionICMSTaxPayerTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição ICMS Tax Payer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>ICMSTaxPayerTxt__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Contribuinte ICMS</fullName>
+                <default>false</default>
+                <label>Contribuinte ICMS</label>
+            </value>
+            <value>
+                <fullName>Contribuinte isento IE</fullName>
+                <default>false</default>
+                <label>Contribuinte isento IE</label>
+            </value>
+            <value>
+                <fullName>Não Contribuinte</fullName>
+                <default>false</default>
+                <label>Não Contribuinte</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Contribuinte ICMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Contribuinte isento IE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>001</controllingFieldValue>
+            <valueName>Não Contribuinte</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicita_es_Impeditivos_Erros_Gui</fullName>
+    <booleanFilter>(1 OR 2)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Categoria__c</columns>
+    <columns>AssuntoTxt__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ShowstopperTxt__c</field>
+        <operation>equals</operation>
+        <value>Sim</value>
+    </filters>
+    <filters>
+        <field>TypeTxt__c</field>
+        <operation>equals</operation>
+        <value>Erro</value>
+    </filters>
+    <label>Solicitações - Impeditivos/Erros</label>
+</ListView>

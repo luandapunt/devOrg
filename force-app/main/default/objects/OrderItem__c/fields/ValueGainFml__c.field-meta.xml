@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValueGainFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OriginalQuantityNmb__c != 0, 
+(( ZGAB__c/ OriginalQuantityNmb__c ) - (LiquidNmb__c/OriginalQuantityNmb__c - ValueROLFml__c/OrderQuantityNmb__c)) * OrderQuantityNmb__c ,
+ZGAB__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Ganho Absoluto Final</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

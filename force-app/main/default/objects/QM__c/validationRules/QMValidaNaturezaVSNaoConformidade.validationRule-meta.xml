@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QMValidaNaturezaVSNaoConformidade</fullName>
+    <active>true</active>
+    <description>Valida se as não conformidades pertencem a Natureza da reclamação selecionada.</description>
+    <errorConditionFormula>IF(  
+       ISPICKVAL(ComplaintReasonTxt__c  , &quot;04-Expedição&quot;)   ,
+	   NOT(BEGINS(Text(NonConformityTxt__c) , &quot;04&quot;)) ,
+	   IF(ISPICKVAL(ComplaintReasonTxt__c  , &quot;06-Produto&quot;)   ,
+	    NOT(BEGINS(Text(NonConformityTxt__c) , &quot;06&quot;)) ,	   
+	   IF(ISPICKVAL(ComplaintReasonTxt__c  , &quot;07-Representante/Vendedor&quot;)   ,
+	    NOT(BEGINS(Text(NonConformityTxt__c) , &quot;07&quot;)) ,	   
+	   IF(ISPICKVAL(ComplaintReasonTxt__c  , &quot;08-Transportadora&quot;)   ,
+	    NOT(BEGINS(Text(NonConformityTxt__c) , &quot;08&quot;)) ,	   
+	   IF(ISPICKVAL(ComplaintReasonTxt__c  , &quot;09-Planejamento Logístico&quot;)   ,
+	    NOT(BEGINS(Text(NonConformityTxt__c) , &quot;09&quot;)) ,	   
+	   IF(ISPICKVAL(ComplaintReasonTxt__c  , &quot;11-Cliente&quot;)   ,
+	    NOT(BEGINS(Text(NonConformityTxt__c) , &quot;11&quot;)) ,	
+	   IF(ISPICKVAL(ComplaintReasonTxt__c  , &quot;12-Atendimento Amanco 0800&quot;)   ,
+	    NOT(BEGINS(Text(NonConformityTxt__c) , &quot;12&quot;)) ,
+	   IF(ISPICKVAL(ComplaintReasonTxt__c  , &quot;14-Cadastro&quot;)   ,
+	    NOT(BEGINS(Text(NonConformityTxt__c) , &quot;14&quot;)) ,
+	   IF(ISPICKVAL(ComplaintReasonTxt__c  , &quot;15-Fiscal&quot;)   ,
+	    NOT(BEGINS(Text(NonConformityTxt__c) , &quot;15&quot;)) ,
+	   false)))))))))</errorConditionFormula>
+    <errorMessage>Gentileza verificar relação Natureza da reclamação com Não conformidade. Você selecionou um valor de Não conformidade que não corresponde ao selecionado em Natureza da reclamação.</errorMessage>
+</ValidationRule>

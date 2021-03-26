@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionClientAreaTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição área cliente</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AlphaGary Compostos</fullName>
+                <default>false</default>
+                <label>AlphaGary Compostos</label>
+            </value>
+            <value>
+                <fullName>AlphaGary Plastifica</fullName>
+                <default>false</default>
+                <label>AlphaGary Plastifica</label>
+            </value>
+            <value>
+                <fullName>Atacado</fullName>
+                <default>false</default>
+                <label>Atacado</label>
+            </value>
+            <value>
+                <fullName>Cia de Água e Saneam</fullName>
+                <default>false</default>
+                <label>Cia de Água e Saneam</label>
+            </value>
+            <value>
+                <fullName>Concessionária de Ro</fullName>
+                <default>false</default>
+                <label>Concessionária de Ro</label>
+            </value>
+            <value>
+                <fullName>Construtora</fullName>
+                <default>false</default>
+                <label>Construtora</label>
+            </value>
+            <value>
+                <fullName>Distribuidor</fullName>
+                <default>false</default>
+                <label>Distribuidor</label>
+            </value>
+            <value>
+                <fullName>Empreiteira</fullName>
+                <default>false</default>
+                <label>Empreiteira</label>
+            </value>
+            <value>
+                <fullName>Engenheiro/Projetist</fullName>
+                <default>false</default>
+                <label>Engenheiro/Projetist</label>
+            </value>
+            <value>
+                <fullName>Escritório de Projet</fullName>
+                <default>false</default>
+                <label>Escritório de Projet</label>
+            </value>
+            <value>
+                <fullName>Indústria - Bidim</fullName>
+                <default>false</default>
+                <label>Indústria - Bidim</label>
+            </value>
+            <value>
+                <fullName>Instaladora</fullName>
+                <default>false</default>
+                <label>Instaladora</label>
+            </value>
+            <value>
+                <fullName>Produtor Rural</fullName>
+                <default>false</default>
+                <label>Produtor Rural</label>
+            </value>
+            <value>
+                <fullName>Profissionais da Con</fullName>
+                <default>false</default>
+                <label>Profissionais da Con</label>
+            </value>
+            <value>
+                <fullName>Profissionais de Irr</fullName>
+                <default>false</default>
+                <label>Profissionais de Irr</label>
+            </value>
+            <value>
+                <fullName>Revenda Infra</fullName>
+                <default>false</default>
+                <label>Revenda Infra</label>
+            </value>
+            <value>
+                <fullName>Varejo</fullName>
+                <default>false</default>
+                <label>Varejo</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

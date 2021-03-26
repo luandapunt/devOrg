@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ActivityBranchTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Ramo de atividade</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Varejo</fullName>
+                <default>false</default>
+                <label>Varejo</label>
+            </value>
+            <value>
+                <fullName>Atacado</fullName>
+                <default>false</default>
+                <label>Atacado</label>
+            </value>
+            <value>
+                <fullName>Irrigação/Produtor Rural</fullName>
+                <default>false</default>
+                <label>Irrigação/Produtor Rural</label>
+            </value>
+            <value>
+                <fullName>Orgão Público</fullName>
+                <default>false</default>
+                <label>Orgão Público</label>
+            </value>
+            <value>
+                <fullName>Construtora</fullName>
+                <default>false</default>
+                <label>Construtora</label>
+            </value>
+            <value>
+                <fullName>Empreiteira</fullName>
+                <default>false</default>
+                <label>Empreiteira</label>
+            </value>
+            <value>
+                <fullName>Incorporadora</fullName>
+                <default>false</default>
+                <label>Incorporadora</label>
+            </value>
+            <value>
+                <fullName>Companhia Privada</fullName>
+                <default>false</default>
+                <label>Companhia Privada</label>
+            </value>
+            <value>
+                <fullName>Revenda</fullName>
+                <default>false</default>
+                <label>Revenda</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

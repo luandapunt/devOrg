@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpptyStageTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Fase da Oportunidade</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Qualificação</fullName>
+                <default>true</default>
+                <label>Qualificação</label>
+            </value>
+            <value>
+                <fullName>Análise Viabilidade técnica</fullName>
+                <default>false</default>
+                <label>Análise Viabilidade técnica</label>
+            </value>
+            <value>
+                <fullName>Análise Viabilidade comercial</fullName>
+                <default>false</default>
+                <label>Análise Viabilidade comercial</label>
+            </value>
+            <value>
+                <fullName>Geração de amostra</fullName>
+                <default>false</default>
+                <label>Geração de amostra</label>
+            </value>
+            <value>
+                <fullName>Teste com cliente</fullName>
+                <default>false</default>
+                <label>Teste com cliente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductActivitySectorTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Setor atividade produto</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>01-Família produtos 01</fullName>
+                <default>false</default>
+                <label>01-Família produtos 01</label>
+            </value>
+            <value>
+                <fullName>46-Setor Comum</fullName>
+                <default>false</default>
+                <label>46-Setor Comum</label>
+            </value>
+            <value>
+                <fullName>54-Serviços</fullName>
+                <default>false</default>
+                <label>54-Serviços</label>
+            </value>
+            <value>
+                <fullName>B1-Broker</fullName>
+                <default>false</default>
+                <label>B1-Broker</label>
+            </value>
+            <value>
+                <fullName>CO-Composto</fullName>
+                <default>false</default>
+                <label>CO-Composto</label>
+            </value>
+            <value>
+                <fullName>CR-Construção</fullName>
+                <default>false</default>
+                <label>CR-Construção</label>
+            </value>
+            <value>
+                <fullName>EB-Embalagem</fullName>
+                <default>false</default>
+                <label>EB-Embalagem</label>
+            </value>
+            <value>
+                <fullName>GE-Geomecânico</fullName>
+                <default>false</default>
+                <label>GE-Geomecânico</label>
+            </value>
+            <value>
+                <fullName>IA-Industria</fullName>
+                <default>false</default>
+                <label>IA-Industria</label>
+            </value>
+            <value>
+                <fullName>ID-Item Descontinuado</fullName>
+                <default>false</default>
+                <label>ID-Item Descontinuado</label>
+            </value>
+            <value>
+                <fullName>IE-Infra-Estrutura</fullName>
+                <default>false</default>
+                <label>IE-Infra-Estrutura</label>
+            </value>
+            <value>
+                <fullName>IN-Industrial</fullName>
+                <default>false</default>
+                <label>IN-Industrial</label>
+            </value>
+            <value>
+                <fullName>IR-Irrigação</fullName>
+                <default>false</default>
+                <label>IR-Irrigação</label>
+            </value>
+            <value>
+                <fullName>MM-Material Manutenção</fullName>
+                <default>false</default>
+                <label>MM-Material Manutenção</label>
+            </value>
+            <value>
+                <fullName>MP-Matéria Prima</fullName>
+                <default>false</default>
+                <label>MP-Matéria Prima</label>
+            </value>
+            <value>
+                <fullName>PR-Predial</fullName>
+                <default>false</default>
+                <label>PR-Predial</label>
+            </value>
+            <value>
+                <fullName>RF-Refugo</fullName>
+                <default>false</default>
+                <label>RF-Refugo</label>
+            </value>
+            <value>
+                <fullName>SC-Sucata</fullName>
+                <default>false</default>
+                <label>SC-Sucata</label>
+            </value>
+            <value>
+                <fullName>SE-Serviço</fullName>
+                <default>false</default>
+                <label>SE-Serviço</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

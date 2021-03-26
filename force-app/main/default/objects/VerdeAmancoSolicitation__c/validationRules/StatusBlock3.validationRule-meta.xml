@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusBlock3</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(StatusTxt__c,&quot;Enviando para o operador logístico&quot;) &amp;&amp; 
+HasItemsBln__c == false &amp;&amp; OR($Profile.Name=&apos;Vendedor&apos;,$Profile.Name=&apos;Representante&apos;,$Profile.Name=&apos;Representante Partner&apos;)</errorConditionFormula>
+    <errorMessage>É necessário adicionar pelo menos um item à solicitação para que seja possível alterar seu status.</errorMessage>
+</ValidationRule>

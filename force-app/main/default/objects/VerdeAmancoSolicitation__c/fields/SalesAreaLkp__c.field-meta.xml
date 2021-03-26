@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesAreaLkp__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Área de vendas</label>
+    <referenceTo>AccountAreaSales__c</referenceTo>
+    <relationshipLabel>Solicitações Verde Amanco</relationshipLabel>
+    <relationshipName>VerdeAmancoSolicitations</relationshipName>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

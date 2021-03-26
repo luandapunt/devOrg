@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Em preenchimento</fullName>
+                <default>true</default>
+                <label>Em preenchimento</label>
+            </value>
+            <value>
+                <fullName>Enviando para o operador logístico</fullName>
+                <default>false</default>
+                <label>Enviando para o operador logístico</label>
+            </value>
+            <value>
+                <fullName>Recebido pelo operador logístico</fullName>
+                <default>false</default>
+                <label>Recebido pelo operador logístico</label>
+            </value>
+            <value>
+                <fullName>Material entregue no endereço solicitado</fullName>
+                <default>false</default>
+                <label>Material entregue no endereço solicitado</label>
+            </value>
+            <value>
+                <fullName>Fotos aguardando aprovação</fullName>
+                <default>false</default>
+                <label>Fotos aguardando aprovação</label>
+            </value>
+            <value>
+                <fullName>Fotos não aprovadas</fullName>
+                <default>false</default>
+                <label>Fotos não aprovadas</label>
+            </value>
+            <value>
+                <fullName>Fotos aprovadas</fullName>
+                <default>false</default>
+                <label>Fotos aprovadas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

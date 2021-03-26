@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bloqueio_de_Material</fullName>
+    <columns>CenterCodeTxt__c</columns>
+    <columns>SalesOrganizationTxt__c</columns>
+    <columns>OrderTypeLkp__c</columns>
+    <columns>ProductLkp__c</columns>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>BlockedItem__c.ProductBlockRT</value>
+    </filters>
+    <filters>
+        <field>SalesOrganizationTxt__c</field>
+        <operation>equals</operation>
+        <value>0143</value>
+    </filters>
+    <label>Bloqueio de Material</label>
+</ListView>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FailureTypeTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo de avaria</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Extravio de produto</fullName>
+                <default>false</default>
+                <label>Extravio de produto</label>
+            </value>
+            <value>
+                <fullName>Produto faltante</fullName>
+                <default>false</default>
+                <label>Produto faltante</label>
+            </value>
+            <value>
+                <fullName>Negociação comercial</fullName>
+                <default>false</default>
+                <label>Negociação comercial</label>
+            </value>
+            <value>
+                <fullName>Extravio de volume</fullName>
+                <default>false</default>
+                <label>Extravio de volume</label>
+            </value>
+            <value>
+                <fullName>Código de barras divergente</fullName>
+                <default>false</default>
+                <label>Código de barras divergente</label>
+            </value>
+            <value>
+                <fullName>Danificado dentro embalagem</fullName>
+                <default>false</default>
+                <label>Danificado dentro embalagem</label>
+            </value>
+            <value>
+                <fullName>Deformação</fullName>
+                <default>false</default>
+                <label>Deformação</label>
+            </value>
+            <value>
+                <fullName>Desbitolamento</fullName>
+                <default>false</default>
+                <label>Desbitolamento</label>
+            </value>
+            <value>
+                <fullName>Embalagem com produto trocado</fullName>
+                <default>false</default>
+                <label>Embalagem com produto trocado</label>
+            </value>
+            <value>
+                <fullName>Embalagem danificada</fullName>
+                <default>false</default>
+                <label>Embalagem danificada</label>
+            </value>
+            <value>
+                <fullName>Embalagem errada</fullName>
+                <default>false</default>
+                <label>Embalagem errada</label>
+            </value>
+            <value>
+                <fullName>Liga e não puxa agua</fullName>
+                <default>false</default>
+                <label>Liga e não puxa agua</label>
+            </value>
+            <value>
+                <fullName>Produto com problema fabricação</fullName>
+                <default>false</default>
+                <label>Produto com problema fabricação</label>
+            </value>
+            <value>
+                <fullName>Produto Danificado Expedição</fullName>
+                <default>false</default>
+                <label>Produto Danificado Expedição</label>
+            </value>
+            <value>
+                <fullName>Produto danificado transporte</fullName>
+                <default>false</default>
+                <label>Produto danificado transporte</label>
+            </value>
+            <value>
+                <fullName>Produto danificado cliente</fullName>
+                <default>false</default>
+                <label>Produto danificado cliente</label>
+            </value>
+            <value>
+                <fullName>Produto amassado</fullName>
+                <default>false</default>
+                <label>Produto amassado</label>
+            </value>
+            <value>
+                <fullName>Produto com Vazamento</fullName>
+                <default>false</default>
+                <label>Produto com Vazamento</label>
+            </value>
+            <value>
+                <fullName>Produto com Bolha</fullName>
+                <default>false</default>
+                <label>Produto com Bolha</label>
+            </value>
+            <value>
+                <fullName>Produto danificado</fullName>
+                <default>false</default>
+                <label>Produto danificado</label>
+            </value>
+            <value>
+                <fullName>Produto evaporou</fullName>
+                <default>false</default>
+                <label>Produto evaporou</label>
+            </value>
+            <value>
+                <fullName>Produto furado</fullName>
+                <default>false</default>
+                <label>Produto furado</label>
+            </value>
+            <value>
+                <fullName>Produto não aquece</fullName>
+                <default>false</default>
+                <label>Produto não aquece</label>
+            </value>
+            <value>
+                <fullName>Produto não liga</fullName>
+                <default>false</default>
+                <label>Produto não liga</label>
+            </value>
+            <value>
+                <fullName>Produto quebrado</fullName>
+                <default>false</default>
+                <label>Produto quebrado</label>
+            </value>
+            <value>
+                <fullName>Produto queimado</fullName>
+                <default>false</default>
+                <label>Produto queimado</label>
+            </value>
+            <value>
+                <fullName>Produto trincado</fullName>
+                <default>false</default>
+                <label>Produto trincado</label>
+            </value>
+            <value>
+                <fullName>Super Aquecimento</fullName>
+                <default>false</default>
+                <label>Super Aquecimento</label>
+            </value>
+            <value>
+                <fullName>Tubo sem marcação</fullName>
+                <default>false</default>
+                <label>Tubo sem marcação</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

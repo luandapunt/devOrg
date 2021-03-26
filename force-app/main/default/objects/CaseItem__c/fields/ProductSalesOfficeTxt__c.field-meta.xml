@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductSalesOfficeTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Escritório vendas produto</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0010-Regional Sul</fullName>
+                <default>false</default>
+                <label>0010-Regional Sul</label>
+            </value>
+            <value>
+                <fullName>0020-Regional SP Capital</fullName>
+                <default>false</default>
+                <label>0020-Regional SP Capital</label>
+            </value>
+            <value>
+                <fullName>0030-Regional RJ/ES</fullName>
+                <default>false</default>
+                <label>0030-Regional RJ/ES</label>
+            </value>
+            <value>
+                <fullName>0040-Regional Nordeste</fullName>
+                <default>false</default>
+                <label>0040-Regional Nordeste</label>
+            </value>
+            <value>
+                <fullName>0050-Regional SP Interior</fullName>
+                <default>false</default>
+                <label>0050-Regional SP Interior</label>
+            </value>
+            <value>
+                <fullName>0060-Regional MG</fullName>
+                <default>false</default>
+                <label>0060-Regional MG</label>
+            </value>
+            <value>
+                <fullName>0070-REgional CO/NO</fullName>
+                <default>false</default>
+                <label>0070-REgional CO/NO</label>
+            </value>
+            <value>
+                <fullName>0090-Venda Direta</fullName>
+                <default>false</default>
+                <label>0090-Venda Direta</label>
+            </value>
+            <value>
+                <fullName>0100-Exportação</fullName>
+                <default>false</default>
+                <label>0100-Exportação</label>
+            </value>
+            <value>
+                <fullName>0110-Regional Irriga</fullName>
+                <default>false</default>
+                <label>0110-Regional Irriga</label>
+            </value>
+            <value>
+                <fullName>0120-Regional Construtora</fullName>
+                <default>false</default>
+                <label>0120-Regional Construtora</label>
+            </value>
+            <value>
+                <fullName>0130-Reg Infra Industria</fullName>
+                <default>false</default>
+                <label>0130-Reg Infra Industria</label>
+            </value>
+            <value>
+                <fullName>0140-Alphagary</fullName>
+                <default>false</default>
+                <label>0140-Alphagary</label>
+            </value>
+            <value>
+                <fullName>0150-Regional Infra</fullName>
+                <default>false</default>
+                <label>0150-Regional Infra</label>
+            </value>
+            <value>
+                <fullName>0160-Assistência Técnica</fullName>
+                <default>false</default>
+                <label>0160-Assistência Técnica</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesPathRestriction</fullName>
+    <active>true</active>
+    <description>Compara os campos &quot;Aprovação&quot; e &quot;Status da aprovação&quot; e bloqueia uma alteração no Sales Path caso os dois campos estejam diferentes.</description>
+    <errorConditionFormula>TEXT( ApprovalTxt__c ) &lt;&gt; TEXT( ApprovalStatusTxt__c )</errorConditionFormula>
+    <errorMessage>Não é possível alterar a etapa de aprovação.</errorMessage>
+</ValidationRule>

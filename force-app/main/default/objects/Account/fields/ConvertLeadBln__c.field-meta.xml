@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConvertLeadBln__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Campo que é verdadeiro se a conta é originária de conversão de lead. Preenchido via mapeamento para Emissor, via código para Parceiros</description>
+    <externalId>false</externalId>
+    <label>Lead Convertido?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

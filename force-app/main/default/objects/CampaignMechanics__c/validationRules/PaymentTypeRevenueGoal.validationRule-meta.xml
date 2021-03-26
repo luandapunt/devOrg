@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentTypeRevenueGoal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+OR(ISPICKVAL(PaymentTypeTxt__c , &apos;FATU&apos;), ISPICKVAL(PaymentTypeTxt__c , &apos;META&apos;)), 
+OR(ISBLANK(BenefitCriteriaLkp__c), ISBLANK(Percentage__c)))</errorConditionFormula>
+    <errorMessage>Uma mecânica de campanha com pagamento sobre a meta/faturamento deve possuir um benefício e uma porcentagem de benefício.</errorMessage>
+</ValidationRule>

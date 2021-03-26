@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DifferentFieldsFromParentAccount</fullName>
+    <active>true</active>
+    <errorConditionFormula>!$Setup.SkipValidations__c.Skip__c &amp;&amp; 
+RecordType.DeveloperName = &apos;AccountPartner&apos; &amp;&amp; 
+ParentId != null &amp;&amp; 
+( 
+(CNPJTxt__c != Parent.CNPJTxt__c) || 
+(Name != Parent.Name) || 
+(RG_StateInscriptionTxt__c != Parent.RG_StateInscriptionTxt__c) || 
+(BillingState != Parent.BillingState) 
+)</errorConditionFormula>
+    <errorMessage>Os campos Razão Social, CNPJ, RG/Inscrição Estadual e Estado da Conta Parceiro devem ser iguais aos da Conta Pai.</errorMessage>
+</ValidationRule>

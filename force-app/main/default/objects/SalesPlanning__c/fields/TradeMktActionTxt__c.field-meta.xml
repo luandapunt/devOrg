@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TradeMktActionTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Ação Trade Mkt</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Antecipação Trimestre</fullName>
+                <default>false</default>
+                <label>Antecipação Trimestre</label>
+            </value>
+            <value>
+                <fullName>Aumento Ticket Médio</fullName>
+                <default>false</default>
+                <label>Aumento Ticket Médio</label>
+            </value>
+            <value>
+                <fullName>Clientes Mistos</fullName>
+                <default>false</default>
+                <label>Clientes Mistos</label>
+            </value>
+            <value>
+                <fullName>Combo Promo Peq. Varejo</fullName>
+                <default>false</default>
+                <label>Combo Promo Peq. Varejo</label>
+            </value>
+            <value>
+                <fullName>Desloca Low Price</fullName>
+                <default>false</default>
+                <label>Desloca Low Price</label>
+            </value>
+            <value>
+                <fullName>Pontual Produto</fullName>
+                <default>false</default>
+                <label>Pontual Produto</label>
+            </value>
+            <value>
+                <fullName>Ticket Médio</fullName>
+                <default>false</default>
+                <label>Ticket Médio</label>
+            </value>
+            <value>
+                <fullName>Top Amanco</fullName>
+                <default>false</default>
+                <label>Top Amanco</label>
+            </value>
+            <value>
+                <fullName>Xeque Mate</fullName>
+                <default>false</default>
+                <label>Xeque Mate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Reclamacao_1</fullName>
+    <active>true</active>
+    <description>Regras referente a status do caso tipo Reclamação.</description>
+    <errorConditionFormula>IF( 
+ByPassBln__c = TRUE,
+OR(
+	AND(
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		ISNEW(),
+		RecordType.Name = &apos;Reclamação&apos;,
+		IF(NOT(ISPICKVAL(Status, &apos;Aberto&apos;)), true, false) 
+	),
+        AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aberto&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aberto&apos;),
+		ISPICKVAL(Status, &apos;Aguardando parecer de campo&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando parecer de campo&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aguardando parecer de campo&apos;),
+		ISPICKVAL(Status, &apos;Aguardando amostra&apos;), 
+		ISPICKVAL(Status, &apos;Aguardando documentos do campo&apos;), 
+		ISPICKVAL(Status, &apos;Encerrado&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando amostra&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Aguardando amostra&apos;),
+		ISPICKVAL(Status, &apos;Enviado para laboratório&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Enviado para laboratório&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Enviado para laboratório&apos;),
+		ISPICKVAL(Status, &apos;Análise amostra em andamento&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+		AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Análise amostra em andamento&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Análise amostra em andamento&apos;),
+		ISPICKVAL(Status, &apos;Análise amostra encerrada&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	),
+	AND(
+		RecordType.Name = &apos;Reclamação&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;, 
+		$Profile.Name!= &apos;Administrador do sistema&apos;, 
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Análise amostra encerrada&apos;),
+		IF(NOT(OR( ISPICKVAL(Status, &apos;Análise amostra encerrada&apos;),
+		ISPICKVAL(Status, &apos;Aguardando documentos do campo&apos;), 
+		ISPICKVAL(Status, &apos;Encerrado&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false)
+	)
+), 
+FALSE 
+)</errorConditionFormula>
+    <errorMessage>Reclamação: alteração de status não permitida.</errorMessage>
+</ValidationRule>

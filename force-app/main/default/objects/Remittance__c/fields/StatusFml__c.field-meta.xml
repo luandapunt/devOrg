@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+   RemittanceStatusBln__c = TRUE, &quot;Remessa cancelada&quot;,
+   IF(
+      NOT(ISBLANK( ShipmentDeliveredDte__c )) , &quot;Mercadoria entregue&quot;,
+      IF(
+         NOT(ISBLANK( ShipmentTransitDte__c )), &quot;Mercadoria em transito&quot;,
+         IF(
+            NOT(ISBLANK(  ShipmentFinishedDte__c )), &quot;Carregamento finalizado&quot;,
+            IF(
+               NOT(ISBLANK(   InLadingDte__c )), &quot;Em carregamento&quot;,
+&quot;&quot;)))))</formula>
+    <inlineHelpText>Status de acordo com as datas de carregamento até data de Mercadoria entregue.</inlineHelpText>
+    <label>Status da remessa</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

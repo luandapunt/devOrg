@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReceiverNielsenBlocked</fullName>
+    <active>true</active>
+    <description>Não permite associar recebedor de acordo com o perfil nielsen</description>
+    <errorConditionFormula>!$Setup.SkipValidations__c.Skip__c &amp;&amp;
+OR(ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;07&quot;), 
+ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;08&quot;), 
+ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;09&quot;), 
+ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;10&quot;), 
+ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;14&quot;), 
+ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;15&quot;), 
+ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;17&quot;), 
+ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;18&quot;), 
+ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;23&quot;), 
+ISPICKVAL(AccountLkp__r.NielsenZoneTxt__c, &quot;27&quot;)) &amp;&amp; AccountReceiverLkp__c != null &amp;&amp; AccountReceiverLkp__c != AccountLkp__c</errorConditionFormula>
+    <errorMessage>Para esse cliente não é permitido alterar o endereço de entrega</errorMessage>
+</ValidationRule>

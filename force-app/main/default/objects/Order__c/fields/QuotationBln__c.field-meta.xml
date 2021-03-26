@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuotationBln__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(OrderStatusTxt__c) = &apos;Rascunho&apos; ||
+TEXT(OrderStatusTxt__c) = &apos;InApproval&apos; ||
+TEXT(OrderStatusTxt__c) = &apos;Approved&apos; ||
+TEXT(OrderStatusTxt__c) = &apos;SentToSAP&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Cotação</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

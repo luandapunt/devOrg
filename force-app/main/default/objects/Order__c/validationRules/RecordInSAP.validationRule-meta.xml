@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordInSAP</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( $Setup.SkipValidations__c.Skip__c ) &amp;&amp; QuotationBln__c = False &amp;&amp; OR($Profile.Name = &apos;Vendedor&apos;,$Profile.Name = &apos;Representante Partner&apos;)</errorConditionFormula>
+    <errorMessage>Não é possível editar esse registro.</errorMessage>
+</ValidationRule>

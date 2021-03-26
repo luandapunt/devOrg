@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesOrganizationTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição organização de vendas</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMANCO</fullName>
+                <default>false</default>
+                <label>AMANCO</label>
+            </value>
+            <value>
+                <fullName>PLASTUBOS</fullName>
+                <default>false</default>
+                <label>PLASTUBOS</label>
+            </value>
+            <value>
+                <fullName>BIDIM</fullName>
+                <default>false</default>
+                <label>BIDIM</label>
+            </value>
+            <value>
+                <fullName>ALPHAGARY</fullName>
+                <default>false</default>
+                <label>ALPHAGARY</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

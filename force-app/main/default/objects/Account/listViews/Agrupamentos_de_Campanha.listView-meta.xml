@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agrupamentos_de_Campanha</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>GroupCodeTxt__c</columns>
+    <columns>MainSalesAreaLkp__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.CampaignGroup</value>
+    </filters>
+    <label>Agrupamentos de Campanha</label>
+</ListView>

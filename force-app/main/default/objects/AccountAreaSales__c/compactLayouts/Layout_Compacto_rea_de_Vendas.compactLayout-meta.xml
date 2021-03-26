@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Layout_Compacto_rea_de_Vendas</fullName>
+    <fields>AccountLkp__c</fields>
+    <fields>CodeSalesOrganizationTxt__c</fields>
+    <fields>SalesOfficeTxt__c</fields>
+    <fields>ChannelPVCTxt__c</fields>
+    <fields>CampaignGroupLkp__c</fields>
+    <label>Layout Compacto Área de Vendas</label>
+</CompactLayout>

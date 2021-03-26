@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Caso_Extravio_de_nota_fiscal</fullName>
+    <active>true</active>
+    <description>Regras referente a status do caso tipo Extravio de nota fiscal.</description>
+    <errorConditionFormula>IF( 
+ByPassBln__c = TRUE,
+OR(
+	AND(
+		ISNEW(),
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		RecordType.Name = &apos;Extravio de nota fiscal&apos;,
+		IF(NOT(ISPICKVAL(Status, &apos;Aguardando retorno transportadora&apos;)), true, false) 
+	),
+	AND(
+		RecordType.Name = &apos;Extravio de nota fiscal&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando retorno transportadora&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Aguardando retorno transportadora&apos;), 
+                ISPICKVAL(Status, &apos;QM em andamento&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND(
+		RecordType.Name = &apos;Extravio de nota fiscal&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;QM em andamento&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;QM em andamento&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+        AND(
+		RecordType.Name = &apos;Extravio de nota fiscal&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Ordem de venda criada&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Ordem de venda criada&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	),
+	AND(
+		RecordType.Name = &apos;Extravio de nota fiscal&apos;,
+		$Profile.Name!= &apos;Interface Salesforce&apos;,
+ $Profile.Name !=&apos;Coordenador SAC&apos;,
+		$Profile.Name!= &apos;Administrador do sistema&apos;,
+		IF( ISPICKVAL( PRIORVALUE(Status) , &apos;Aguardando encerramento&apos;), 
+		IF(NOT(OR(ISPICKVAL(Status, &apos;Aguardando encerramento&apos;), 
+		ISPICKVAL(Status, &apos;Encerrado&apos;), 
+		ISPICKVAL(Status, &apos;Cancelado&apos;))) , true, false) , false) 
+	)
+), 
+FALSE 
+)</errorConditionFormula>
+    <errorMessage>Extravio de nota fiscal: alteração de status não permitida.</errorMessage>
+</ValidationRule>

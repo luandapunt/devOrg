@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentTypeFixed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(PaymentTypeTxt__c, &apos;FIXO&apos;), OR(NOT(ISBLANK(Percentage__c)), NOT(ISBLANK(BenefitCriteriaLkp__c ))))</errorConditionFormula>
+    <errorMessage>Uma mecânica de campanha com pagamento fixo não pode possuir um critério de benefício ou uma porcentagem de benefício..</errorMessage>
+</ValidationRule>

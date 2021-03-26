@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FormattedMonthFml__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT( CurrentMonthTxt__c ), 
+&apos;01&apos;,&apos;Jan&apos;, 
+&apos;02&apos;,&apos;Fev&apos;, 
+&apos;03&apos;,&apos;Mar&apos;, 
+&apos;04&apos;,&apos;Abr&apos;, 
+&apos;05&apos;,&apos;Mai&apos;, 
+&apos;06&apos;,&apos;Jun&apos;, 
+&apos;07&apos;,&apos;Jul&apos;, 
+&apos;08&apos;,&apos;Ago&apos;, 
+&apos;09&apos;,&apos;Set&apos;, 
+&apos;10&apos;,&apos;Out&apos;, 
+&apos;11&apos;,&apos;Nov&apos;, 
+&apos;12&apos;,&apos;Dez&apos;, 
+&apos;Jan&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mês Formatado</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InformsPaymentCondition</fullName>
+    <active>true</active>
+    <description>Se o campo &quot;Informa condição de pagamento&quot; estiver marcado, é obrigatório preencher o campo &quot;Condição de Pagamento&quot;.</description>
+    <errorConditionFormula>AND( OrderTypeLkp__r.ReportPaymentTermsBln__c=true, PaymentTermLkp__c=null, ISPICKVAL(OrderStatusTxt__c, &apos;Rascunho&apos;) )</errorConditionFormula>
+    <errorMessage>Para esse tipo de ordem é obrigatório o preenchimento do campo &quot;Condição de Pagamento&quot;.</errorMessage>
+</ValidationRule>

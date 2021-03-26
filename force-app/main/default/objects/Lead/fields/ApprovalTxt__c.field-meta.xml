@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApprovalTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Aprovação</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aguardando envio para aprovação</fullName>
+                <default>true</default>
+                <label>Aguardando envio para aprovação</label>
+            </value>
+            <value>
+                <fullName>Enviado para aprovação</fullName>
+                <default>false</default>
+                <label>Enviado para aprovação</label>
+            </value>
+            <value>
+                <fullName>Aprovado na etapa 1</fullName>
+                <default>false</default>
+                <label>Aprovado pela área de cadastro</label>
+            </value>
+            <value>
+                <fullName>Aprovado na etapa 2</fullName>
+                <default>false</default>
+                <label>Aprovado pela área fiscal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

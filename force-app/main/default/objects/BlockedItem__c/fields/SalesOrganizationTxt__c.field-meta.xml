@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesOrganizationTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Organização de Vendas</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AM01</fullName>
+                <default>false</default>
+                <label>AM01</label>
+            </value>
+            <value>
+                <fullName>0143</fullName>
+                <default>false</default>
+                <label>0143</label>
+            </value>
+            <value>
+                <fullName>0099</fullName>
+                <default>false</default>
+                <label>0099</label>
+            </value>
+            <value>
+                <fullName>0141</fullName>
+                <default>false</default>
+                <label>0141</label>
+            </value>
+            <value>
+                <fullName>0144</fullName>
+                <default>false</default>
+                <label>0144</label>
+            </value>
+            <value>
+                <fullName>0145</fullName>
+                <default>false</default>
+                <label>0145</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

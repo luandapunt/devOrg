@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductSalesOrganizationTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Organização vendas produto</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0099-BIDIM</fullName>
+                <default>false</default>
+                <label>0099-BIDIM</label>
+            </value>
+            <value>
+                <fullName>0125-DOUTORES DA CONST.</fullName>
+                <default>false</default>
+                <label>0125-DOUTORES DA CONST.</label>
+            </value>
+            <value>
+                <fullName>0141-ALPHAGARY CORP.</fullName>
+                <default>false</default>
+                <label>0141-ALPHAGARY CORP.</label>
+            </value>
+            <value>
+                <fullName>0143-PLASTUBOS</fullName>
+                <default>false</default>
+                <label>0143-PLASTUBOS</label>
+            </value>
+            <value>
+                <fullName>0147-MEXICHEM TRADING</fullName>
+                <default>false</default>
+                <label>0147-MEXICHEM TRADING</label>
+            </value>
+            <value>
+                <fullName>0155-BR - CredConstrução</fullName>
+                <default>false</default>
+                <label>0155-BR - CredConstrução</label>
+            </value>
+            <value>
+                <fullName>AM01-AMANCO</fullName>
+                <default>false</default>
+                <label>AM01-AMANCO</label>
+            </value>
+            <value>
+                <fullName>PL01-OrgV Plastubos</fullName>
+                <default>false</default>
+                <label>PL01-OrgV Plastubos</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

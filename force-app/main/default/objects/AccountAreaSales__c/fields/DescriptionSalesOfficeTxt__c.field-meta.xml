@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DescriptionSalesOfficeTxt__c</fullName>
+    <externalId>false</externalId>
+    <label>Descrição escritório de vendas</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agência (Default)</fullName>
+                <default>false</default>
+                <label>Agência (Default)</label>
+            </value>
+            <value>
+                <fullName>Alphagary</fullName>
+                <default>false</default>
+                <label>Alphagary</label>
+            </value>
+            <value>
+                <fullName>Assistência Técnica</fullName>
+                <default>false</default>
+                <label>Assistência Técnica</label>
+            </value>
+            <value>
+                <fullName>Exportação</fullName>
+                <default>false</default>
+                <label>Exportação</label>
+            </value>
+            <value>
+                <fullName>Reg Infra Industria</fullName>
+                <default>false</default>
+                <label>Reg Infra Industria</label>
+            </value>
+            <value>
+                <fullName>Regional CO/NO</fullName>
+                <default>false</default>
+                <label>Regional CO/NO</label>
+            </value>
+            <value>
+                <fullName>Regional Construtora</fullName>
+                <default>false</default>
+                <label>Regional Construtora</label>
+            </value>
+            <value>
+                <fullName>Regional Infra</fullName>
+                <default>false</default>
+                <label>Regional Infra</label>
+            </value>
+            <value>
+                <fullName>Regional Irriga</fullName>
+                <default>false</default>
+                <label>Regional Irriga</label>
+            </value>
+            <value>
+                <fullName>Regional MG</fullName>
+                <default>false</default>
+                <label>Regional MG</label>
+            </value>
+            <value>
+                <fullName>Regional Nordeste</fullName>
+                <default>false</default>
+                <label>Regional Nordeste</label>
+            </value>
+            <value>
+                <fullName>Regional RJ/ES</fullName>
+                <default>false</default>
+                <label>Regional RJ/ES</label>
+            </value>
+            <value>
+                <fullName>Regional SP Capital</fullName>
+                <default>false</default>
+                <label>Regional SP Capital</label>
+            </value>
+            <value>
+                <fullName>Regional SP Interior</fullName>
+                <default>false</default>
+                <label>Regional SP Interior</label>
+            </value>
+            <value>
+                <fullName>Regional Sul</fullName>
+                <default>false</default>
+                <label>Regional Sul</label>
+            </value>
+            <value>
+                <fullName>Venda Direta</fullName>
+                <default>false</default>
+                <label>Venda Direta</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

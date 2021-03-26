@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextOrderOnlyQuotation</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISPICKVAL(Category__c, &apos;Cotação&apos;) &amp;&amp; NextOrderType__c != NULL</errorConditionFormula>
+    <errorMessage>Somente Tipos de Ordem de Cotação podem ter Tipo de Ordem de Destino</errorMessage>
+</ValidationRule>
