@@ -50,7 +50,6 @@
     <description>[###][CatalogElement__c] Elementos de Catálogo de Preços, para montar a hierarquia</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>

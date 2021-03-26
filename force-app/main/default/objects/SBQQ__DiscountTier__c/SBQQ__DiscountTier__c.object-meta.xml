@@ -147,8 +147,7 @@
     <deprecated>false</deprecated>
     <description>Discount tier that specifies discount for a given quantity range.</description>
     <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableBulkApi>true</enableBulkApi><enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>

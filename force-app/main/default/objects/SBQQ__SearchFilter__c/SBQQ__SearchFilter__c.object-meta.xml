@@ -147,8 +147,7 @@
     <deprecated>false</deprecated>
     <description>Search filter definition.</description>
     <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableBulkApi>true</enableBulkApi><enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>

@@ -50,7 +50,6 @@
     <description>[a17][SalesPlanning__c] Planejamento de vendas definido a partir da cota do vendedor para suas contas.</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>

@@ -46,7 +46,6 @@
     <description>[###][ElementProduct__c] Join entre elementos e produtos, para configurar a exibição do Catálogo de Preços</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>

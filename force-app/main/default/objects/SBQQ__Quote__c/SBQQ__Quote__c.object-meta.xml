@@ -150,8 +150,7 @@
     <deprecated>false</deprecated>
     <description>Sales quote for a given opportunity. There may be multiple quotes for a single opportunity.</description>
     <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableBulkApi>true</enableBulkApi><enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>

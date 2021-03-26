@@ -147,8 +147,7 @@
     <deprecated>false</deprecated>
     <description>Action taken when Product Rule fires.</description>
     <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableBulkApi>true</enableBulkApi><enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>

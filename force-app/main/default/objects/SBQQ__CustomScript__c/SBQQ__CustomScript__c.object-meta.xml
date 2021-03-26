@@ -146,8 +146,7 @@
     <deprecated>false</deprecated>
     <description>Script that can be executed by an outside resource</description>
     <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableBulkApi>true</enableBulkApi><enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>

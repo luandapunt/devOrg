@@ -147,8 +147,7 @@
     <deprecated>false</deprecated>
     <description>Definition of a column in line item table on quote document.</description>
     <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableBulkApi>true</enableBulkApi><enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>

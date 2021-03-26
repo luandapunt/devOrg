@@ -46,7 +46,6 @@
     <description>[a0G][Queue__c] Responsável por prover garantia de entrega para camada de integração</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>

@@ -147,8 +147,7 @@
     <deprecated>false</deprecated>
     <description>Process Input Conditions determine its visibility based on the answer of other questions.</description>
     <enableActivities>false</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableBulkApi>true</enableBulkApi><enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>

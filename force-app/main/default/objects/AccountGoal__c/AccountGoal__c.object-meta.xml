@@ -46,7 +46,6 @@
     <description>[a0w][AccountGoal__c] Objetos que guardam as metas individuais de cada cliente, para cada período da Campanha de Trade Marketing</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>

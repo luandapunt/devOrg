@@ -46,7 +46,6 @@
     <description>[a0t][CampaignMechanics__c] Mecânica definida para a campanha de Trade: Maneira de apuração e pagamento de benefício</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>

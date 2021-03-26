@@ -46,7 +46,6 @@
     <description>[a05][CaseMotive__c] Objeto que relaciona motivo do caso o tipo de caso e perfil de visualização.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableReports>true</enableReports>
